@@ -1,0 +1,80 @@
+PLACEHOLDER – to be replaced with official document
+
+File
+  Supporting_Docs/Legal/Director_IDs/CEO_ID_Card.pdf
+
+Important
+  - This is a temporary placeholder saved with a .pdf extension.
+  - It is plain text and NOT a valid PDF binary.
+  - Replace with an official identity document scan suitable for regulatory due diligence before packaging and submission.
+
+Purpose
+  Provide identity evidence for the Chief Executive Officer (CEO), who is an authorized signatory referenced in corporate records and dossier documents. This supports regulator and auditor due diligence linking dossier signatures to a real, uniquely identified person.
+
+Acceptable Evidence (one of the following)
+  - Government-issued Greek ID card (both sides, if applicable).
+  - Passport (main bio page; include machine-readable zone if required; may redact where allowed).
+  - Other government-issued photo ID accepted under applicable law and internal KYC/KYB policy.
+
+Data visibility and privacy (minimization and redaction)
+  - Keep visible (at minimum):
+    • Full legal name (as in ΓΕΜΗ and Articles of Association)
+    • Photograph
+    • Document type/issuer
+    • Expiry date
+  - May redact (apply privacy-by-design and legal guidance):
+    • Document number (partial), place of birth, personal ID numbers not required for verification
+    • MRZ line segments (if not required)
+    • Address or secondary personal details not needed for identity match
+  - Ensure redactions do not obscure authenticity/issuer fields needed for verification.
+
+Requirements for the official PDF
+  - Single, legible PDF (color scan recommended, 300+ DPI).
+  - Current and valid (not expired at submission).
+  - Name matches exactly the entries in corporate records and dossier signature blocks.
+  - If multiple pages/sides, include all necessary sides/pages in correct order.
+  - No passwords or encryption.
+
+Cross-checks (consistency)
+  - Matches names/roles/signature blocks in:
+    • Supporting_Docs/Legal/GEMH_Company_Registration.pdf
+    • Supporting_Docs/Legal/Articles_of_Association.pdf
+    • 01_Registry_Application_GreekTrustCo_SIGNED.pdf
+    • 02_EETT_Qualified_Service_Start_Application_SIGNED.pdf
+    • 04_TSP_Policy_GR_EN_SIGNED.pdf
+    • 05_TSPS_Qualified_Services_GR_EN_SIGNED.pdf
+    • 10_End_User_Agreement_GR_EN_SIGNED.pdf
+    • 17_Executive_Brief_GR_EN_SIGNED.pdf
+  - Signature authority aligns with representation clauses in Articles_of_Association.pdf and ΓΕΜΗ records.
+
+Companion file (to be provided separately)
+  - Supporting_Docs/Legal/Director_IDs/QTS_Manager_ID_Card.pdf
+  - Provide identity document for the Qualified Trust Services Manager; apply the same rules above.
+
+Pre-Submission Checklist
+  - [ ] Official CEO ID scan present (single PDF, legible).
+  - [ ] Not expired as of submission date.
+  - [ ] Full legal name matches ΓΕΜΗ/Articles and dossier signatures.
+  - [ ] Required fields visible; privacy redactions applied where appropriate.
+  - [ ] File opens without password; filename exact: CEO_ID_Card.pdf.
+  - [ ] Companion QTS_Manager_ID_Card.pdf prepared and consistent.
+
+Replacement Instructions
+  1) Delete this placeholder file.
+  2) Insert the privacy-redacted official CEO ID scan as a valid PDF at:
+     EETT_Dossier_GreekTrustCo_2025-06-15.asice/Supporting_Docs/Legal/Director_IDs/CEO_ID_Card.pdf
+  3) Regenerate META-INF/manifest.xml (SHA-256 entries) and reapply the ASiC-E signature (XAdES-LTA) during final packaging.
+
+Document Metadata (to populate internally when replacing)
+  - Organization: GreekTrustCo
+  - Subject: <CEO Full Legal Name>
+  - Role: Chief Executive Officer (Authorized Signatory)
+  - Document Type: <Greek ID Card | Passport | Other>
+  - Issuer: <Issuing Authority>
+  - Document Number: <Redacted/Partial>
+  - Expiry Date: <YYYY-MM-DD>
+  - Collected by: Compliance
+  - Reviewed by: Legal
+  - Classification: Confidential – Submitted to EETT
+
+End of placeholder.

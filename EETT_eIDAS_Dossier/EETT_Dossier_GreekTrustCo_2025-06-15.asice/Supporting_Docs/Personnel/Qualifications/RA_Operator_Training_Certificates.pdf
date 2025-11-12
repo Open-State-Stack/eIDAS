@@ -1,0 +1,163 @@
+PLACEHOLDER – to be replaced with official document
+
+File
+  Supporting_Docs/Personnel/Qualifications/RA_Operator_Training_Certificates.pdf
+
+Important
+  - This is a temporary placeholder saved with a .pdf extension.
+  - It is plain text and NOT a valid PDF binary.
+  - Replace with the official, signed RA Operator Training & Certification Pack before packaging and submission.
+
+Purpose
+  Provide authoritative evidence that all Registration Authority (RA) Operators have been trained, assessed, and authorized to perform identity proofing, enrollment, issuance support, and revocation intake for Qualified Trust Services in accordance with eIDAS and ETSI standards. This supports EETT and auditor due diligence regarding competence, integrity, and procedural control in RA operations.
+
+Required Properties of the Official Document
+  - Format: Single, consolidated PDF (non-password-protected; printable; PDF/A acceptable)
+  - Language: Greek and/or English (if bilingual, place Greek first)
+  - Structure: Training curriculum, attendance/sign-off sheets, exam/assessment results, certificates, SOP acknowledgements, authorization roster (merged into one PDF with a contents page)
+  - Dates: Current version; evidence dated within the validity period of the authorizations (recommend ≤ 12 months for refresher)
+  - Signatures: RA Manager (or QTS Manager) and each RA Operator (acknowledgements and attestations)
+  - File name (exact): RA_Operator_Training_Certificates.pdf
+  - Location (exact): EETT_Dossier_GreekTrustCo_2025-06-15.asice/Supporting_Docs/Personnel/Qualifications/
+
+Applicable Standards and References (indicative)
+  - eIDAS Regulation (EU) No 910/2014 (relevant Articles for Qualified services)
+  - ETSI EN 319 401 (General Policy Requirements)
+  - ETSI EN 319 411-1 and ETSI EN 319 411-2 (TSPs issuing certificates; qualified)
+  - ETSI EN 319 412 series (Certificate Profiles; naming and identity attributes)
+  - RFC 5280 (X.509), RFC 6960 (OCSP) – awareness level for RA-relevant touchpoints
+  - ETSI TS 119 461 (Remote identity proofing) – if remote identification is used
+
+Minimum Expected Contents (for the final PDF)
+  1) Cover Page
+     - Title: “RA Operator – Training & Certification Pack”
+     - Organization: GreekTrustCo
+     - Version/Issue Date
+     - Approvals: RA Manager / QTS Manager signatures and dates
+
+  2) Role and Authorization Framework
+     - RA Operator role description, responsibilities, and authority limits
+     - Segregation of duties (RA vs. PKI/CA, Security, Crypto Officers, QA/Audit)
+     - Authorization roster:
+       • Operator full name, unique ID/username
+       • Authorization scope (QES/QSeal; natural vs. legal persons; in-person vs. remote)
+       • Effective date, expiry/renewal date
+       • Supervisor (RA Manager) and secondary approver (as applicable)
+
+  3) Training Curriculum (syllabus)
+     - eIDAS/ETSI overview: obligations for RA functions
+     - Identity proofing (natural persons):
+       • In-person checks; document authentication; photo match
+       • Remote identification (if applicable): liveness, video session, integrity controls (per ETSI TS 119 461)
+       • Handling of high-assurance eID means (if used)
+     - Identity proofing (legal persons):
+       • Organization identity, legal existence, authority to act
+       • Verification of signatory’s mandate; evidence capture (GEMH/registry extracts)
+     - Attribute accuracy for certificate profiles (ETSI EN 319 412):
+       • Subject DN, SAN, QCStatements mapping; data minimization
+     - Enrollment and evidence management:
+       • Evidence capture, integrity, chain of custody, storage/retention
+       • Privacy and GDPR basics for RA (lawful basis, minimization, redaction)
+     - Revocation intake and processing:
+       • Authentication of requester; urgent revocations; fraud/compromise cases
+       • Escalation and after-hours procedures
+     - Systems and security:
+       • RA workstation hardening, MFA, session control, clean desk
+       • Logging and audit trails; time synchronization awareness
+     - Anti-fraud and red flags:
+       • Suspicious patterns, document tampering indicators, social engineering
+       • Reporting channels and incident escalation to Security/Compliance
+     - Quality control:
+       • Sampling, peer review/4-eyes (where applicable), error correction
+     - Code of conduct and ethics:
+       • Independence, conflicts, integrity; disciplinary measures
+
+  4) Training Delivery and Evidence
+     - Training plan and schedule (initial and refresher)
+     - Attendance logs per session (date, duration, trainer, modality)
+     - Training materials index (slides, manuals, SOP references)
+
+  5) SOP and Policy Acknowledgements (signed by each RA Operator)
+     - Acknowledgement statements and dates for:
+       • TSPS sections governing RA processes
+       • Identity proofing SOP (in-person and remote, if used)
+       • Evidence capture and retention SOP
+       • Revocation request handling SOP
+       • Privacy/Data protection SOP
+       • Information Security & Acceptable Use policies for RA
+     - Version references and document IDs
+
+  6) Assessments and Certifications
+     - Written/online test results (score, pass/fail, date)
+     - Practical evaluation checklists (supervised enrollments; scenario-based)
+     - Issued training certificates (internal or external) with IDs and validity
+     - Remediation/retraining records (if any)
+
+  7) Authorization and Periodic Review
+     - Authorization letters or forms countersigned by RA Manager/QTS Manager
+     - Review cadence (e.g., annual), triggers for early review (policy changes, incidents)
+     - Suspension/revocation of RA authorization process (if applicable)
+
+  8) Privacy and Minimization
+     - Personal data contained in this pack minimized and redacted where feasible
+     - No inclusion of sensitive personal data beyond what is strictly necessary
+     - Retention aligned with Recordkeeping Policy; secure storage and access control
+
+  9) Exception Handling and Incidents
+     - Process for documenting exceptions from standard RA procedures
+     - Linkage to incident response (security/privacy incidents; suspected fraud)
+     - Lessons learned and continuous improvement tracking
+
+  10) Document Control
+     - Version history, approvers, next review date
+     - Distribution list and classification
+
+Cross-References to Dossier Items
+  - 05_TSPS_Qualified_Services_GR_EN_SIGNED.pdf (RA processes, identity requirements)
+  - 04_TSP_Policy_GR_EN_SIGNED.pdf (governance, roles, segregation of duties)
+  - 11_Revocation_SOP_GR_EN.pdf; 11a_Revocation_Forms.pdf (revocation intake, forms)
+  - 12_Recordkeeping_Policy_GR_EN.pdf (evidence retention and access)
+  - 07_Risk_Assessment_GR_EN.pdf; 07a_Incident_Response_Plan_GR_EN.pdf (risk and incident linkages)
+  - 13_EETT_Communication_Templates_GR.pdf (templates used in user-facing notices)
+  - Supporting_Docs/Legal/GEMH_Company_Registration.pdf (legal person evidence reference)
+  - 03a_Traceability_Matrix.pdf (clause mapping to RA evidence)
+  - 03_Conformity_Assessment_Report_TUV_2025.pdf (auditor references to RA controls)
+
+Pre-Submission Checklist
+  - [ ] All active RA Operators listed with current authorization dates and scopes
+  - [ ] Training attendance logs complete and signed
+  - [ ] SOP and policy acknowledgements signed with version references
+  - [ ] Assessments completed (written/practical) and pass records included
+  - [ ] Certificates (internal/external) present and legible
+  - [ ] Remote identification materials included if applicable (ETSI TS 119 461 alignment)
+  - [ ] Privacy redactions applied; no extraneous PII
+  - [ ] Single, readable PDF; filename exactly: RA_Operator_Training_Certificates.pdf
+  - [ ] Placed under: Supporting_Docs/Personnel/Qualifications/
+
+Replacement Instructions
+  1) Delete this placeholder file.
+  2) Merge all RA training and authorization evidence into a single PDF named:
+     EETT_Dossier_GreekTrustCo_2025-06-15.asice/Supporting_Docs/Personnel/Qualifications/RA_Operator_Training_Certificates.pdf
+  3) Re-check alignment with TSPS, Revocation SOP, and Recordkeeping Policy.
+  4) Regenerate META-INF/manifest.xml and the ASiC-E signature (XAdES-LTA) during final packaging.
+
+Appendix A – RA Training Matrix Template (include in final PDF)
+  | Operator | User ID | Scope (QES/QSeal; In-person/Remote) | Course/Module | Date | Hours | Trainer | Assessment (Score) | Cert ID | Next Refresher |
+  |----------|---------|--------------------------------------|---------------|------|-------|---------|---------------------|---------|----------------|
+  | <Name>   | <UID>   | QES In-person                        | RA-Foundations|      |       |         |                     |         |                |
+  | <Name>   | <UID>   | QES Remote (TS 119 461)              | Remote-ID     |      |       |         |                     |         |                |
+  | <Name>   | <UID>   | QSeal (Legal Persons)                | KYB/Vetting   |      |       |         |                     |         |                |
+  | <Name>   | <UID>   | Revocation Intake                    | Revocation    |      |       |         |                     |         |                |
+  | <Name>   | <UID>   | Evidence & Privacy                   | GDPR-RA       |      |       |         |                     |         |                |
+
+Document Metadata (for the official PDF)
+  - Organization: GreekTrustCo
+  - Title: RA Operator – Training & Certification Pack
+  - Version: <vX.Y>
+  - Effective Date: <YYYY-MM-DD>
+  - Owner: RA Manager
+  - Reviewed by: QTS Manager; Compliance
+  - Approved by: QTS Manager (or delegate per authority matrix)
+  - Classification: Confidential – Submitted to EETT
+
+End of placeholder.

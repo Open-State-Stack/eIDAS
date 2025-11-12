@@ -1,0 +1,146 @@
+PLACEHOLDER – to be replaced with official document
+
+File
+  Supporting_Docs/Legal/Articles_of_Association.pdf
+
+Important
+  - This is a temporary placeholder saved with a .pdf extension.
+  - It is plain text and NOT a valid PDF binary.
+  - Replace with the official Articles of Association (Καταστατικό) package before packaging and submission.
+
+Purpose
+  Provide authoritative evidence of GreekTrustCo’s incorporation terms, governance structure, representation powers, and corporate rules. The Articles of Association (and all amendments) underpin who can sign dossier documents, how the company is governed, and what activities it may perform. This supports EETT/eIDAS due diligence for Trust Service Providers.
+
+Acceptable Evidence (one or a combination, as applicable)
+  - Consolidated Articles of Association (Τελευταίο Κωδικοποιημένο Καταστατικό) including all amendments, notarized where applicable.
+  - Initial Articles plus all subsequent amendments, with references to ΓΕΜΗ filings or ΦΕΚ publications.
+  - ΓΕΜΗ official extracts that include references to the Articles and amendments.
+  - Board/Shareholder resolutions that amend key Articles or confirm representation powers, if not yet codified.
+  - Certified translation to English only if required; Greek originals should remain primary.
+
+Required Properties of the Official Document
+  - Format: PDF (non-password-protected; printable; PDF/A acceptable).
+  - Language: Greek original. If an English translation is included, compile the Greek original first, then attach the English translation in the same PDF.
+  - Completeness: Must include the latest consolidated Articles OR the initial Articles plus all amendments, with clear amendment history (dates/IDs).
+  - Provenance: Notarial stamps, references to ΓΕΜΗ entries and/or ΦΕΚ numbers where applicable.
+  - Single file: If multiple documents are needed (original + amendments + translations), combine them into a single PDF in this path.
+  - File name (exact): Articles_of_Association.pdf
+  - Location (exact): EETT_Dossier_GreekTrustCo_2025-06-15.asice/Supporting_Docs/Legal/
+
+Minimum Expected Contents (Greek headings acceptable as-is)
+  1) Company Identification
+     - Legal name (Επωνυμία), distinctive title (Διακριτικός Τίτλος, if any)
+     - Legal form (Νομική Μορφή)
+     - Registered seat (Έδρα)
+  2) Corporate Purpose (Σκοπός)
+     - Activities covered, including those relevant to trust services and PKI operations
+  3) Share Capital and Ownership
+     - Share capital amount, structure, and any classes of shares
+     - Shareholder registry references or mechanism (if maintained elsewhere)
+  4) Governance
+     - Board of Directors / Managers: composition, appointments, terms, authority
+     - Representation (Εκπροσώπηση): who can sign (single/collective), and any limitations
+     - Delegation of authority and internal approval thresholds
+  5) Meetings and Quorums
+     - General meeting rules, quorum/majority requirements
+     - Board meeting procedures, decision-making
+  6) Financial and Audit Provisions
+     - Financial year, audit requirements, dividend policy (if any)
+  7) Amendments and Duration
+     - Company duration (if fixed), amendment procedures, dissolution provisions
+  8) Amendment History and References
+     - Table or annex with each amendment date, notarial act number, ΓΕΜΗ filing ID, ΦΕΚ reference (if applicable)
+     - Explicit statement identifying the latest consolidated version (date)
+  9) Attachments (if applicable)
+     - Notarial certifications
+     - Certified translations (attach after Greek originals)
+
+Verification and Consistency Checks (Internal)
+  - Representation powers align with signatories on dossier items (01, 02/02a, 04, 05, 10, 17).
+  - Board composition and authority are current; dates/terms align with ΓΕΜΗ records.
+  - Legal name, legal form, registered seat consistent with GEMH_Company_Registration.pdf and AFM_Tax_Registration.pdf.
+  - Articles’ scope does not conflict with TSPS commitments or operational practices.
+  - Latest consolidation is clearly indicated; no missing addenda or recent amendments.
+  - Legibility: all pages readable; stamps/signatures visible.
+
+Cross-References to Dossier Items
+  - Supporting_Docs/Legal/GEMH_Company_Registration.pdf (corporate registration)
+  - Supporting_Docs/Legal/AFM_Tax_Registration.pdf (tax registry)
+  - 01_Registry_Application_GreekTrustCo_SIGNED.pdf (applicant data must match)
+  - 02_EETT_Qualified_Service_Start_Application_SIGNED.pdf (signatories and authority)
+  - 04_TSP_Policy_GR_EN_SIGNED.pdf; 05_TSPS_Qualified_Services_GR_EN_SIGNED.pdf (governance alignment)
+  - 10_End_User_Agreement_GR_EN_SIGNED.pdf (contractual authority alignment)
+  - 17_Executive_Brief_GR_EN_SIGNED.pdf (leadership context)
+  - Director IDs (see “Related Director IDs placeholders to add” below)
+
+Pre-Submission Checklist
+  - [ ] Official consolidated Articles or full set of Articles + all amendments included
+  - [ ] Representation clause(s) confirm who signs and how (single/collective)
+  - [ ] Names/titles match ΓΕΜΗ and dossier signatories
+  - [ ] Greek original present; English translation (if included) appended after the Greek text
+  - [ ] Stamps/seals/notarial references visible; ΓΕΜΗ/ΦΕΚ references present
+  - [ ] Single PDF, opens without password
+  - [ ] Filename exactly: Articles_of_Association.pdf
+  - [ ] Placed under: Supporting_Docs/Legal/
+  - [ ] Checked by Legal Counsel
+
+Replacement Instructions
+  1) Delete this placeholder file.
+  2) Combine the official Articles and all amendments (Greek original first; optional English translation after) into:
+     EETT_Dossier_GreekTrustCo_2025-06-15.asice/Supporting_Docs/Legal/Articles_of_Association.pdf
+  3) Regenerate META-INF/manifest.xml and the container signature (XAdES-LTA) during final packaging.
+
+Document Metadata (to be present in or derivable from the official PDF)
+  - Organization: GreekTrustCo
+  - Title: Articles of Association (Καταστατικό)
+  - Consolidation Date / Latest Amendment: <YYYY-MM-DD>
+  - Notarial Act(s): <Numbers/Dates>
+  - ΓΕΜΗ Reference(s): <IDs/Links/QR if available>
+  - ΦΕΚ Reference(s): <Issue/Number/Date, if applicable>
+  - Prepared/Collected by: Legal
+  - Reviewed by: Compliance
+  - Approved by: Authorized Signatory
+  - Classification: External Evidence – Submitted to EETT
+
+
+Related Director IDs placeholders to add (create these separate files)
+  Objective
+    Provide identity evidence for key signatories and governance roles referenced in the Articles and ΓΕΜΗ records.
+
+  Exact file paths and filenames
+    - Supporting_Docs/Legal/Director_IDs/CEO_ID_Card.pdf
+    - Supporting_Docs/Legal/Director_IDs/QTS_Manager_ID_Card.pdf
+
+  Each of the above files should initially contain a placeholder text similar to:
+    PLACEHOLDER – to be replaced with official document
+    File: <respective path from above>
+    Important:
+      - This is a temporary placeholder saved with a .pdf extension.
+      - It is plain text and NOT a valid PDF binary.
+      - Replace with an official identity document scan suitable for regulatory due diligence.
+    Acceptable Evidence:
+      - Government-issued photo ID (e.g., Greek ID card or Passport) of the respective individual.
+      - For passports, include main bio page; for ID cards, both sides if relevant.
+      - If English translation is needed, include after the original.
+    Privacy and Minimization:
+      - Redact/obscure personal data not required for identity verification (e.g., MRZ line segments, document number partial, place of birth) per internal privacy policy and applicable law.
+      - Keep full name and photo visible, and document type/issuer and expiry date where required.
+    Requirements:
+      - Full legal name matches ΓΕΜΗ records and Articles signatories.
+      - Document validity (not expired at submission).
+      - Legible and unaltered (no filters/overlays beyond approved redactions).
+      - Single PDF per person; multi-page if needed (front/back).
+    Cross-Checks:
+      - Matches names/roles/signature blocks in Articles_of_Association.pdf, GEMH_Company_Registration.pdf, and signed dossier PDFs.
+      - For the QTS Manager, ensure consistency with TSPS and internal authority matrix.
+    Pre-Submission Checklist:
+      - [ ] Official ID scan present (privacy-compliant redactions applied).
+      - [ ] Name matches ΓΕΜΗ and dossier signatory.
+      - [ ] Not expired as of submission date.
+      - [ ] File opens without password; filename exact.
+    Replacement Instructions:
+      1) Delete placeholder text.
+      2) Insert the privacy-redacted official ID scan into the same path as a valid PDF.
+      3) Regenerate META-INF/manifest.xml and the container signature (XAdES-LTA) during final packaging.
+
+End of placeholder.

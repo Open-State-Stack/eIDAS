@@ -1,0 +1,103 @@
+PLACEHOLDER – to be replaced with official document
+
+File
+  Supporting_Docs/Certifications/Datacenter_Certification.pdf
+
+Important
+  - This is a temporary placeholder saved with a .pdf extension.
+  - It is plain text and NOT a valid PDF binary.
+  - Replace with the official Datacenter Certification/Attestation package PDF(s) from your colocation/cloud provider(s) before packaging and submission.
+
+Purpose
+  Provide authoritative evidence that the datacenter(s) hosting GreekTrustCo’s critical PKI, RA, status (CRL/OCSP), and supporting infrastructure meet recognized standards for physical security, power, cooling, resilience, and operations, consistent with eIDAS/ETSI expectations.
+
+Acceptable Evidence (one or a combination, depending on provider)
+  - Uptime Institute Tier Certification (Design/Constructed Facility/Operational Sustainability) – Tier III or IV preferred for critical zones
+  - EN 50600 certification or assessment report (availability classes, protection classes)
+  - ANSI/TIA-942 Rated facility certification (Rated 3 or 4)
+  - ISO/IEC 27001:2022 certificate covering the datacenter operator and the hosting sites used
+  - ISO 22301 (Business Continuity) certificate for the datacenter operator
+  - SOC 2 Type II (Security, Availability, and optionally Confidentiality) attestation report (redacted customer-available version)
+  - Independent Letter of Attestation (LoA) by accredited auditor confirming physical security controls, power/cooling redundancy, access controls, monitoring, and incident handling at the specific sites used
+  - Fire safety and suppression certification (e.g., EN 15004, FM-200/Novec-1230 systems) documentation where applicable
+
+Required Properties of the Official Document
+  - Format: PDF (non-password-protected; printable; PDF/A acceptable)
+  - Language: Greek and/or English
+  - Issuer: Recognized certification body or auditor; or the datacenter operator providing copies of valid certificates and a letter referencing the specific sites/rooms/cages used by GreekTrustCo
+  - Coverage: Explicit reference to the physical locations (addresses) and rooms/cages/racks where GreekTrustCo’s equipment is installed
+  - Validity: Certificates/attestations current as of submission date (2025-06-15), including issue/expiry dates or period of coverage for SOC 2 Type II
+  - Verification: CB/AB directory links, Uptime/TIA-942/EN 50600 verification numbers, or auditor contact for verification
+
+Minimum Expected Contents
+  1) Datacenter Operator Identification
+     - Legal name, addresses of the facilities (primary and DR) used by GreekTrustCo
+     - Contact information for compliance/audit verification
+  2) Facility Certifications/Attestations
+     - Uptime Institute Tier (if applicable): Tier level, certification type (Design/CF/OS), certificate IDs, effective dates
+     - EN 50600 class details (availability class, protection class)
+     - ANSI/TIA-942 rating (Rated 3 or 4), certificate number and scope
+     - ISO 27001 and ISO 22301 certificates for the operator, with scope and site annexes
+     - SOC 2 Type II report (customer-available), coverage period, trust service categories in scope
+     - Fire detection/suppression system certification details (e.g., clean agent type, compliance standards)
+  3) Physical Security and Access Control Summary
+     - Multi-factor access, mantraps, CCTV coverage/retention, guard presence and hours, visitor procedures and escort policies
+     - Segregation of cages/rooms, anti-tailgating, tamper evidence procedures
+  4) Power, Cooling, and Environmental Controls
+     - Redundancy levels (e.g., N+1/2N), UPS/generator details, fuel autonomy, maintenance procedures
+     - Cooling redundancy and environmental monitoring; hot/cold aisle containment
+  5) Resilience, Monitoring, and Incident Handling
+     - Monitoring systems (BMS/DCIM), alerting, incident response procedures and SLAs
+     - Maintenance windows, change management, and communication processes
+  6) Site-Specific Mapping to GreekTrustCo
+     - Explicit mapping of GreekTrustCo cages/racks/rooms to the certified/attested scope
+     - If the certification is broader than the specific rooms used, a letter stating inclusion of those rooms within scope
+  7) Validity and Verification
+     - Certificate IDs, issue and expiry dates (or report period for SOC 2)
+     - Verification URLs/QR codes, accreditation references for CBs or auditors
+
+Verification and Consistency Checks (Internal)
+  - Confirm facility names/addresses match those in GreekTrustCo hosting contracts, diagrams, and the TSPS
+  - Validate certification status online (CB directories, Uptime/TIA/EN 50600 registers, or SOC report cover letter)
+  - Ensure validity dates cover the submission date and foreseeable operational window
+  - Confirm redundancy claims (Tier/Rating) align with internal availability objectives and BCP/DR planning
+  - Check that the specific cages/rooms/racks used by GreekTrustCo are in scope of the cited certifications/attestations
+  - Align physical access procedures with RA/PKI key ceremony and operations controls
+
+Cross-References to Dossier Items
+  - 04_TSP_Policy_GR_EN_SIGNED.pdf (premises and physical security governance)
+  - 05_TSPS_Qualified_Services_GR_EN_SIGNED.pdf (facility and operations controls)
+  - 07_Risk_Assessment_GR_EN.pdf; 07a_Incident_Response_Plan_GR_EN.pdf (risk/incident alignment)
+  - 09_Service_Termination_Plan_GR_EN.pdf (facility dependencies in termination/exit strategies)
+  - 06_Test_Certificates/* (chain of custody and environmental controls for HSMs/keys)
+  - Supporting_Docs/Certifications/HSM_FIPS_Certification.pdf (cryptographic module certification)
+  - Supporting_Docs/Certifications/CAB_Accreditation_Certificate.pdf (auditor/certifier accreditation, if applicable to LoA/SOC/certificates)
+
+Pre-Submission Checklist
+  - [ ] Official datacenter certification/attestation PDF(s) present and legible
+  - [ ] Facilities used by GreekTrustCo (addresses, rooms/cages) are explicitly included in scope
+  - [ ] Certification/attestation validity covers submission date; versions and IDs recorded
+  - [ ] Verification links/QR codes included or independent verification performed
+  - [ ] Redundancy Tier/Rating consistent with availability objectives and TSPS statements
+  - [ ] Physical access procedures align with key ceremony and RA/PKI operational controls
+  - [ ] Filename exactly: Datacenter_Certification.pdf
+  - [ ] Placed under: Supporting_Docs/Certifications/
+
+Replacement Instructions
+  1) Delete this placeholder file.
+  2) Combine all relevant facility certificates/attestations and any LoA into a single PDF named:
+     EETT_Dossier_GreekTrustCo_2025-06-15.asice/Supporting_Docs/Certifications/Datacenter_Certification.pdf
+  3) If using multiple facilities, include a contents page listing each site and evidence artifact.
+  4) Regenerate META-INF/manifest.xml and the container signature (XAdES-LTA) during final packaging.
+
+Document Metadata (to be present in or derivable from the official PDF)
+  - Organization: GreekTrustCo
+  - Title: Datacenter Certification and Attestations
+  - Sites Covered: <Facility A address> (Primary), <Facility B address> (DR)
+  - Evidence Included: Uptime/TIA/EN 50600/ISO 27001/ISO 22301/SOC 2/Fire Suppression (as applicable)
+  - Issue/Validity: <YYYY-MM-DD> to <YYYY-MM-DD> (per artifact)
+  - Issuer(s): <Certification Body/Auditor/Datacenter Operator>
+  - Verification: <URLs/QR codes/registry IDs>
+  - Classification: Internal – Submitted to EETT
+
+End of placeholder.

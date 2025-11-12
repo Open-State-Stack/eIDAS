@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<asic:Manifest
+    xmlns:asic="http://uri.etsi.org/02918/v1.2.1#"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <!--
+      PLACEHOLDER – to be replaced with official generated manifest
+
+      This file is a placeholder for the ASiC-E container manifest.
+      It should list every payload file in the container (excluding this file and signatures),
+      along with their SHA-256 digest values.
+
+      A packaging script should regenerate this file with accurate entries before final submission.
+    -->
+
+    <!-- Digest algorithm to use for all entries -->
+    <asic:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+
+    <!--
+      Template for entries (example shown commented out):
+
+      <asic:DataObjectReference URI="01_Registry_Application_GreekTrustCo_SIGNED.pdf">
+        <ds:DigestValue>BASE64_ENCODED_SHA256_DIGEST</ds:DigestValue>
+      </asic:DataObjectReference>
+    -->
+
+    <!-- No entries yet; will be populated during packaging -->
+</asic:Manifest>

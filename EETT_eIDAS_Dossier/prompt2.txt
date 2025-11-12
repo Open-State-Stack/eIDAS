@@ -1,0 +1,170 @@
+
+Role
+
+Act as a senior compliance operations assistant experienced in eIDAS and EETT trust service provider dossier preparation.
+
+Objective
+
+Reorganize the current project files and folders into the standardized, folder-based structure of
+EETT_Dossier_GreekTrustCo_2025-06-15.asice.
+Each section (01–20) will be a dedicated folder containing:
+    •   Its respective PDF and evidence files
+    •   The corresponding .md documentation files already drafted in the previous project structure
+
+Tasks
+    1.  Scan the entire current project directory recursively.
+    2.  Identify all relevant files, including:
+    •   .pdf, .pem, .der, .crl, .zip
+    •   and all .md (Markdown) documentation files.
+    3.  Map, rename, and move each file into its proper numbered folder (01–20) according to the structure below.
+    4.  Copy any .md documentation files found in the previous project to their corresponding folders — e.g.
+    •   Registry_Application.md → 01_Registry/Registry_Application.md
+    •   Risk_Assessment.md → 07_Risk_And_Incidents/Risk_Assessment.md
+    5.  Create folders that are missing.
+    6.  Generate placeholder .txt files for any required document not found.
+    7.  Output a Markdown summary table showing all alignment actions.
+    8.  Generate a Bash or PowerShell script that reproduces the same alignment locally.
+
+Target Directory Structure
+
+EETT_Dossier_GreekTrustCo_2025-06-15.asice
+│
+├── mimetype
+│   Content: "application/vnd.etsi.asic-e+zip"
+│
+├── META-INF/
+│   ├── manifest.xml
+│   ├── signatures.xml
+│   └── ASiCManifest.xml
+│
+├── 01_Registry/
+│   ├── 01_Registry_Application_GreekTrustCo_SIGNED.pdf
+│   ├── 01a_Registry_Fee_Proof_300EUR.pdf
+│   ├── 01b_Change_Notification_Template_SIGNED.pdf
+│   └── Registry_Application.md
+│
+├── 02_Service_Start/
+│   ├── 02_EETT_Qualified_Service_Start_Application_SIGNED.pdf
+│   ├── 02a_Cover_Letter_Electronic_System_Access_SIGNED.pdf
+│   └── Service_Start.md
+│
+├── 03_Conformity_Assessment/
+│   ├── 03_Conformity_Assessment_Report_TUV_2025.pdf
+│   ├── 03a_Traceability_Matrix.pdf
+│   └── Conformity_Assessment.md
+│
+├── 04_TSP_Policy/
+│   ├── 04_TSP_Policy_GR_EN_SIGNED.pdf
+│   └── TSP_Policy.md
+│
+├── 05_TSPS_Services/
+│   ├── 05_TSPS_Qualified_Services_GR_EN_SIGNED.pdf
+│   └── TSPS_Services.md
+│
+├── 06_Test_Certificates/
+│   ├── Root_CA_Certificate.pem
+│   ├── Issuing_CA_QES_Certificate.pem
+│   ├── Issuing_CA_QSeal_Certificate.pem
+│   ├── TSA_CA_Certificate.pem
+│   ├── Sample_QES_Certificate.pem
+│   ├── Sample_OCSP_Response.der
+│   ├── Sample_CRL.crl
+│   ├── Certificate_Profiles_Guide.pdf
+│   └── Test_Certificates.md
+│
+├── 07_Risk_And_Incidents/
+│   ├── 07_Risk_Assessment_GR_EN.pdf
+│   ├── 07a_Incident_Response_Plan_GR_EN.pdf
+│   ├── 07b_Incident_Report_Forms.pdf
+│   └── Risk_And_Incidents.md
+│
+├── 08_User_Notifications/
+│   ├── 08_User_Notification_Templates_GR_EN.pdf
+│   └── User_Notifications.md
+│
+├── 09_Service_Termination/
+│   ├── 09_Service_Termination_Plan_GR_EN.pdf
+│   └── Service_Termination.md
+│
+├── 10_End_User_Agreement/
+│   ├── 10_End_User_Agreement_GR_EN_SIGNED.pdf
+│   └── End_User_Agreement.md
+│
+├── 11_Revocation_Procedures/
+│   ├── 11_Revocation_SOP_GR_EN.pdf
+│   ├── 11a_Revocation_Forms.pdf
+│   └── Revocation_Procedures.md
+│
+├── 12_Recordkeeping/
+│   ├── 12_Recordkeeping_Policy_GR_EN.pdf
+│   └── Recordkeeping.md
+│
+├── 13_Communication_Templates/
+│   ├── 13_EETT_Communication_Templates_GR.pdf
+│   └── Communication_Templates.md
+│
+├── 14_NTL_Publication/
+│   ├── 14_NTL_Publication_Datasheet.pdf
+│   └── NTL_Publication.md
+│
+├── 17_Executive_Brief/
+│   ├── 17_Executive_Brief_GR_EN_SIGNED.pdf
+│   └── Executive_Brief.md
+│
+├── 18_Project_Timeline/
+│   ├── 18_Gantt_Chart_Project_Timeline.pdf
+│   └── Project_Timeline.md
+│
+├── 19_Compliance_Register/
+│   ├── 19_Master_Compliance_Register.pdf
+│   └── Compliance_Register.md
+│
+├── 20_README_and_Placeholders/
+│   ├── 20_README_and_Placeholder_Table.zip
+│   └── README_and_Placeholders.md
+│
+└── Supporting_Docs/
+    ├── Financial/
+    │   ├── Balance_Sheet_2024.pdf
+    │   └── Insurance_Policy.pdf
+    ├── Certifications/
+    │   ├── ISO27001_Certificate.pdf
+    │   ├── ISO9001_Certificate.pdf
+    │   ├── Datacenter_Certification.pdf
+    │   ├── HSM_FIPS_Certification.pdf
+    │   └── CAB_Accreditation_Certificate.pdf
+    ├── Legal/
+    │   ├── GEMH_Company_Registration.pdf
+    │   ├── AFM_Tax_Registration.pdf
+    │   ├── Articles_of_Association.pdf
+    │   └── Director_IDs/
+    │       ├── CEO_ID_Card.pdf
+    │       └── QTS_Manager_ID_Card.pdf
+    └── Personnel/
+        ├── DPO_Appointment_Letter.pdf
+        └── Qualifications/
+            ├── QTS_Manager_CV_Certifications.pdf
+            ├── Crypto_Officer_Qualifications.pdf
+            └── RA_Operator_Training_Certificates.pdf
+
+
+Rules
+    •   ✅ Auto-rename files to match official dossier naming (e.g., RiskAssessment.pdf → 07_Risk_Assessment_GR_EN.pdf).
+    •   📁 Copy corresponding .md documentation from the previous structure to the correct folder (by matching section name or prefix).
+    •   ⚠️ Create placeholder .txt files for missing documents:
+
+PLACEHOLDER – to be replaced with official document
+
+
+    •   🧾 Generate Markdown summary table after reorganization:
+
+Status  Folder  File    Action  Notes
+✅   01_Registry 01_Registry_Application_GreekTrustCo_SIGNED.pdf Aligned Existing file
+📝   07_Risk_And_Incidents   RiskAssessment.pdf → 07_Risk_Assessment_GR_EN.pdf   Renamed Normalized
+📄   07_Risk_And_Incidents   Risk_And_Incidents.md   Copied  From previous project
+⚠️  10_End_User_Agreement   Placeholder created Missing signed version
+
+    •   Create folders (01–20 + Supporting_Docs)
+    •   Move files to the relevant folders
+    •   Copies .md files into matching folders
+    •   Generates missing placeholders

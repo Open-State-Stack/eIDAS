@@ -1,0 +1,84 @@
+PLACEHOLDER – to be replaced with official document
+
+File: 02a_Cover_Letter_Electronic_System_Access_SIGNED.pdf
+Container: EETT_Dossier_GreekTrustCo_2025-06-15.asice (root level)
+
+Description
+This is a temporary placeholder saved with a .pdf extension. It is plain text and NOT a valid PDF binary.
+Replace this file with the officially signed “Cover Letter – Electronic System Access” PDF prior to packaging and submission.
+
+Purpose
+Formal cover letter requesting creation/enabling of organization access to the EETT electronic system(s) for Trust Service Provider submissions and lifecycle interactions (Ηλεκτρονικό Σύστημα ΕΕΤΤ). It designates authorized users/roles, acknowledges applicable terms, and provides contact and security details required for account provisioning and ongoing communications.
+
+Required Contents (to include in the official signed PDF)
+1) Organization and Registration
+   - Legal entity name: GreekTrustCo (exact, as per registry application)
+   - Registered address and contact details
+   - Corporate identifiers: GEMH (ΓΕΜΗ), AFM/VAT, other applicable IDs
+
+2) Request Statement
+   - Subject: Request for access to EETT Electronic System(s) for Trust Service Provider operations
+   - Context: Alignment with “01_Registry_Application_GreekTrustCo_SIGNED.pdf” and “02_EETT_Qualified_Service_Start_Application_SIGNED.pdf”
+   - Requested environment: Production (and/or Test/Sandbox, if applicable)
+   - Intended use: Registry, qualified service lifecycle submissions, communications, status updates, and compliance interactions
+
+3) Authorized Users and Roles
+   - Organization Administrator (name, title, email, phone)
+   - Compliance Officer (name, title, email, phone)
+   - Technical Contact (name, title, email, phone)
+   - Incident/24x7 Contact (name, email/phone) for urgent matters
+   - Optional additional delegates (RA Manager, Security/PKI Engineer)
+   - Requested roles/permissions (as available in the system), e.g.:
+     • Organization Admin / Submitter
+     • Compliance / Legal Correspondent
+     • Technical Integrations / API
+   - Acceptance that the organization maintains and promptly updates the contact roster
+
+4) Credentials and Security Preferences
+   - Strong authentication required; acceptance of MFA/2FA
+   - Email domains for user provisioning (if domain-based policy applies)
+   - IP allowlisting notes (if required)
+   - Statement of adherence to EETT terms of use and data protection requirements
+   - Acknowledgement to safeguard credentials and report suspected compromise
+
+5) Communication and Notices
+   - Primary mailbox for official EETT communications (group email recommended)
+   - Secondary/backup mailbox
+   - Escalation path and hours-of-availability (business hours / on-call)
+
+6) Cross-References to Dossier Items
+   - 01_Registry_Application_GreekTrustCo_SIGNED.pdf
+   - 02_EETT_Qualified_Service_Start_Application_SIGNED.pdf
+   - 07a_Incident_Response_Plan_GR_EN.pdf (reference for incident contacts)
+   - 13_EETT_Communication_Templates_GR.pdf (reference for standard communications)
+
+7) Attachments (if required by EETT)
+   - Proof of authority for signatory (board resolution/POA) or reference to dossier items
+   - Identification details of authorized users (as requested by EETT)
+
+8) Declarations and Signatures
+   - Declaration that information provided is accurate and kept up-to-date
+   - Acceptance of system terms, logging, and audit requirements
+   - Authorized signatory details and signature blocks
+   - Date, place, and organization seal (if used)
+
+Expected Properties of the Official Document
+- Format: PDF (non-password-protected; PDF/A acceptable)
+- Language: Greek and/or English as accepted by EETT
+- Signatures: Advanced/Qualified e-signature by an authorized representative; timestamp recommended
+- Exact filename: 02a_Cover_Letter_Electronic_System_Access_SIGNED.pdf
+
+Pre-Submission Checklist
+- [ ] Organizational details match the registry/start applications
+- [ ] Authorized users and roles clearly listed; contacts validated
+- [ ] Security preferences and acknowledgements included (MFA/2FA, data protection)
+- [ ] Primary/secondary communications mailboxes provided
+- [ ] Signed by an authorized representative; signature validates
+- [ ] Filename exactly: 02a_Cover_Letter_Electronic_System_Access_SIGNED.pdf
+- [ ] Placed at root of EETT_Dossier_GreekTrustCo_2025-06-15.asice
+
+Replacement Instructions
+Delete this placeholder and copy the official signed PDF to the same path before generating META-INF/manifest.xml and signatures.xml for the ASiC-E container.
+
+Submission Note
+Do NOT submit the dossier with this placeholder present.

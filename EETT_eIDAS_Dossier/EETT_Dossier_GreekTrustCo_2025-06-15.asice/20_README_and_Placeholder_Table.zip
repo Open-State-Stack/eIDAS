@@ -1,0 +1,316 @@
+PLACEHOLDER – to be replaced with official archive
+
+Artifact
+  20_README_and_Placeholder_Table.zip
+
+Purpose
+  This placeholder stands in for a ZIP archive that must contain:
+    1) README.md – concise guidance for EETT dossier reviewers and internal teams
+    2) Placeholder_Table.md – a Markdown table listing every dossier artifact with its alignment status
+    3) Changes_Log.md – a chronological log of renames/moves/placeholder creations
+    4) scripts/reproduce_alignment.sh – shell script to reproduce the alignment locally on Linux/macOS
+    5) scripts/reproduce_alignment.ps1 – PowerShell script to reproduce the alignment locally on Windows
+
+IMPORTANT
+  - Replace this text file with an actual ZIP archive containing the files described below.
+  - Do not submit this placeholder in the final ASiC-E container.
+  - Ensure all filenames and relative paths inside the ZIP match exactly as listed here.
+
+Intended ZIP archive structure
+  /
+  ├── README.md
+  ├── Placeholder_Table.md
+  ├── Changes_Log.md
+  └── scripts/
+      ├── reproduce_alignment.sh
+      └── reproduce_alignment.ps1
+
+
+-----BEGIN FILE: README.md-----
+Title: EETT Dossier – README and Packaging Guidance
+Version: 1.0
+Date: 2025-06-15
+Owner: QTS Manager
+Audience: EETT reviewers, CAB auditors, and internal compliance/engineering teams
+
+1) Overview
+This README accompanies the EETT_Dossier_GreekTrustCo_2025-06-15.asice container. It explains:
+  - The dossier structure and purpose of each item
+  - How placeholders are tracked and replaced
+  - How to reproduce the alignment locally (scripts provided)
+  - How to package the ASiC-E container with a compliant manifest and XAdES-LTA signature
+
+2) Target ASiC-E Container Structure (summary)
+Root: EETT_Dossier_GreekTrustCo_2025-06-15.asice
+  - mimetype (stored, no compression) with content: application/vnd.etsi.asic-e+zip
+  - META-INF/manifest.xml (lists all payload files with SHA-256)
+  - META-INF/signatures.xml (XAdES-LTA signature over the manifest/payload)
+  - META-INF/ASiCManifest.xml (optional)
+  - Top-level dossier PDFs and the 06_Test_Certificates/ and Supporting_Docs/ folders
+
+3) Placeholders and Normalization
+If any required item is missing or still in draft, a placeholder file is used. All placeholders are tracked in Placeholder_Table.md. Replace placeholders with final, signed binaries prior to submission, then regenerate the manifest and signatures.
+
+4) Reproducing Alignment
+Use one of the provided scripts:
+  - scripts/reproduce_alignment.sh for Bash (Linux/macOS)
+  - scripts/reproduce_alignment.ps1 for PowerShell (Windows)
+The scripts:
+  - Create folder hierarchy
+  - Normalize filenames to the exact target naming scheme
+  - Create placeholder text where files are missing
+  - Optionally compute SHA-256 hashes and draft a manifest template
+
+5) ASiC-E Packaging Requirements
+  - The file named "mimetype" must be stored in the ZIP with no compression (stored method).
+  - All payload files (excluding META-INF/*) must have a SHA-256 digest listed in META-INF/manifest.xml.
+  - Apply an XAdES-LTA signature in META-INF/signatures.xml referencing the manifest/payloads.
+  - Recommended canonicalization: http://www.w3.org/2006/12/xml-c14n11
+  - Signature method: http://www.w3.org/2001/04/xmldsig-more#rsa-sha256
+  - Digest method: http://www.w3.org/2001/04/xmlenc#sha256
+
+6) Pre-Submission Checklist
+  - All placeholders have been replaced with official documents
+  - SHA-256 manifest regenerated and validated
+  - XAdES-LTA signature created and validated
+  - Filenames and hierarchy match the target structure exactly
+  - Basic open/read checks on all PDFs and artifacts succeed (no password protection)
+  - Timestamps and certificate chains verify where applicable
+
+7) Support
+For questions, contact:
+  - QTS Manager (primary)
+  - Compliance Officer (secondary)
+-----END FILE: README.md-----
+
+
+-----BEGIN FILE: Placeholder_Table.md-----
+Title: Placeholder and Alignment Status Table
+Note: Update this table after each alignment run or document replacement.
+
+Legend:
+  - ✅ Aligned: File present and correctly named/placed
+  - 📝 Renamed: Source file renamed/mapped to target name
+  - 📁 Moved: Item moved to target folder
+  - ⚠️ Placeholder created: Pending replacement with official document
+  - ❗ Action required: Blocker or missing source decision
+
+Columns:
+  Status | File Name (Target) | Action Taken | Notes
+
+Template rows (extend and replace as needed):
+  ✅ | mimetype | Created with fixed content | Stored method (no compression); content = application/vnd.etsi.asic-e+zip
+  ✅ | META-INF/manifest.xml | Generated (template) | Regenerate before final packaging
+  ✅ | META-INF/signatures.xml | Generated (template) | Replace with real XAdES-LTA from signing step
+  ✅ | META-INF/ASiCManifest.xml | Generated (optional template) | Optional metadata; keep in sync with manifest.xml
+
+  📝 | 01_Registry_Application_GreekTrustCo_SIGNED.pdf | Renamed/Mapped | From draft source; replace with signed official PDF
+  📝 | 01a_Registry_Fee_Proof_300EUR.pdf | Renamed/Mapped | From draft bank proof; ensure final PDF shows EUR 300 and transaction ID
+  📝 | 01b_Change_Notification_Template_SIGNED.pdf | Renamed/Mapped | Replace with signed official template
+  📝 | 02_EETT_Qualified_Service_Start_Application_SIGNED.pdf | Renamed/Mapped | Replace with signed official PDF
+  ⚠️ | 02a_Cover_Letter_Electronic_System_Access_SIGNED.pdf | Placeholder created | Replace with signed official cover letter
+  📝 | 03_Conformity_Assessment_Report_TUV_2025.pdf | Renamed/Mapped or Placeholder | Replace with CAB-issued, signed CAR
+  📝 | 03a_Traceability_Matrix.pdf | Renamed/Mapped or Placeholder | Populate from master spreadsheet; export to PDF
+  📝 | 04_TSP_Policy_GR_EN_SIGNED.pdf | Renamed/Mapped or Placeholder | Replace with signed official bilingual policy
+  📝 | 05_TSPS_Qualified_Services_GR_EN_SIGNED.pdf | Renamed/Mapped or Placeholder | Replace with signed official bilingual TSPS
+
+  📝 | 06_Test_Certificates/Root_CA_Certificate.pem | Mapped or Placeholder | PEM, single cert block; trust anchor for chain
+  📝 | 06_Test_Certificates/Issuing_CA_QES_Certificate.pem | Mapped | PEM, CA cert for QES
+  📝 | 06_Test_Certificates/Issuing_CA_QSeal_Certificate.pem | Mapped | PEM, CA cert for QSeal
+  ⚠️ | 06_Test_Certificates/TSA_CA_Certificate.pem | Placeholder created | Replace with PEM CA cert for TSA
+  📝 | 06_Test_Certificates/Sample_QES_Certificate.pem | Mapped | Example end-entity QES cert (PEM)
+  📝 | 06_Test_Certificates/Sample_OCSP_Response.der | Mapped | DER-encoded OCSP sample
+  📝 | 06_Test_Certificates/Sample_CRL.crl | Mapped | CRL sample (DER or PEM)
+  ⚠️ | 06_Test_Certificates/Certificate_Profiles_Guide.pdf | Placeholder created | Replace with finalized guide
+
+  📝 | 07_Risk_Assessment_GR_EN.pdf | Renamed/Mapped | Replace with final PDF
+  📝 | 07a_Incident_Response_Plan_GR_EN.pdf | Renamed/Mapped | Replace with final PDF
+  📝 | 07b_Incident_Report_Forms.pdf | Renamed/Mapped | Replace with final PDF
+  📝 | 08_User_Notification_Templates_GR_EN.pdf | Renamed/Mapped | Replace with final PDF
+  📝 | 09_Service_Termination_Plan_GR_EN.pdf | Renamed/Mapped | Replace with final PDF
+  📝 | 10_End_User_Agreement_GR_EN_SIGNED.pdf | Renamed/Mapped | Replace with signed official PDF
+  📝 | 11_Revocation_SOP_GR_EN.pdf | Renamed/Mapped | Replace with final PDF
+  📝 | 11a_Revocation_Forms.pdf | Renamed/Mapped | Replace with final PDF
+  📝 | 12_Recordkeeping_Policy_GR_EN.pdf | Renamed/Mapped | Replace with final PDF
+  📝 | 13_EETT_Communication_Templates_GR.pdf | Renamed/Mapped | Replace with final PDF
+  📝 | 14_NTL_Publication_Datasheet.pdf | Renamed/Mapped | Replace with final PDF
+  📝 | 17_Executive_Brief_GR_EN_SIGNED.pdf | Renamed/Mapped | Replace with signed official PDF
+  ⚠️ | 18_Gantt_Chart_Project_Timeline.pdf | Placeholder created | Export final Gantt to PDF
+  📝 | 19_Master_Compliance_Register.pdf | Renamed/Mapped | Export from master register to PDF
+  ⚠️ | 20_README_and_Placeholder_Table.zip | Placeholder created | Replace with this ZIP archive (not text)
+
+  ⚠️ | Supporting_Docs/Financial/Balance_Sheet_2024.pdf | Placeholder created or Aligned | Provide official PDF
+  ⚠️ | Supporting_Docs/Financial/Insurance_Policy.pdf | Placeholder created or Aligned | Provide official PDF
+  ⚠️ | Supporting_Docs/Certifications/ISO27001_Certificate.pdf | Placeholder created or Aligned | Provide official PDF
+  ⚠️ | Supporting_Docs/Certifications/ISO9001_Certificate.pdf | Placeholder created or Aligned | Provide official PDF
+  ⚠️ | Supporting_Docs/Certifications/Datacenter_Certification.pdf | Placeholder created or Aligned | Provide official PDF
+  ⚠️ | Supporting_Docs/Certifications/HSM_FIPS_Certification.pdf | Placeholder created or Aligned | Provide official PDF
+  ⚠️ | Supporting_Docs/Certifications/CAB_Accreditation_Certificate.pdf | Placeholder created or Aligned | Provide official PDF
+  ⚠️ | Supporting_Docs/Legal/GEMH_Company_Registration.pdf | Placeholder created or Aligned | Provide official PDF
+  ⚠️ | Supporting_Docs/Legal/AFM_Tax_Registration.pdf | Placeholder created or Aligned | Provide official PDF
+  ⚠️ | Supporting_Docs/Legal/Articles_of_Association.pdf | Placeholder created or Aligned | Provide official PDF
+  ⚠️ | Supporting_Docs/Legal/Director_IDs/CEO_ID_Card.pdf | Placeholder created or Aligned | Provide official PDF
+  ⚠️ | Supporting_Docs/Legal/Director_IDs/QTS_Manager_ID_Card.pdf | Placeholder created or Aligned | Provide official PDF
+  ⚠️ | Supporting_Docs/Personnel/DPO_Appointment_Letter.pdf | Placeholder created or Aligned | Provide official PDF
+  ⚠️ | Supporting_Docs/Personnel/Qualifications/QTS_Manager_CV_Certifications.pdf | Placeholder created or Aligned | Provide official PDF
+  ⚠️ | Supporting_Docs/Personnel/Qualifications/Crypto_Officer_Qualifications.pdf | Placeholder created or Aligned | Provide official PDF
+  ⚠️ | Supporting_Docs/Personnel/Qualifications/RA_Operator_Training_Certificates.pdf | Placeholder created or Aligned | Provide official PDF
+
+Instructions:
+  1) Update Status and Action Taken after each alignment step.
+  2) Replace any Placeholder created items with official documents promptly.
+  3) Ensure Notes include traceability (source path, decision, reviewer, date).
+-----END FILE: Placeholder_Table.md-----
+
+
+-----BEGIN FILE: Changes_Log.md-----
+Title: Alignment Changes Log
+Purpose: Chronologically record every rename, move, or placeholder creation. Use ISO dates.
+
+Template
+  [YYYY-MM-DD] Operation: Rename
+    - Source: <original relative path>
+    - Destination: <new relative path>
+    - Rationale: <why the change was needed>
+    - Actor: <name/role>
+
+  [YYYY-MM-DD] Operation: Move
+    - Source: <original relative path>
+    - Destination: <new relative path>
+    - Rationale: <why the change was needed>
+    - Actor: <name/role>
+
+  [YYYY-MM-DD] Operation: Placeholder Created
+    - Path: <relative path of placeholder>
+    - Reason: <missing official document; awaiting signature; etc.>
+    - Actor: <name/role>
+
+  [YYYY-MM-DD] Operation: Placeholder Replaced
+    - Path: <relative path>
+    - Replaced With: <official document details/version/signature info>
+    - Validation: <hash/signature verified; openable; etc.>
+    - Actor: <name/role>
+
+Guidance
+  - Log entries in real time to preserve traceability.
+  - Include reviewer/approver where applicable.
+  - Reference related ticket/issue IDs if used internally.
+-----END FILE: Changes_Log.md-----
+
+
+-----BEGIN FILE: scripts/reproduce_alignment.sh-----
+#!/usr/bin/env bash
+# Reproduce dossier alignment (template)
+# Platform: Linux/macOS (Bash)
+# Usage: bash scripts/reproduce_alignment.sh
+
+set -euo pipefail
+
+echo "[INFO] This is a template. Review and tailor paths before use."
+echo "[INFO] Running in: $(pwd)"
+
+# 1) Create required directories (sample subset; extend as needed)
+mkd() { mkdir -p "$1" && echo "[MKDIR] $1"; }
+mkd "EETT_Dossier_GreekTrustCo_2025-06-15.asice/META-INF"
+mkd "EETT_Dossier_GreekTrustCo_2025-06-15.asice/06_Test_Certificates"
+mkd "EETT_Dossier_GreekTrustCo_2025-06-15.asice/Supporting_Docs/Financial"
+mkd "EETT_Dossier_GreekTrustCo_2025-06-15.asice/Supporting_Docs/Certifications"
+mkd "EETT_Dossier_GreekTrustCo_2025-06-15.asice/Supporting_Docs/Legal/Director_IDs"
+mkd "EETT_Dossier_GreekTrustCo_2025-06-15.asice/Supporting_Docs/Personnel/Qualifications"
+
+# 2) Create fixed-content mimetype (must be stored, no compression in final ASiC-E ZIP)
+echo "application/vnd.etsi.asic-e+zip" > "EETT_Dossier_GreekTrustCo_2025-06-15.asice/mimetype"
+echo "[WRITE] mimetype"
+
+# 3) Map or create placeholders (example commands; extend per Placeholder_Table.md)
+placeholder() { printf "PLACEHOLDER – to be replaced with official document\n" > "$1" && echo "[PLACEHOLDER] $1"; }
+
+# Examples:
+# placeholder "EETT_Dossier_GreekTrustCo_2025-06-15.asice/02a_Cover_Letter_Electronic_System_Access_SIGNED.pdf"
+# placeholder "EETT_Dossier_GreekTrustCo_2025-06-15.asice/06_Test_Certificates/TSA_CA_Certificate.pem"
+
+# 4) Optional: compute SHA-256 list to assist manifest generation
+if command -v shasum >/dev/null 2>&1; then
+  echo "[INFO] Computing SHA-256 digests (excluding META-INF/*)"
+  find "EETT_Dossier_GreekTrustCo_2025-06-15.asice" -type f \
+    ! -path "*/META-INF/*" \
+    -exec shasum -a 256 "{}" \; | sed 's#  #  ./#' > SHA256SUMS.txt
+  echo "[INFO] SHA256SUMS.txt generated (template input for manifest.xml)"
+else
+  echo "[WARN] shasum not found; skip digest generation"
+fi
+
+# 5) Reminder for packaging & signing (performed outside this script)
+echo "[NEXT] Package ASiC-E with mimetype stored (no compression), add META-INF/manifest.xml, sign with XAdES-LTA."
+echo "[DONE] Template alignment complete."
+-----END FILE: scripts/reproduce_alignment.sh-----
+
+
+-----BEGIN FILE: scripts/reproduce_alignment.ps1-----
+<#
+Reproduce dossier alignment (template)
+Platform: Windows PowerShell
+Usage: powershell -ExecutionPolicy Bypass -File scripts\reproduce_alignment.ps1
+#>
+
+Set-StrictMode -Version Latest
+$ErrorActionPreference = "Stop"
+
+Write-Host "[INFO] This is a template. Review and tailor paths before use."
+Write-Host ("[INFO] Running in: {0}" -f (Get-Location))
+
+# 1) Create required directories (sample subset; extend as needed)
+function MkDirSafe([string]$Path) {
+  if (-not (Test-Path -Path $Path)) {
+    New-Item -ItemType Directory -Path $Path | Out-Null
+    Write-Host "[MKDIR] $Path"
+  }
+}
+MkDirSafe "EETT_Dossier_GreekTrustCo_2025-06-15.asice\META-INF"
+MkDirSafe "EETT_Dossier_GreekTrustCo_2025-06-15.asice\06_Test_Certificates"
+MkDirSafe "EETT_Dossier_GreekTrustCo_2025-06-15.asice\Supporting_Docs\Financial"
+MkDirSafe "EETT_Dossier_GreekTrustCo_2025-06-15.asice\Supporting_Docs\Certifications"
+MkDirSafe "EETT_Dossier_GreekTrustCo_2025-06-15.asice\Supporting_Docs\Legal\Director_IDs"
+MkDirSafe "EETT_Dossier_GreekTrustCo_2025-06-15.asice\Supporting_Docs\Personnel\Qualifications"
+
+# 2) Create fixed-content mimetype (must be stored, no compression in final ASiC-E ZIP)
+"application/vnd.etsi.asic-e+zip" | Out-File -FilePath "EETT_Dossier_GreekTrustCo_2025-06-15.asice\mimetype" -Encoding ascii -NoNewline
+Write-Host "[WRITE] mimetype"
+
+# 3) Map or create placeholders (example commands; extend per Placeholder_Table.md)
+function New-Placeholder([string]$TargetPath) {
+  "PLACEHOLDER – to be replaced with official document" | Out-File -FilePath $TargetPath -Encoding utf8
+  Write-Host "[PLACEHOLDER] $TargetPath"
+}
+
+# Examples:
+# New-Placeholder "EETT_Dossier_GreekTrustCo_2025-06-15.asice\02a_Cover_Letter_Electronic_System_Access_SIGNED.pdf"
+# New-Placeholder "EETT_Dossier_GreekTrustCo_2025-06-15.asice\06_Test_Certificates\TSA_CA_Certificate.pem"
+
+# 4) Optional: compute SHA-256 to assist manifest generation
+if (Get-Command "Get-FileHash" -ErrorAction SilentlyContinue) {
+  Write-Host "[INFO] Computing SHA-256 digests (excluding META-INF/*)"
+  $root = "EETT_Dossier_GreekTrustCo_2025-06-15.asice"
+  $files = Get-ChildItem -Path $root -Recurse -File | Where-Object { $_.FullName -notmatch "\\META-INF\\" }
+  $lines = foreach ($f in $files) {
+    $h = Get-FileHash -Algorithm SHA256 -Path $f.FullName
+    "{0}  .\{1}" -f $h.Hash.ToLower(), ($f.FullName -replace '^.+?EETT_Dossier_GreekTrustCo_2025-06-15\.asice\\','EETT_Dossier_GreekTrustCo_2025-06-15.asice\')
+  }
+  $lines | Out-File -FilePath "SHA256SUMS.txt" -Encoding ascii
+  Write-Host "[INFO] SHA256SUMS.txt generated (template input for manifest.xml)"
+} else {
+  Write-Host "[WARN] Get-FileHash not available; skip digest generation"
+}
+
+# 5) Reminder for packaging & signing (performed outside this script)
+Write-Host "[NEXT] Package ASiC-E with mimetype stored (no compression), add META-INF\manifest.xml, sign with XAdES-LTA."
+Write-Host "[DONE] Template alignment complete."
+-----END FILE: scripts/reproduce_alignment.ps1-----
+
+
+Submission Note
+  Replace this placeholder with an actual ZIP archive named exactly:
+    20_README_and_Placeholder_Table.zip
+  containing the four files and paths above. Keep filenames and content synchronized with the final dossier.
+
+End of placeholder.

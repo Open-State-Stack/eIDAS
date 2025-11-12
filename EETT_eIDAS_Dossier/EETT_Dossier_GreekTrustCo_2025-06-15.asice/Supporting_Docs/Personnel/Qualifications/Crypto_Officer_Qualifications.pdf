@@ -1,0 +1,152 @@
+PLACEHOLDER – to be replaced with official document
+
+File
+  Supporting_Docs/Personnel/Qualifications/Crypto_Officer_Qualifications.pdf
+
+Important
+  - This is a temporary placeholder saved with a .pdf extension.
+  - It is plain text and NOT a valid PDF binary.
+  - Replace with the official, signed Qualifications & Training Pack for the Crypto Officer(s) before packaging and submission.
+
+Purpose
+  Provide authoritative evidence that the designated Crypto Officer(s) (COs) possess the qualifications, experience, and training to operate and safeguard cryptographic modules and keys used for Qualified Trust Services (QES/QSeal/TSA and status services). This evidence supports EETT and auditor due diligence on competence for key management, HSM operations, ceremonies, and secure processes required by eIDAS and ETSI standards.
+
+Required Properties of the Official Document
+  - Format: Single, consolidated PDF (non-password-protected; printable; PDF/A acceptable)
+  - Language: Greek and/or English (if bilingual, place Greek first)
+  - Structure: Role profile + CV(s) + training record(s) + certifications + attestations (merged into one PDF with contents page)
+  - Dates: Current version, signed and dated by the Crypto Officer(s) and the QTS Manager (or Security Officer) within 90 days of submission
+  - Evidence: Clear scans of credential certificates and training attestations; pages legible and complete
+  - File name (exact): Crypto_Officer_Qualifications.pdf
+  - Location (exact): EETT_Dossier_GreekTrustCo_2025-06-15.asice/Supporting_Docs/Personnel/Qualifications/
+
+Minimum Expected Contents (outline for the final PDF)
+  1) Cover Page
+     - Title: “Crypto Officer – Qualifications & Training Pack”
+     - Full legal name(s) of designated Crypto Officer(s)
+     - Date of issue/version
+     - Signature block(s): Crypto Officer(s) and reviewer/approver (QTS Manager or Security Officer)
+
+  2) Role Definition and Accountability
+     - Formal role description for Crypto Officer (approved by Security/QTS Manager)
+     - Segregation of duties: delineation from Security Officer, RA Operators, System Admins, and Auditors
+     - Authority matrix reference (who can authorize, cosign, and witness key management actions)
+
+  3) Key Competencies (indicative; map to evidence)
+     - HSM operations and governance (FIPS 140-2/140-3 Level 3+ modules; vendor operational best practices)
+     - Key ceremonies: planning, execution, evidence capture, dual control, split knowledge, M-of-N enforcement
+     - Private key lifecycle: generation, activation, usage constraints, backup/restore/escrow (if any), archival, destruction/zeroization
+     - Access control and authentication factors (smartcards/tokens, PINs/passphrases, quorum policies)
+     - Cryptographic policy, algorithm and key length baselines (SHA-256+; RSA/ECC baselines), deprecation/transition planning
+     - Certificate lifecycle dependencies (Root/Issuing CAs, OCSP signer, CRL signer, TSA signer)
+     - Audit/event logging, tamper-evidence, secure time, chain of custody
+     - Change control and documented procedures; incident handling for key compromise
+     - Regulatory/standards awareness: eIDAS, ETSI EN 319 401/411-1/411-2/421, RFC 5280/6960/3161
+
+  4) Curriculum Vitae (CV) – Each Crypto Officer
+     - Professional summary focused on PKI, HSM, key management, and compliance
+     - Employment history (reverse chronological) with trust-services responsibilities
+     - Education (degrees, institutions, years)
+     - Languages (Greek/English as relevant)
+     - Declaration of accuracy; signature and date
+
+  5) Certifications & Training Evidence (attach scans with IDs/dates)
+     - HSM vendor training/administration (e.g., Thales, Entrust, Utimaco) – course names, IDs, completion dates
+     - Key ceremony and PKI operations workshops
+     - Security certifications (e.g., CISSP/CISM/CISA) and/or ISO 27001 implementer/auditor (if applicable)
+     - eIDAS/ETSI-focused training (EN 319 401/411/412/421) – provider, content summary
+     - Incident response and secure operations trainings (e.g., logging/monitoring, forensics triage basics)
+     - Any cryptography fundamentals or advanced courses (as relevant to role)
+
+  6) Practical Experience & Case Summaries
+     - Key ceremonies executed/supported (scope: Root/Issuing/TSA/OCSP/CRL), with roles performed (redact sensitive details)
+     - HSM cluster lifecycle: initialization, partitioning, key replication/backup/restore, firmware management
+     - Algorithm migration/deprecation projects (e.g., RSA size uplift; SHA-1→SHA-256+ transitions)
+     - Control testing/audit support (e.g., CAR engagements, internal audits, witness statements, corrective actions)
+
+  7) Procedural Mastery and Evidence
+     - Referenced SOPs/Work Instructions under TSPS:
+       • Key generation and ceremony SOPs/checklists
+       • Quorum/M-of-N administration procedure
+       • Backup and restore (sealed media handling, KCV verification)
+       • Zeroization and end-of-life procedures
+       • Incident response for suspected key compromise
+       • Firmware update/rollback and configuration hardening procedures
+     - Acknowledgement statement (read/understood latest SOPs), signed by the Crypto Officer(s)
+
+  8) Independence, Ethics, and Conflicts
+     - Statement confirming independence from roles determining business purposes (per governance model)
+     - Conflict-of-interest declaration and mitigation (if any)
+     - Code of conduct acknowledgment (security and confidentiality obligations)
+
+  9) On-Call/Escalation and Substitution
+     - On-call or availability expectations for ceremonies/emergencies
+     - Approved deputies and substitution process; required approvals for emergency actions
+
+  10) Sign-off and Attestations
+     - Crypto Officer(s) attestation of competency and readiness
+     - Reviewer (Security Officer or QTS Manager) sign-off and date
+     - Document control (version, next review date)
+
+Privacy and Minimization
+  - Redact personal data not required for competence verification (national IDs, home addresses, private phone/email).
+  - Keep credential numbers that assist verification; include verification URLs/QRs where possible.
+  - Avoid sensitive personal data categories unless strictly necessary for regulatory verification.
+
+Verification and Consistency Checks (Internal)
+  - Skillset and training align with TSPS responsibilities (05_TSPS_Qualified_Services_GR_EN_SIGNED.pdf)
+  - HSM vendor certifications match the models/firmware in production and DR (see HSM_FIPS_Certification.pdf)
+  - Ceremony responsibilities align with authority matrix, dual control, and split knowledge requirements
+  - SOPs acknowledged are the latest approved versions; change control references are current
+  - Experience and training dates are current (preferably within last 24 months for critical topics)
+
+Cross-References to Dossier Items
+  - 05_TSPS_Qualified_Services_GR_EN_SIGNED.pdf (operational practices and role definitions)
+  - 04_TSP_Policy_GR_EN_SIGNED.pdf (governance, segregation of duties)
+  - 06_Test_Certificates/Certificate_Profiles_Guide.pdf (algorithms, profiles alignment)
+  - Supporting_Docs/Certifications/HSM_FIPS_Certification.pdf (module validation and version alignment)
+  - Supporting_Docs/Certifications/Datacenter_Certification.pdf (environmental/physical controls context)
+  - 03_Conformity_Assessment_Report_TUV_2025.pdf; 03a_Traceability_Matrix.pdf (audit linkage, clause mapping)
+  - 11_Revocation_SOP_GR_EN.pdf; 11a_Revocation_Forms.pdf (status services keys and workflows)
+  - 07a_Incident_Response_Plan_GR_EN.pdf; 07_Risk_Assessment_GR_EN.pdf (incident and risk context)
+
+Pre-Submission Checklist
+  - [ ] Role profile and accountability defined; segregation of duties documented
+  - [ ] CV(s) updated, signed, and dated (≤ 90 days old)
+  - [ ] HSM vendor/admin certifications included; verification links/IDs present
+  - [ ] Key ceremony and lifecycle SOP acknowledgements signed
+  - [ ] Evidence of recent, relevant training (≤ 24 months for critical areas)
+  - [ ] Experience summaries demonstrate practical competence for QTS scope
+  - [ ] Privacy redactions applied; no extraneous PII
+  - [ ] Single, readable PDF; filename exactly: Crypto_Officer_Qualifications.pdf
+  - [ ] Placed under: Supporting_Docs/Personnel/Qualifications/
+
+Replacement Instructions
+  1) Delete this placeholder file.
+  2) Merge the signed role profile, CV(s), certifications/training evidence, SOP acknowledgements, and attestations into a single PDF named:
+     EETT_Dossier_GreekTrustCo_2025-06-15.asice/Supporting_Docs/Personnel/Qualifications/Crypto_Officer_Qualifications.pdf
+  3) Re-check alignment with TSPS, HSM_FIPS_Certification.pdf, and ceremony procedures.
+  4) Regenerate META-INF/manifest.xml and the ASiC-E signature (XAdES-LTA) during final packaging.
+
+Appendix A – Evidence Index Template (include in the final PDF)
+  | Section | Evidence | Issuer/Provider | ID/URL | Issue Date | Expiry | Notes |
+  | Role Profile | Crypto Officer Role Description | Security/QTS | DOC-ROLE-CO-xx | <YYYY-MM-DD> | N/A | Approved version |
+  | CV | CO CV – <Name> | Self-signed | N/A | <YYYY-MM-DD> | N/A | Signed ≤ 90 days |
+  | Training | HSM Admin Course (Model/Version) | <Vendor> | <Cert ID/URL> | <YYYY-MM-DD> | N/A | Matches deployed HSM |
+  | Training | Key Ceremony Workshop | <Provider> | <ID> | <YYYY-MM-DD> | N/A | Dual control/split knowledge |
+  | Certification | Security Cert (e.g., CISSP/CISM) | (ISC)²/ISACA | <ID> | <YYYY-MM-DD> | <YYYY-MM-DD> | Optional |
+  | Standards | eIDAS/ETSI Course (EN 319 401/411/412/421) | <Provider> | <URL> | <YYYY-MM-DD> | N/A | Standards competency |
+  | SOP Ack | Key Ceremony SOP Acknowledgement | GreekTrustCo | SOP-ACK-CO-xx | <YYYY-MM-DD> | N/A | Latest SOP version |
+  | SOP Ack | Backup/Restore & Zeroization SOP Ack | GreekTrustCo | SOP-ACK-CO-yy | <YYYY-MM-DD> | N/A | Latest SOP version |
+
+Document Metadata (to be present in or derivable from the official PDF)
+  - Organization: GreekTrustCo
+  - Title: Crypto Officer – Qualifications & Training Pack
+  - Version: <vX.Y>
+  - Effective Date: <YYYY-MM-DD>
+  - Owner(s): Crypto Officer(s): <Full Legal Name(s)>
+  - Reviewed by: Security Officer; QTS Manager
+  - Approved by: QTS Manager (and/or Executive Sponsor per authority matrix)
+  - Classification: Confidential – Submitted to EETT
+
+End of placeholder.

@@ -1,0 +1,115 @@
+PLACEHOLDER – to be replaced with official document
+
+File
+  Supporting_Docs/Certifications/ISO9001_Certificate.pdf
+
+Important
+  - This is a temporary placeholder saved with a .pdf extension.
+  - It is plain text and NOT a valid PDF binary.
+  - Replace with the official ISO 9001 certificate PDF issued by an accredited Certification Body (CB) before packaging and submission.
+
+Purpose
+  Provide authoritative evidence that GreekTrustCo operates a Quality Management System (QMS) compliant with ISO 9001:2015 (Quality Management Systems) for the scope relevant to provision of Qualified Trust Services (QES/QSeal/TSA/Status services) and supporting processes. This supports EETT/eIDAS supervisory expectations for quality assurance, customer focus, and continual improvement.
+
+Required Properties of the Official Document
+  - Format: PDF (non-password-protected; printable; PDF/A acceptable)
+  - Languages: Greek and/or English
+  - Issuer: Accredited Certification Body (CB) under an IAF MLA signatory Accreditation Body (e.g., ESYD or another IAF signatory AB)
+  - Standard: ISO 9001:2015
+  - Certificate Identification:
+      • Certificate Number (unique)
+      • Original Certification Date
+      • Current Issue/Renewal Date
+      • Expiry Date
+      • Certification Cycle (3-year cycle), Surveillance cadence (e.g., annual)
+  - Scope Statement:
+      • Explicitly covers activities relevant to Qualified Trust Services and supporting functions (e.g., design/provision of trust services, CA/RA activities, issuance/revocation/status, time-stamping, customer service, documentation control)
+  - Sites / Multi-site Scheme (if applicable):
+      • List all covered sites/locations/colocations; indicate multi-site sampling model if used
+  - Verification:
+      • Public verification link or QR code to CB directory (recommended)
+      • Accreditation details of the CB (AB name, accreditation ID)
+
+Minimum Expected Contents (for the official certificate package)
+  1) Certification Body (CB) and Accreditation
+     - CB legal name, address, contact, website
+     - Accreditation Body (AB) details (e.g., ESYD), accreditation scope/ID
+     - IAF MLA participation statement or marks (as permissible)
+  2) Certified Organization
+     - Legal name: GreekTrustCo
+     - Registered address and identifiers (GEMH/ΓΕΜΗ, AFM/VAT)
+     - Contact details for certification queries (optional)
+  3) Standard and Version
+     - “ISO 9001:2015” explicitly stated
+  4) Certificate Details
+     - Certificate number, original issue date, current issue/renewal date, expiry date
+     - Certification cycle (3-year), surveillance schedule (e.g., annual)
+     - Any conditions/limitations or exclusions
+  5) Scope Statement (must be explicit and relevant to QTS)
+     - Example elements to include (adjust to actual scope):
+       • “Design, development, provision, and support of Qualified Trust Services, including CA/RA processes, issuance and revocation of qualified certificates, provision of revocation/status services (CRL/OCSP), time-stamping services, subscriber support and complaint handling, documentation control, and associated quality management activities.”
+  6) Sites Covered
+     - Primary secure facility(ies), DR site(s), RA office(s), datacenter/colocation addresses (as applicable)
+     - If multi-site: reference the Certified Sites Schedule listing each address and scope inclusion
+  7) Verification and Legal
+     - CB verification URL/QR for certificate authenticity/status
+     - Accreditation reference (AB register link, if available)
+     - Proper use of CB/AB/IAF marks (if displayed)
+     - CB signatures/seals and dates
+
+Verification and Consistency Checks (Internal)
+  - Certificate authenticity:
+    • Verify status on CB’s public directory (URL/QR); ensure “Valid” and correct scope
+    • Confirm CB accreditation with AB (IAF MLA signatory)
+  - Scope adequacy:
+    • Scope explicitly covers QTS-related service delivery and support processes (CA/RA, issuance, revocation, status, TSA, customer-facing processes, documentation control)
+    • All operational sites underpinning QTS are included
+  - Validity and timelines:
+    • Active as of submission (2025-06-15), not expired
+    • Surveillance not overdue; no suspensions noted
+  - Consistency with dossier:
+    • Align scope with 04_TSP_Policy_GR_EN_SIGNED.pdf and 05_TSPS_Qualified_Services_GR_EN_SIGNED.pdf
+    • Cross-check covered sites/functions with operations (risk/incident/BCP/records)
+    • Complaints and customer feedback processes align with contractual terms (10)
+
+Cross-References to Dossier Items
+  - 04_TSP_Policy_GR_EN_SIGNED.pdf (governance and scope alignment)
+  - 05_TSPS_Qualified_Services_GR_EN_SIGNED.pdf (operational practices and quality controls)
+  - 07_Risk_Assessment_GR_EN.pdf; 07a_Incident_Response_Plan_GR_EN.pdf (process integration with quality/risk/incident)
+  - 09_Service_Termination_Plan_GR_EN.pdf (controlled process management)
+  - 10_End_User_Agreement_GR_EN_SIGNED.pdf (customer requirements and service commitments)
+  - 11_Revocation_SOP_GR_EN.pdf; 11a_Revocation_Forms.pdf (service processes)
+  - 12_Recordkeeping_Policy_GR_EN.pdf (document/record control)
+  - Supporting_Docs/Certifications/CAB_Accreditation_Certificate.pdf (if provided to evidence CAB/CAB accreditation relationships)
+
+Pre-Submission Checklist
+  - [ ] Official ISO 9001:2015 certificate PDF present and legible
+  - [ ] Issuer is an accredited CB (IAF MLA signatory AB)
+  - [ ] Scope statement explicitly covers QTS-related services and support processes
+  - [ ] Certificate number, issue/expiry dates, cycle info included and current
+  - [ ] Sites list/schedule present and aligns with operations in dossier
+  - [ ] Public verification link/QR provided and shows “Valid”
+  - [ ] Filename exactly: ISO9001_Certificate.pdf
+  - [ ] Placed under: Supporting_Docs/Certifications/
+
+Replacement Instructions
+  1) Delete this placeholder file.
+  2) Copy the official ISO 9001:2015 certificate PDF to:
+     EETT_Dossier_GreekTrustCo_2025-06-15.asice/Supporting_Docs/Certifications/ISO9001_Certificate.pdf
+  3) If the certificate scope or sites change, update related dossier references (Policy/TSPS, Risk/BCP/IR/Records).
+  4) Regenerate META-INF/manifest.xml and the container signature (XAdES-LTA) during final packaging.
+
+Document Metadata (to appear in or derivable from the official PDF)
+  - Organization: GreekTrustCo
+  - Title: ISO 9001:2015 Certificate
+  - Standard Version: ISO 9001:2015
+  - Certificate Number: <value from CB>
+  - Original Issue Date: <YYYY-MM-DD>
+  - Current Issue/Renewal Date: <YYYY-MM-DD>
+  - Expiry Date: <YYYY-MM-DD>
+  - Certification Body (CB): <Legal Name, Accreditation ID>
+  - Accreditation Body (AB): <Name, IAF signatory>
+  - Verification: <CB directory URL or QR code>
+  - Classification: Internal – Submitted to EETT
+
+End of placeholder.

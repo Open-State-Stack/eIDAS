@@ -1,0 +1,78 @@
+PLACEHOLDER – to be replaced with official document
+
+File: 02_EETT_Qualified_Service_Start_Application_SIGNED.pdf
+Container: EETT_Dossier_GreekTrustCo_2025-06-15.asice (root level)
+
+Description
+This is a temporary placeholder saved with a .pdf extension. It is plain text and NOT a valid PDF binary.
+Replace this file with the officially signed “EETT Qualified Service Start Application” PDF prior to packaging and submission.
+
+Purpose
+Formal notification and request to EETT to commence provision of Qualified Trust Services by GreekTrustCo. It declares services, readiness, effective start date(s), and confirms compliance with the eIDAS/ETSI framework.
+
+Scope of Qualified Services (example; select what applies)
+- Qualified Certificates for Electronic Signatures (QES)
+- Qualified Certificates for Electronic Seals (QSeal)
+- Qualified Electronic Time-Stamping (TSA)
+- Qualified Website Authentication Certificates (QWAC) (if applicable)
+
+Required Contents (for the official PDF)
+- Applicant Details
+  - Legal entity name, registered address, identifiers (GEMH, AFM/VAT), contact points (admin, compliance)
+  - Senior responsible officer and QTS Manager details
+- Services to Start
+  - List of Qualified services to activate and their effective date(s)
+  - Service descriptions and intended relying party population
+- Compliance Readiness Statements
+  - Conformity to ETSI EN 319 401 and service-specific standards:
+    - QES/QSeal: ETSI EN 319 411-1/-2 and ETSI EN 319 412 series
+    - TSA: ETSI EN 319 421; RFC 3161
+    - Status services (OCSP/CRL): RFC 6960/RFC 5280
+  - Reference to Conformity Assessment Report (CAR) and auditor (03_Conformity_Assessment_Report_TUV_2025.pdf)
+- Policy and Practice References
+  - TSP Policy (04_TSP_Policy_GR_EN_SIGNED.pdf)
+  - TSPS for Qualified Services (05_TSPS_Qualified_Services_GR_EN_SIGNED.pdf)
+  - CPS/Policies OIDs, CPS URIs, and publication points
+- Technical Infrastructure Overview
+  - CA hierarchy (Root/Issuing), HSM details at a high level, key protection, ceremony overview
+  - AIA/CRL/OCSP/TSA endpoints (test/production indicators)
+- Operational Controls
+  - Revocation processes (11_Revocation_SOP_GR_EN.pdf; 11a_Revocation_Forms.pdf)
+  - Incident response (07a_Incident_Response_Plan_GR_EN.pdf; 07b_Incident_Report_Forms.pdf)
+  - Recordkeeping (12_Recordkeeping_Policy_GR_EN.pdf)
+  - User notifications (08_User_Notification_Templates_GR_EN.pdf)
+- Legal and Contractual
+  - End-user terms (10_End_User_Agreement_GR_EN_SIGNED.pdf)
+  - EETT communication templates (13_EETT_Communication_Templates_GR.pdf)
+- Attachments/Cross-References
+  - Test bundle (06_Test_Certificates/*) and profiles guide
+  - Risk assessment (07_Risk_Assessment_GR_EN.pdf)
+  - Service termination plan (09_Service_Termination_Plan_GR_EN.pdf)
+  - NTL publication datasheet (14_NTL_Publication_Datasheet.pdf)
+  - Master Compliance Register (19_Master_Compliance_Register.pdf)
+- Declarations and Signatures
+  - Declaration of conformity/accuracy
+  - Authorization of signatory and organization seal/signature pages
+  - Date, place, and contact for clarifications
+
+Expected Properties of the Official Document
+- Format: PDF (non-password-protected; PDF/A acceptable)
+- Language: Greek and/or English as instructed by EETT
+- Signatures: Advanced/Qualified electronic signature by an authorized representative; timestamp recommended
+- Exact filename: 02_EETT_Qualified_Service_Start_Application_SIGNED.pdf
+
+Pre-Submission Checklist
+- [ ] Services listed accurately with correct effective start date(s)
+- [ ] All referenced documents exist in the dossier and filenames match the target structure
+- [ ] Conformity Assessment Report and auditor details referenced
+- [ ] Endpoints (AIA/CRL/OCSP/TSA) listed and validated (where applicable)
+- [ ] Policy OIDs and CPS/TSPS references are consistent with certificates
+- [ ] Signed by authorized signatory; signature validates
+- [ ] File name exactly: 02_EETT_Qualified_Service_Start_Application_SIGNED.pdf
+- [ ] Placed at root of EETT_Dossier_GreekTrustCo_2025-06-15.asice
+
+Replacement Instructions
+Delete this placeholder and copy the official signed PDF to the same path before generating META-INF/manifest.xml and signatures.xml for the ASiC-E container.
+
+Submission Note
+Do NOT submit the dossier with this placeholder present.

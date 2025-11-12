@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<asic:ASiCManifest
+    xmlns:asic="http://uri.etsi.org/02918/v1.2.1#"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <!--
+      PLACEHOLDER – to be replaced with official document
+
+      This optional ASiC manifest is an additional metadata file sometimes included
+      alongside META-INF/manifest.xml in ASiC-E containers. It can describe payload
+      objects and their digests, MIME types, and identifiers.
+
+      Notes for the packaging step:
+        - Use SHA-256 for all payload digests.
+        - Include every non-META-INF payload file present in the container.
+        - Do NOT include this file or META-INF/signatures.xml in the payload list.
+        - Ensure alignment with META-INF/manifest.xml entries.
+        - This file will be regenerated automatically by the packaging script.
+    -->
+
+    <!-- Digest algorithm to use for all entries -->
+    <asic:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+
+    <!--
+      Template for entries (example shown commented out):
+
+      <asic:DataObjectReference URI="01_Registry_Application_GreekTrustCo_SIGNED.pdf">
+        <ds:DigestValue>BASE64_ENCODED_SHA256_DIGEST</ds:DigestValue>
+        <asic:MimeType>application/pdf</asic:MimeType>
+        <asic:Identifier>doc-01</asic:Identifier>
+      </asic:DataObjectReference>
+
+      <asic:DataObjectReference URI="06_Test_Certificates/Sample_OCSP_Response.der">
+        <ds:DigestValue>BASE64_ENCODED_SHA256_DIGEST</ds:DigestValue>
+        <asic:MimeType>application/ocsp-response</asic:MimeType>
+        <asic:Identifier>doc-06-ocsp</asic:Identifier>
+      </asic:DataObjectReference>
+    -->
+
+    <!-- No entries yet; will be populated during packaging -->
+</asic:ASiCManifest>

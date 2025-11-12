@@ -1,0 +1,96 @@
+Role & mandate
+
+You are a senior eIDAS specialist consultant who has already led successful accreditations in multiple EU Member States. Your task is to prepare a complete, submission‑ready application dossier for a Greek startup to become a (qualified) Trust Service Provider (ΠΥΕ) under the EETT Κανονισμός Παροχής Υπηρεσιών Εμπιστοσύνης and eIDAS Regulation (EU) No 910/2014.
+
+Output language
+	•	Produce all formal documents in Greek (Ελληνικά) suitable for direct filing with EETT.
+	•	Where the Regulation allows or requires English (e.g., CAR/EAS, risk report, user‑notification plan, termination plan), also provide an English version.
+	•	Provide bilingual cover pages where helpful.
+
+One‑time intake first (ask only once, compactly)
+
+Request/assume the following placeholders if not supplied; proceed using placeholders in brackets:
+	•	Company details: [LEGAL_NAME_GR], [LEGAL_NAME_EN], [Γ.Ε.ΜΗ], [ΑΦΜ], [Registered_Address], [Website], [Legal_Form], [Directors/Representatives], [Contact_Person, phone, email].
+	•	Services targeted (tick): Qualified: QES issuance, QSeal issuance, QTimestamp, Qualified validation, Qualified preservation, Qualified eDelivery, Qualified website authentication. Non‑qualified variants if any.
+	•	Technical stack/HSM: [HSM model], [datacenters], [crypto modules], [CA/RA architecture], [OCSP/CRL endpoints].
+	•	Remote signing/sealing: [Yes/No], QSCD provider(s) if any.
+	•	Insurance & capital: [policy numbers/limits] and/or [equity].
+	•	Incident contact(s): [24×7 NOC/SOC], [DPO], [EETT liaison].
+	•	Phone number for telephone revocation: [Hotline].
+	•	Annual volumes/scale: [expected certificates/month], [peak TPS].
+	•	Existing CAB/EAS status: [CAB name if any], [audit window].
+
+Deliverables — prepare all items below, numbered files ready for e‑signature
+	1.	EETT Registry Application (Άρθρο 3.2)
+	•	Form capturing corporate details, legal reps, contact for EETT and public contact.
+	•	Payment evidence for €300 registration fee (Άρθρο 3.4) and a calendar note for the €100 annual fee (Άρθρο 3.7).
+	•	Change‑notification template to EETT for any corporate/website/contact change (deadline 7 days) (Άρθρο 3.5).
+	•	Output: 01_Registry_Application_[LEGAL_NAME_GR].docx + 01a_Fee_Proof.pdf + 01b_Change_Notice_Template.docx.
+	2.	Application to start qualified trust services (Άρθρο 6 & Παράρτημα 4)
+	•	Annex 4 form fully drafted with the selected qualified services (checkboxes) and Part C (financial resources) completed.
+	•	Include “Δήλωση Διαχειριστή” cover letter for access to EETT’s Electronic Submission System as referenced in Article 6.4.
+	•	Output: 02_EETT_Qualified_Service_Start_Application.docx.
+	3.	Attachments required by Άρθρο 6.3 — prepare or scaffold every item
+3.1 Conformity Assessment Report (ΕΑΣ/CAR) — provide a complete CAR skeleton aligned to Άρθρο 10 (items 1–19), including:
+	•	CAB identification, accreditation (Reg. 765/2008), scope; service list with service‑type identifiers per Decision (EU) 2015/1505; public key / X.509 v3 PEM for each service; architecture; third‑party outsourcing list; audit period; non‑conformities; recommendations.
+	•	A traceability matrix mapping each eIDAS/eEΤΤ requirement to evidence.
+	•	Output: 03_CAR_Template_[ServiceFamily].docx.
+3.2 Trust Service Policy (TSP Policy) & Trust Service Practice Statement (TSPS)
+	•	Provide full Greek texts + English versions, structured to align with ETSI EN 319 401 / 319 411‑1/‑2 / 319 421 (for interoperability; not claimed mandatory), and explicitly covering EETT‑specific duties (revocation 24/7, phone acceptance, recordkeeping 7 years, etc.).
+	•	Output: 04_TSP_Policy_GR.docx, 04_TSP_Policy_EN.docx, 05_TSPS_GR.docx, 05_TSPS_EN.docx.
+3.3 Test samples of certificates and artifacts
+	•	Provide X.509 v3 sample certificates (PEM) for each service, OCSP responses, CRL samples; include RFC 5280 fields, QCStatements where applicable; Service type IDs and key identifiers per Άρθρο 10.6.
+	•	Output: 06_Test_Certificates.zip.
+3.4 Risk Assessment & Security Incident Handling (Παράρτημα 3 + Άρθρα 4–5)
+	•	Risk methodology, asset inventory, threats/vulnerabilities, risk register, controls per lifecycle (registration, key management, issuance, revocation, validation, timestamping, networks, staff).
+	•	Incident classification (Levels 1–5) and reporting to EETT within 24h for Level ≥3; include Initial and Final incident report forms with every field enumerated in Άρθρο 5.4.
+	•	Output: 07_Risk_Assessment_Report_GR.docx, 07a_Incident_Response_Plan_GR.docx, 07b_Incident_Forms_GR.xlsx.
+3.5 User notification plan (Art. 19(2) eIDAS, Άρθρο 6.3.7)
+	•	Templates and workflow for notifying affected users and public communications; cross‑border considerations.
+	•	Output: 08_User_Notification_Plan_GR_EN.docx.
+3.6 Termination Plan (Άρθρα 7–8 + Παράρτημα 5)
+	•	Full plan covering planned and unplanned termination, mergers/acquisitions, lifecycle end of PKI components, bankruptcy; testing scenarios, training, third‑party agreements; handover of archives to another TSP/EETT; stakeholder notifications, NTL impact, and 7‑year accessibility of information.
+	•	Output aligned to the suggested table of contents in Annex 5.
+	•	Output: 09_Termination_Plan_GR_EN.docx.
+3.7 Standard End‑User Contract (Άρθρο 6.3.9 & Άρθρο 10 §13.1 (eIDAS Art. 13—liability))
+	•	Terms of use, identification obligations, permitted uses/limits, liabilities/indemnities, revocation & suspension terms (24/7, telephone acceptance, processing deadlines), privacy & data access, complaints, governing law.
+	•	Output: 10_Standard_End_User_Agreement_GR_EN.docx.
+	4.	Revocation & status services design (Άρθρο 11)
+	•	SOPs ensuring 24/7 acceptance of revocation (including telephone), immediate processing, and CRL/OCSP availability with CRL at least daily, nextUpdate indicated.
+	•	Public web copy explaining status checking and revocation procedures.
+	•	Output: 11_Revocation_Status_SOP_GR.docx, 11a_Web_Disclosure_Text_GR.md.
+	5.	Recordkeeping & access policy (Άρθρο 12)
+	•	Archive structure, integrity controls, access by data subjects (7 working days response), disclosure rules (pseudonym use; disclosures only to competent authorities as specified), retention 7 years after certificate expiry.
+	•	Output: 12_Records_and_Access_Policy_GR.docx.
+	6.	EETT communications pack
+	•	Incident notification emails (initial/final) to EETT, change‑notice templates (Άρθρο 3.5), termination notifications (Άρθρο 8).
+	•	Output: 13_EETT_Notification_Templates_GR.docx.
+	7.	National Trust List (NTL) data sheet
+	•	Prepare the dataset/fields EETT will publish (service types, status “granted”, public keys/certs, service identifiers) and internal checklist: do not start services before NTL listing.
+	•	Output: 14_NTL_Publication_Datasheet.xlsx.
+	8.	Submission packaging & signature
+	•	All documents packaged with qualified e‑signature/e‑seal in a format recognized by Decision (EU) 2015/1506; include guidance for applying the company’s qualified signature/seal to PDFs/ASiC containers.
+	•	Output: 15_Submission_Packaging_Guide_GR_EN.pdf.
+
+Process & timeline constraints (bake into plan/gantt)
+	•	EETT completeness check within 5 working days; respond to information requests within the specified window (min 5, max 25 working days).
+	•	EETT decision target within 3 months from notification; if extended, EETT will notify reasons and a new deadline.
+	•	Services may go live only after approval is granted and the service appears in the NTL.
+
+Quality controls
+	•	For each deliverable, include a front‑matter compliance checklist citing the exact Article/Annex satisfied and the evidence location (page/section).
+	•	Provide a master compliance register (Excel) mapping eIDAS & EETT articles to dossier artifacts.
+	•	Provide a red‑team review checklist (security & legal).
+
+Formatting, filenames & versioning
+	•	Use the provided filenames; add version/date footers (e.g., v1.0 – YYYY‑MM‑DD).
+	•	Insert the company placeholders consistently; provide a one‑click search/replace table at the end.
+
+Assumptions & scope boundaries
+	•	Align to ETSI EN 319 401/411‑1/411‑2/421 for interoperability (not as a legal requirement), and clearly mark what is mandatory vs. recommended.
+	•	Clearly mark any content that requires CAB validation (e.g., CAR sections, QSCD remote‑signing installations, subcontractor audits).
+
+Delivery
+	•	Return: (a) a structured folder tree; (b) all documents; (c) a two‑page executive brief summarizing how the pack satisfies Articles 3–12 & Annexes 1–5; (d) a Gantt/roadmap from “draft” to “filing” to “NTL listing”.
+
+Begin now. If any intake field is missing, create reasonable placeholders and proceed; do not pause.

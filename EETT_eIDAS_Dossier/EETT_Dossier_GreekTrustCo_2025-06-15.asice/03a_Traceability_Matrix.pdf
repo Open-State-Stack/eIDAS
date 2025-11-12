@@ -1,0 +1,170 @@
+PLACEHOLDER – to be replaced with official document
+
+03a_Traceability_Matrix.pdf
+EETT_Dossier_GreekTrustCo_2025-06-15.asice (root level)
+
+Important
+- This is a temporary placeholder saved with a .pdf extension.
+- It is plain text and NOT a valid PDF binary.
+- Replace this file with the official Traceability Matrix PDF (or export to PDF from your master spreadsheet) before packaging and submission.
+
+Purpose
+This Traceability Matrix maps every applicable requirement from the eIDAS/ETSI framework and related RFCs to GreekTrustCo’s evidence set, test/observation results, and dossier references. It enables EETT and the Conformity Assessment Body to verify that all obligations are met and that evidence is complete, current, and consistent.
+
+Scope of Standards (include/adjust as applicable)
+- ETSI EN 319 401
+- ETSI EN 319 411-1
+- ETSI EN 319 411-2 (Qualified)
+- ETSI EN 319 412 series
+- ETSI EN 319 421 (TSA)
+- RFC 5280 (Certificates/CRLs)
+- RFC 6960 (OCSP)
+- RFC 3161 (Time-Stamping)
+- eIDAS Regulation (EU) No 910/2014 (relevant Articles for Qualified Services)
+
+Recommended Columns
+- Ref_ID: Unique reference key (e.g., EN411-2_6.2.3)
+- Standard: (e.g., ETSI EN 319 411-2)
+- Clause: (e.g., 6.2.3)
+- Requirement_Summary: Short plain-language paraphrase of the clause
+- Evidence_Reference: Policy/Procedure/Record/Test-ID
+- Dossier_File: Exact file name in dossier (e.g., 05_TSPS_Qualified_Services_GR_EN_SIGNED.pdf)
+- Section_Page: Section, page, or appendix in the evidence where requirement is addressed
+- Test_Observation_ID: Link to CAB test case, internal control test, or observation (if applicable)
+- Result: Pass / Fail / N/A
+- Notes: Rationale, scope, compensating controls, cross-references
+- Risk_Rating: Low / Medium / High (for any gaps or deviations)
+- Owner: Responsible role (e.g., QTS Manager)
+- Remediation_Due: YYYY-MM-DD (if Result != Pass)
+
+Example Rows (illustrative only)
+- Ref_ID: EN411-2_6.2.3
+  Standard: ETSI EN 319 411-2
+  Clause: 6.2.3
+  Requirement_Summary: Issuance policies and identity verification controls for Qualified Certificates are defined and enforced.
+  Evidence_Reference: TSPS §4.2; RA SOP §3; Training Records TR-RA-2025-01
+  Dossier_File: 05_TSPS_Qualified_Services_GR_EN_SIGNED.pdf
+  Section_Page: §4.2 pp. 18–24; Appendix B
+  Test_Observation_ID: CAB-TC-QES-12
+  Result: Pass
+  Notes: RA operator sampling observed; training records verified.
+  Risk_Rating: Low
+  Owner: QTS Manager
+  Remediation_Due: -
+
+- Ref_ID: EN412-1_SubjectNaming
+  Standard: ETSI EN 319 412-1
+  Clause: 5.x
+  Requirement_Summary: Subject DN structure for QC conforms to profile; attributes are correctly populated and encoded.
+  Evidence_Reference: Certificate Profiles Guide §3–7; Sample QES cert dump
+  Dossier_File: 06_Test_Certificates/Certificate_Profiles_Guide.pdf
+  Section_Page: §4.3 pp. 22–29
+  Test_Observation_ID: CAB-TC-Profiles-04
+  Result: Pass
+  Notes: Checked against Sample_QES_Certificate.pem; DN and QCStatements OK.
+  Risk_Rating: Low
+  Owner: PKI Engineering
+  Remediation_Due: -
+
+- Ref_ID: RFC5280_CRL
+  Standard: RFC 5280
+  Clause: 5.x
+  Requirement_Summary: CRL presence, validity, number increment, and AKI are compliant.
+  Evidence_Reference: CRL sample; CA configuration; SOP Revocation §6
+  Dossier_File: 11_Revocation_SOP_GR_EN.pdf
+  Section_Page: §6 pp. 14–17
+  Test_Observation_ID: CAB-TC-CRL-02
+  Result: Pass
+  Notes: Sample_CRL.crl inspected; nextUpdate interval within policy thresholds.
+  Risk_Rating: Low
+  Owner: Status Services Lead
+  Remediation_Due: -
+
+- Ref_ID: RFC6960_OCSP
+  Standard: RFC 6960
+  Clause: 2.x
+  Requirement_Summary: OCSP responder produces valid responses; EKU OCSP Signing; producedAt/thisUpdate/nextUpdate sensible.
+  Evidence_Reference: OCSP response sample; Responder cert; Service runbook
+  Dossier_File: 06_Test_Certificates/Sample_OCSP_Response.der
+  Section_Page: N/A (binary); see Profiles Guide §8
+  Test_Observation_ID: CAB-TC-OCSP-03
+  Result: Pass
+  Notes: DER response decoded; nonce policy documented.
+  Risk_Rating: Low
+  Owner: Status Services Lead
+  Remediation_Due: -
+
+- Ref_ID: EN319-421_TSA
+  Standard: ETSI EN 319 421
+  Clause: 6.x
+  Requirement_Summary: TSA policy and security requirements met; TSA chain validity documented.
+  Evidence_Reference: CPS/TSPS; TSA CA cert; TST samples; Security controls summary
+  Dossier_File: 06_Test_Certificates/TSA_CA_Certificate.pem
+  Section_Page: See Profiles Guide §10
+  Test_Observation_ID: CAB-TC-TSA-05
+  Result: N/A
+  Notes: Placeholder until TSA artifacts finalized.
+  Risk_Rating: Medium
+  Owner: PKI Engineering
+  Remediation_Due: 2025-05-31
+
+Required Dossier Cross-References (non-exhaustive)
+- 03_Conformity_Assessment_Report_TUV_2025.pdf
+- 04_TSP_Policy_GR_EN_SIGNED.pdf
+- 05_TSPS_Qualified_Services_GR_EN_SIGNED.pdf
+- 06_Test_Certificates/*
+  • Root_CA_Certificate.pem
+  • Issuing_CA_QES_Certificate.pem
+  • Issuing_CA_QSeal_Certificate.pem
+  • TSA_CA_Certificate.pem
+  • Sample_QES_Certificate.pem
+  • Sample_OCSP_Response.der
+  • Sample_CRL.crl
+  • Certificate_Profiles_Guide.pdf
+- 07_Risk_Assessment_GR_EN.pdf
+- 07a_Incident_Response_Plan_GR_EN.pdf
+- 07b_Incident_Report_Forms.pdf
+- 08_User_Notification_Templates_GR_EN.pdf
+- 09_Service_Termination_Plan_GR_EN.pdf
+- 10_End_User_Agreement_GR_EN_SIGNED.pdf
+- 11_Revocation_SOP_GR_EN.pdf
+- 11a_Revocation_Forms.pdf
+- 12_Recordkeeping_Policy_GR_EN.pdf
+- 13_EETT_Communication_Templates_GR.pdf
+- 14_NTL_Publication_Datasheet.pdf
+- 17_Executive_Brief_GR_EN_SIGNED.pdf
+- 18_Gantt_Chart_Project_Timeline.pdf
+- 19_Master_Compliance_Register.pdf
+
+Completion Guidance
+1) Enumerate all applicable clauses from the standards in scope.
+2) For each clause, provide a clear Requirement_Summary and the exact Evidence_Reference.
+3) Use the precise Dossier_File name from the ASiC-E container root or subfolders.
+4) Indicate Test_Observation_ID where control testing or auditor observation is available.
+5) Mark Result as Pass/Fail/N/A; add Notes for scope limitations or compensating controls.
+6) For any Fail/Gap, assign Owner, Risk_Rating, and Remediation_Due.
+7) Keep pagination/section references accurate; update if source documents change.
+8) Revalidate the matrix after any document version updates or policy changes.
+
+Acceptance Criteria (for final PDF)
+- Completeness: All applicable clauses mapped; no unaddressed requirements.
+- Accuracy: File names, sections/pages, and IDs match the dossier exactly.
+- Consistency: Results align with CAR conclusions and test evidence.
+- Currency: Reflects the submission state (versions/dates current as of packaging).
+- Clarity: Notes sufficiently explain decisions and any N/A scoping.
+
+CSV/Spreadsheet Schema (for internal preparation)
+Ref_ID,Standard,Clause,Requirement_Summary,Evidence_Reference,Dossier_File,Section_Page,Test_Observation_ID,Result,Notes,Risk_Rating,Owner,Remediation_Due
+
+Pre-Submission Checklist
+- [ ] Placeholder removed and replaced with official Traceability Matrix exported to PDF.
+- [ ] Cross-references validated against final dossier filenames and paths.
+- [ ] CAR cross-check: No contradictions between 03 and 03a.
+- [ ] All “N/A” entries justified in Notes.
+- [ ] All gaps tracked with Owner and Remediation_Due.
+- [ ] Final review by Compliance and QTS Manager completed.
+
+Replacement Instruction
+Delete this placeholder and copy the official 03a_Traceability_Matrix.pdf to the same path prior to generating META-INF/manifest.xml and META-INF/signatures.xml for the ASiC-E container.
+
+End of placeholder.
