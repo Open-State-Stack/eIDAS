@@ -1,5 +1,5 @@
 # EXECUTIVE BRIEF
-## Complete EETT/eIDAS Accreditation Dossier for [LEGAL_NAME_GR]
+## Complete EETT/eIDAS Accreditation Dossier for Ελληνικές Υπηρεσίες Εμπιστοσύνης Α.Ε.
 
 **Date:** [SUBMISSION_DATE]  
 **Version:** 1.0  

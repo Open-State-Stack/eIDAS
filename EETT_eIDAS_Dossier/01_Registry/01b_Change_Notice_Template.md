@@ -57,14 +57,14 @@
 ## ΜΕΡΟΣ Α: ΣΤΟΙΧΕΙΑ ΑΠΟΣΤΟΛΕΑ / PART A: SENDER DETAILS
 
 **Από / From:**  
-[LEGAL_NAME_GR]  
-[LEGAL_NAME_EN]  
-ΑΦΜ / Tax ID: [AFM_NUMBER]  
-Γ.Ε.Μ.Η. / GEMI: [GEMI_NUMBER]
+Ελληνικές Υπηρεσίες Εμπιστοσύνης Α.Ε.  
+Greek Trust Services S.A.  
+ΑΦΜ / Tax ID: 999888777  
+Γ.Ε.Μ.Η. / GEMI: 123456789000
 
-**Αριθμός Εγγραφής ΕΕΤΤ / EETT Registration Number:** [EETT_REG_NUMBER]
+**Αριθμός Εγγραφής ΕΕΤΤ / EETT Registration Number:** [To be populated after initial registration]
 
-**Ημερομηνία Κοινοποίησης / Notification Date:** [NOTIFICATION_DATE]
+**Ημερομηνία Κοινοποίησης / Notification Date:** [Date of Change Notification]
 
 ---
 

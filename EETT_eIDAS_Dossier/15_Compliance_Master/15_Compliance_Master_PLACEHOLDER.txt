@@ -1,0 +1,3 @@
+This placeholder tracks Section 15 (Compliance Master Register).
+The authoritative register is maintained in 19_Compliance_Register/19_Master_Compliance_Register.{pdf,md} to align with the 2025 EETT template.
+Update this file with a link to the signed Excel workbook once generated.

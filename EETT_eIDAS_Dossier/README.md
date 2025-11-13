@@ -45,6 +45,19 @@ All documents are professionally drafted, bilingual (Greek/English where require
 
 ---
 
+## 💡 READINESS STATUS (as of [CURRENT_DATE])
+
+**Overall, the dossier is approximately 75% complete and structurally sound.** All required documents are in place and mapped to the relevant EETT regulations.
+
+**Next Critical Action:** The immediate priority is the systematic replacement of all placeholders (e.g., `[LEGAL_NAME_GR]`, `[CAB_NAME]`) with finalized, validated data. This is a prerequisite for moving to the audit and submission phases.
+
+**Key Findings:**
+- **Placeholder Population:** Over 150 unique placeholders identified. Coordinated effort required with Legal, Finance, and Technical teams. See `SUBMISSION_ALIGNMENT_SUMMARY.md` for a detailed matrix.
+- **External Dependencies:** The Conformity Assessment Body (CAB) audit cannot commence until the dossier is fully populated. Engagement with a selected CAB (e.g., TÜV, BSI) should be initiated in parallel.
+- **Signatures:** A clear workflow for applying qualified electronic signatures to the final PDF documents is required.
+
+---
+
 ## 📁 DOSSIER STRUCTURE
 
 ```
@@ -119,51 +132,53 @@ EETT_eIDAS_Dossier/
 │       ├── Archive handover, 7-year accessibility
 │       └── NTL status change coordination
 │
-├── 09_Contracts/                          [Article 6.3.9, eIDAS Art. 13]
-│   └── 10_Standard_End_User_Agreement_GR_EN.docx (Bilingual)
-│       ├── Terms of use, subscriber obligations
-│       ├── Revocation terms (24×7, phone acceptance)
-│       ├── Liability framework (Art. 13)
-│       └── GDPR compliance (data subject rights)
+├── 09_Service_Termination/                [Articles 7–8, Annex 5]
+│   └── 09_Service_Termination_Plan_GR_EN.pdf
+│       ├── Planned/unplanned shutdown playbooks
+│       ├── Custody transfer & escrow steps
+│       ├── Stakeholder notification matrix
+│       └── Testing & rehearsal evidence
 │
-├── 10_Revocation_Status/                  [Article 11]
-│   ├── 11_Revocation_Status_SOP_GR.docx
+├── 10_End_User_Agreement/                 [Article 6.3.9, eIDAS Art. 13]
+│   └── 10_End_User_Agreement_GR_EN_SIGNED.pdf
+│       ├── Terms of use & subscriber duties
+│       ├── Revocation & SLA clauses (24×7)
+│       ├── Liability framework (Art. 13)
+│       └── GDPR/data subject provisions
+│
+├── 11_Revocation_Procedures/              [Article 11]
+│   ├── 11_Revocation_SOP_GR_EN.pdf
 │   │   └── 24×7 SOPs, OCSP/CRL operations, processing times
 │   └── 11a_Web_Disclosure_Text_GR.md
 │       └── Public web copy for revocation procedures
 │
-├── 11_Records_Access/                     [Article 12]
-│   └── 12_Records_and_Access_Policy_GR.docx
+├── 12_Recordkeeping/                      [Article 12]
+│   └── 12_Recordkeeping_Policy_GR_EN.pdf
 │       ├── 7-year retention, integrity controls
 │       ├── Data subject access (7 working days)
 │       └── Disclosure rules (competent authorities only)
 │
-├── 12_EETT_Communications/                [Articles 3.5, 5, 8]
-│   └── 13_EETT_Notification_Templates_GR.docx
+├── 13_Communication_Templates/            [Articles 3.5, 5, 8]
+│   └── 13_EETT_Communication_Templates_GR.pdf
 │       ├── Change notification (7-day deadline)
 │       ├── Incident notification (24h initial, final report)
 │       ├── Termination notification
 │       └── CAB audit submission cover
 │
-├── 13_NTL/                                [Article 3.3]
-│   └── 14_NTL_Publication_Datasheet.xlsx
+├── 14_NTL_Publication/                    [Article 3.3]
+│   └── 14_NTL_Publication_Datasheet.pdf
 │       ├── Service type OIDs, public keys, status, URLs
 │       ├── Pre-filled for EETT to publish
 │       └── **REMINDER:** Do not start services before NTL listing
 │
-├── 14_Submission_Guide/                   [Decision (EU) 2015/1506]
-│   └── 15_Submission_Packaging_Guide_GR_EN.pdf
-│       ├── Qualified signature application (PAdES/ASiC-E)
-│       ├── Packaging instructions (ZIP, manifest, checksums)
-│       └── Validation procedures
+├── 15_Compliance_Master/                  [Placeholder → see Section 19]
+│   └── 15_Compliance_Master_PLACEHOLDER.txt
+│       └── Points to 19_Compliance_Register (PDF/MD/XLSX)
 │
-└── 15_Compliance_Master/
-    └── Master_Compliance_Register.xlsx (TO BE CREATED)
-        ├── Tab 1: eIDAS Article mapping → Dossier evidence
-        ├── Tab 2: EETT Regulation mapping → Dossier evidence
-        ├── Tab 3: ETSI Standards mapping → Implementation
-        ├── Tab 4: Document cross-reference matrix
-        └── Tab 5: Red-team review checklist
+└── 16_Submission_Packaging/               [Decision (EU) 2015/1506]
+    └── 16_Submission_Packaging_PLACEHOLDER.txt
+        ├── Final ASiC-E guide once signed
+        └── Hash/manifest validation scripts
 ```
 
 ---

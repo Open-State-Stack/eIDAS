@@ -1,0 +1,33 @@
+---
+# EETT eIDAS Dossier - Pandoc Metadata Template
+# This file provides default metadata for PDF generation
+
+# Document properties
+classoption:
+  - twoside
+  - openright
+header-includes:
+  - \usepackage{fancyhdr}
+  - \usepackage{graphicx}
+  - \usepackage{xcolor}
+  - \usepackage{hyperref}
+  - \usepackage{bookmark}
+  - \usepackage{longtable}
+  - \usepackage{booktabs}
+  - \usepackage{array}
+  - \usepackage{multirow}
+  - \usepackage{polyglossia}
+  - \setmainlanguage{english}
+  - \setotherlanguage{greek}
+  - \pagestyle{fancy}
+  - \fancyhead[L]{\leftmark}
+  - \fancyhead[R]{\thepage}
+  - \fancyfoot[C]{EETT eIDAS Dossier - Confidential}
+  - \fancyfoot[R]{\today}
+  - \renewcommand{\headrulewidth}{0.4pt}
+  - \renewcommand{\footrulewidth}{0.4pt}
+  - \hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue}
+
+# Formatting
+indent: false
+block-headings: true

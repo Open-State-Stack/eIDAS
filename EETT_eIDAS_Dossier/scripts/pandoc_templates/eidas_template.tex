@@ -1,0 +1,186 @@
+% EETT eIDAS Document Template
+% Supports Greek and English, compliant formatting
+
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+
+% Fonts with Greek support
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\setmainfont{$if(mainfont)$$mainfont$$else$DejaVu Serif$endif$}
+\setsansfont{$if(sansfont)$$sansfont$$else$DejaVu Sans$endif$}
+\setmonofont{$if(monofont)$$monofont$$else$DejaVu Sans Mono$endif$}
+
+% Language support
+\usepackage{polyglossia}
+\setmainlanguage{$if(lang)$$lang$$else$english$endif$}
+$if(lang)$
+$if(lang.greek)$
+\setotherlanguage{greek}
+$endif$
+$endif$
+
+% Page geometry
+\usepackage[
+  $if(geometry)$
+    $for(geometry)$$geometry$$sep$,$endfor$
+  $else$
+    margin=2.5cm
+  $endif$
+]{geometry}
+
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\textit{$title-meta$}}
+\fancyhead[LO]{\textit{\leftmark}}
+\fancyfoot[C]{\textbf{CONFIDENTIAL} - EETT eIDAS Dossier}
+\fancyfoot[R]{\small $date$}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+% Colors
+\usepackage{xcolor}
+\definecolor{eettblue}{RGB}{0,51,102}
+\definecolor{linkcolor}{RGB}{0,102,204}
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+  pdfauthor={$author-meta$},
+  pdftitle={$title-meta$},
+  pdfsubject={EETT eIDAS Qualified TSP Application},
+  pdfkeywords={eIDAS, EETT, Trust Services, Qualified Certificates},
+  colorlinks=true,
+  linkcolor=linkcolor,
+  urlcolor=linkcolor,
+  citecolor=linkcolor,
+  bookmarksnumbered=true,
+  breaklinks=true
+}
+\usepackage{bookmark}
+
+% Tables
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tabularx}
+
+% Graphics
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+
+% Line spacing
+$if(linestretch)$
+\usepackage{setspace}
+\setstretch{$linestretch$}
+$endif$
+
+% Section numbering
+$if(numbersections)$
+\setcounter{secnumdepth}{$if(secnumdepth)$$secnumdepth$$else$3$endif$}
+$else$
+\setcounter{secnumdepth}{-\maxdimen}
+$endif$
+
+% Lists
+\usepackage{enumitem}
+\setlist{nosep}
+
+% Code blocks
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+% Title page
+\title{\textbf{\huge $title$}}
+\author{$for(author)$$author$$sep$ \and $endfor$}
+\date{$date$}
+
+% Custom commands for eIDAS compliance markers
+\newcommand{\eettart}[1]{\textcolor{eettblue}{\textbf{[Article #1 EETT]}}}
+\newcommand{\eidasart}[1]{\textcolor{eettblue}{\textbf{[Article #1 eIDAS]}}}
+\newcommand{\required}{\textcolor{red}{\textbf{[REQUIRED]}}}
+\newcommand{\recommended}{\textcolor{orange}{\textbf{[RECOMMENDED]}}}
+
+\begin{document}
+
+% Title page
+\maketitle
+\thispagestyle{empty}
+
+\vfill
+\begin{center}
+\large
+\textbf{CONFIDENTIAL DOCUMENT} \\
+\vspace{1em}
+For submission to: \\
+\textbf{Εθνική Επιτροπή Τηλεπικοινωνιών και Ταχυδρομείων (ΕΕΤΤ)} \\
+\textbf{Hellenic Telecommunications and Post Commission (EETT)} \\
+\vspace{1em}
+Compliance Framework: \\
+eIDAS Regulation (EU) No 910/2014 \\
+EETT Κανονισμός Παροχής Υπηρεσιών Εμπιστοσύνης
+\end{center}
+\vfill
+
+\clearpage
+
+% Table of contents
+$if(toc)$
+{
+$if(colorlinks)$
+\hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
+$endif$
+\setcounter{tocdepth}{$toc-depth$}
+\tableofcontents
+\clearpage
+}
+$endif$
+
+% List of tables (if needed)
+$if(lot)$
+\listoftables
+\clearpage
+$endif$
+
+% List of figures (if needed)
+$if(lof)$
+\listoffigures
+\clearpage
+$endif$
+
+% Main content
+$body$
+
+% Signature page (if signatures are needed)
+\clearpage
+\section*{Document Approval \& Signatures}
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|X|X|X|X|}
+\hline
+\textbf{Role} & \textbf{Name} & \textbf{Signature} & \textbf{Date} \\
+\hline
+Qualified Trust Services Manager & [QTS\_MANAGER\_NAME] & & [SIGN\_DATE] \\
+\hline
+Legal Representative & [CEO\_NAME] & & [SIGN\_DATE] \\
+\hline
+Chief Information Security Officer & [CISO\_NAME] & & [SIGN\_DATE] \\
+\hline
+\end{tabularx}
+
+\vspace{3em}
+
+\noindent\textbf{Document Control:} \\
+\begin{tabular}{ll}
+Version: & 1.0 \\
+Classification: & Confidential \\
+Distribution: & EETT, Internal Management, CAB \\
+Retention: & 7 years (Article 12 EETT) \\
+\end{tabular}
+
+\end{document}
