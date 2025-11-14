@@ -2,13 +2,14 @@
 
 | Requirement | Evidence | Status | Notes |
 |-------------|----------|--------|-------|
-| Άρθρο 6 & Παράρτημα 4 – Κύριο έντυπο | `02_EETT_Qualified_Service_Start_Application_SIGNED.pdf` + `Service_Start.md` | ✅ Completed | Περιλαμβάνει πλήρη λίστα υπηρεσιών (QES/QSeal/QTimestamp) και οικονομικά στοιχεία Μέρος Γ. |
-| Άρθρο 6.4 – Δήλωση Διαχειριστή | `02a_Cover_Letter_Electronic_System_Access_SIGNED.pdf` | ✅ Signed | Έχει πεδία για [SYSTEM_ADMIN_*]; απαιτεί τελική συμπλήρωση. |
-| Λίστα Συνημμένων Μέρος Ζ | Cross-reference στη `Service_Start.md` §G | ✅ Linked | Περιλαμβάνει URL/τοποθεσίες για φακέλους 03–14. |
+| Άρθρο 6 & Παράρτημα 4 – Κύριο έντυπο | `Service_Start.md` (v1.0, 2025-06-15) | ✅ Content final | Όλα τα placeholders αντικαταστάθηκαν, §G ενημερώθηκε με manifest & attachments. PDF re-export pending (βλ. Actions). |
+| Άρθρο 6.4 – Δήλωση Διαχειριστή | `02a_Cover_Letter_Electronic_System_Access_SIGNED.pdf` | ⚠️ Needs refresh | Στοιχεία SysAdmin (Νικόλαος Ιωάννου) διαθέσιμα στο master, απαιτείται νέα έκδοση PDF με συμπληρωμένα πεδία. |
+| Λίστα Συνημμένων Μέρος Ζ | `Service_Start.md` §G + `/02_Service_Start/attachments/*` | ✅ Completed | Όλα τα συνημμένα χαρτογραφήθηκαν και διασταυρώθηκαν με folders 03–12 + νέα annex αρχεία. |
 
 ## Outstanding Actions
-- ⚠️ Συμπληρώστε τα placeholders `[SUBMISSION_DATE]`, `[PROTOCOL_NUMBER]`, `[LEGAL_NAME_*]` πριν την μετατροπή σε asic-e.
-- ⚠️ Ελέγξτε ότι οι αναφορές στα συνημμένα αντιστοιχούν στις μετονομασίες που έγιναν (π.χ. φάκελος 05_TSPS_Services).
-- ➕ Προσθέστε αριθμό ασφάλισης (policy #) στη §Γ.3 μόλις ληφθεί από το τμήμα Finance.
+- 🔄 Εξάγετε εκ νέου το `02_EETT_Qualified_Service_Start_Application_SIGNED.pdf` από το ενημερωμένο MD (Pandoc/XeLaTeX) και εφαρμόστε QES/QSeal υπογραφές.
+- 🖊️ Ενημερώστε τη δήλωση Διαχειριστή (Doc 02a) με τα στοιχεία `SYSTEM_ADMIN_*` και αποκτήστε νέα υπογραφή.
+- 📤 Ανεβάστε μέσω portal όλα τα νέα annex αρχεία από `/02_Service_Start/attachments` και επιβεβαιώστε επιτυχές checksum.
+- 📁 Πρωτόκολλο: καταγράψτε αριθμό πρωτοκόλλου ΕΕΤΤ μόλις εκδοθεί και ενημερώστε τις πρώτες σελίδες του εντύπου.
 
-Μετά την κάλυψη των παραπάνω, το πακέτο 02 είναι έτοιμο για υποβολή στο ηλεκτρονικό σύστημα ΕΕΤΤ.
+Μετά τα παραπάνω, το πακέτο 02 μπορεί να μετατραπεί σε ASiC-E και να υποβληθεί στο ηλεκτρονικό σύστημα ΕΕΤΤ.

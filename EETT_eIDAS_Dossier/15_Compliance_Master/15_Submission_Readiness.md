@@ -1,12 +1,14 @@
-# 15 – Compliance Master (Placeholder Section)
+# 15 – Compliance Master Readiness
 
-Η τρέχουσα έκδοση του προτύπου ΕΕΤΤ (2025) δεν περιλαμβάνει ξεχωριστό φάκελο 15. Για να διατηρηθεί η αριθμητική συνέχεια 01–20, η ενότητα αυτή λειτουργεί ως δείκτης προς το πλήρες **Master Compliance Register** που φιλοξενείται στον φάκελο `19_Compliance_Register`.
+Η τρέχουσα έκδοση του προτύπου ΕΕΤΤ δεν περιλαμβάνει ξεχωριστή ενότητα 15. Η λειτουργικότητα του «Compliance Master Register» φιλοξενείται στο φάκελο `19_Compliance_Register` (PDF/MD) ώστε να αποφεύγεται διπλή συντήρηση. Ο παρών φάκελος διατηρεί δείκτη κατάστασης και θα φιλοξενήσει το υπογεγραμμένο Excel όταν παραχθεί.
 
-| Item | Location | Status | Notes |
-|------|----------|--------|-------|
-| Master Compliance Register (PDF/MD) | `19_Compliance_Register/19_Master_Compliance_Register.{pdf,md}` | ✅ Complete | Περιλαμβάνει mapping eIDAS/EETT/ETSI.
-| Excel source (to be signed) | _Pending export_ | ⚠️ Outstanding | Θα εκδοθεί σε XLSX αμέσως πριν την υποβολή, σύμφωνα με οδηγίες CAB.
-| Placeholder | `15_Compliance_Master_PLACEHOLDER.txt` | ✅ Added | Περιγράφει τη μεταφορά της ενότητας στον φάκελο 19.
+| Item | Evidence / Location | Status | Notes |
+|------|--------------------|--------|-------|
+| Master register (PDF) | `19_Compliance_Register/19_Master_Compliance_Register.pdf` | ✅ Ready | Περιλαμβάνει mapping eIDAS/EETT/ETSI → Evidence + status column. Απαιτεί οριστική ψηφιακή υπογραφή πριν αποστολή. |
+| Working copy (MD) | `19_Compliance_Register/19_Master_Compliance_Register.md` | ✅ Up to date | Διατηρεί hyperlinks προς Doc 01–20 και checklist «red-team». |
+| Narrative | `19_Compliance_Register/Compliance_Register.md` | ✅ | Περιγράφει μεθοδολογία, υπεύθυνους και ροή ενημέρωσης. |
+| Excel export | `15_Master_Compliance_Register.xlsx` (Doc 15 & 19) | ✅ Generated | Περιλαμβάνει σύνοψη eIDAS/EETT με στήλη \"Last Control Test\". Απαιτεί τελική QES υπογραφή πριν υποβολή. |
 
-## Required Action
-- Όταν ολοκληρωθεί η τελική Excel έκδοση, αποθηκεύστε το αρχείο ως `15_Master_Compliance_Register.xlsx` σε αυτόν τον φάκελο και συγχρονίστε με το PDF στον φάκελο 19.
+## Outstanding
+- ⚠️ Εφαρμογή QES (PAdES/ASiC) στο XLSX πριν την παράδοση και καταγραφή της ημερομηνίας στο `15_Compliance_Master_PLACEHOLDER.txt`.
+- ⚠️ Συνέχιση συγχρονισμού XLSX ↔ PDF/MD (Doc 19) για κάθε μελλοντική αλλαγή.

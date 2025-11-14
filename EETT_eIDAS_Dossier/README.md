@@ -120,8 +120,11 @@ EETT_eIDAS_Dossier/
 │   └── 07b_Incident_Forms_GR.xlsx
 │       └── Initial & final incident report templates (Art. 5.4 fields)
 │
-├── 07_User_Notifications/                 [eIDAS Art. 19(2), Art. 6.3.7]
-│   └── 08_User_Notification_Plan_GR_EN.docx (Bilingual)
+├── 08_User_Notifications/                 [eIDAS Art. 19(2), Art. 6.3.7]
+│   ├── 08_User_Notification_Plan_GR_EN.md (authoritative)
+│   ├── 08_User_Notification_Plan_GR_EN_ENRICHED.md (reference)
+│   ├── 08_User_Notification_Templates_GR_EN.pdf
+│   └── ENRICHMENT_SUMMARY_Doc08.md
 │       ├── Notification triggers, methods, templates
 │       └── Cross-border considerations
 │
@@ -153,9 +156,12 @@ EETT_eIDAS_Dossier/
 │       └── Public web copy for revocation procedures
 │
 ├── 12_Recordkeeping/                      [Article 12]
-│   └── 12_Recordkeeping_Policy_GR_EN.pdf
+│   ├── 12_Recordkeeping_Policy_GR_EN.pdf
+│   ├── 12_Records_and_Access_Policy_GR.md
+│   ├── DOC-GDPR-DSAR-001_Data_Subject_Access_Request_Procedure.md
+│   └── DSAR_LOG.md
 │       ├── 7-year retention, integrity controls
-│       ├── Data subject access (7 working days)
+│       ├── DSAR workflow (≤7 working days) + log for audit trail
 │       └── Disclosure rules (competent authorities only)
 │
 ├── 13_Communication_Templates/            [Articles 3.5, 5, 8]
@@ -176,6 +182,9 @@ EETT_eIDAS_Dossier/
 │       └── Points to 19_Compliance_Register (PDF/MD/XLSX)
 │
 └── 16_Submission_Packaging/               [Decision (EU) 2015/1506]
+    ├── Submission_Packaging.md (quick reference)
+    ├── 16_Submission_Packaging_PLACEHOLDER.txt (workflow + commands)
+    └── (Signed guide + ASiC artifacts added post-final build)
     └── 16_Submission_Packaging_PLACEHOLDER.txt
         ├── Final ASiC-E guide once signed
         └── Hash/manifest validation scripts

@@ -8,5 +8,4 @@
 | Section placeholders | `15_Compliance_Master_PLACEHOLDER.txt`, `16_Submission_Packaging_PLACEHOLDER.txt` | ✅ Added | Περιγράφουν τα μη διαθέσιμα έγγραφα.
 
 ## Outstanding
-- ⚠️ Επαληθεύστε ότι όλα τα νέα readiness αρχεία αναφέρονται στον πίνακα για εύκολη αναζήτηση.
-- ⚠️ Ενημερώστε το root `README.md` ώστε να αντικατοπτρίζει τις μετονομασίες φακέλων (04,05,08,09,12,16).
+- None (continue to update README/placeholder guides whenever νέα αρχεία ή μετονομασίες προκύπτουν).

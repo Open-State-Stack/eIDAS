@@ -4,7 +4,8 @@
 **Εταιρεία / Company:** [LEGAL_NAME_GR]  
 **Έκδοση / Version:** 1.0  
 **Ημερομηνία / Date:** [SUBMISSION_DATE]  
-**Ταξινόμηση / Classification:** Εμπιστευτικό / Confidential
+**Ταξινόμηση / Classification:** Εμπιστευτικό / Confidential  
+**Συναφή Έγγραφα:** `07_Contacts.md`, `Supporting_Docs/Risk/Asset_Inventory_v1.xlsx`, `Supporting_Docs/ISO27001/Statement_of_Applicability.md`
 
 ---
 
@@ -55,6 +56,19 @@
 
 ---
 
+### 1.4. Σύνδεση με Statement of Applicability (SoA)
+Οι έλεγχοι που αναφέρονται στο παρόν έγγραφο χαρτογραφούνται στο `Supporting_Docs/ISO27001/Statement_of_Applicability.md` (SoA έκδ. 1.2). Για κάθε κατηγορία μέτρων καταγράφεται ο αντίστοιχος έλεγχος ISO/IEC 27001:2022 και το status εφαρμογής:
+
+| Ενότητα Έκθεσης | Κρίσιμο Μέτρο | ISO/IEC 27001:2022 Control | SoA Αναφορά |
+|-----------------|---------------|----------------------------|-------------|
+| §2 Asset Management | Απογραφή κρυπτογραφικών κλειδιών | A.5.9 Inventory of information and other associated assets | SoA §2.1 |
+| §3 Threat Modeling | Συνεχής αξιολόγηση απειλών | A.5.7 Threat intelligence | SoA §2.4 |
+| §6.2 Operational Controls | Διαχείριση κλειδιών & τελετές | A.8.24 Use of cryptography | SoA §4.2 |
+| §6.2 Operational Controls | Λειτουργία OCSP/CRL | A.8.20 Network security | SoA §4.6 |
+| §7 Non-conformities | CAP & lessons learned | A.10.2 Information security reviews | SoA §5.3 |
+
+Οποιαδήποτε αλλαγή στο SoA πρέπει να αντικατοπτρίζεται τόσο εδώ όσο και στο `15_Compliance_Master`.
+
 ## 2. ΑΠΟΓΡΑΦΗ ΠΕΡΙΟΥΣΙΑΚΩΝ ΣΤΟΙΧΕΙΩΝ (ASSET INVENTORY)
 
 Τα κρίσιμα περιουσιακά στοιχεία που υποστηρίζουν τις υπηρεσίες εμπιστοσύνης έχουν καταγραφεί και ταξινομηθεί.
@@ -76,6 +90,8 @@
 | **Προσωπικό** | Ρόλοι Εμπιστοσύνης (Crypto Officer, RA Operator) | Υψηλή |
 
 ---
+
+*Πλήρης απογραφή (με asset IDs, ιδιοκτήτες και κατανομή σε data centers) τηρείται στο `Supporting_Docs/Risk/Asset_Inventory_v1.xlsx` και ενημερώνεται τριμηνιαία.*
 
 ## 3. ΜΟΝΤΕΛΟΠΟΙΗΣΗ ΑΠΕΙΛΩΝ (THREAT MODELING)
 
@@ -136,7 +152,7 @@
 | **Lamda Hellix Thessaloniki** | Εφεδρικό Data Center (DR Site) | ISO 27001:2013, ISO 22301:2019 | **Υψηλό (High)** | Ετήσιος έλεγχος, εξαμηνιαίες δοκιμές DR failover |
 | **Swisscom RA** | QSCD Remote Signing Platform | eIDAS Qualified QSCD, ISO 27001 | **Υψηλό (High)** | Ετήσια επανεξέταση από CAB, τριμηνιαίοι έλεγχοι API logs |
 | **Namirial S.p.A.** | Remote Signature Application (Mobile Signing) | eIDAS Qualified, ISO 27001 | **Υψηλό (High)** | Ετήσια επανεξέταση, εξαμηνιαίοι έλεγχοι αποδοτικότητας |
-| **[CUSTODIAN_NAME]** | Archive Custodian (7-year retention) | ISO 27001, GDPR compliant | **Μέτριο (Medium)** | Ετήσιος έλεγχος, δοκιμή επαναφοράς αρχείων |
+| **[ARCHIVE_CUSTODIAN_NAME]** | Archive Custodian (7-year retention) | ISO 27001, GDPR compliant | **Μέτριο (Medium)** | Ετήσιος έλεγχος, δοκιμή επαναφοράς αρχείων |
 | **Cloudflare** | DDoS Protection & CDN | SOC 2 Type II, ISO 27001 | **Μέτριο (Medium)** | Εξαμηνιαίος έλεγχος αποδοτικότητας, παρακολούθηση SLA |
 | **Microsoft Azure** | SIEM Log Storage (Azure Sentinel) | ISO 27001, ISO 27018, SOC 2 | **Μέτριο (Medium)** | Ετήσια επανεξέταση, συνεχής παρακολούθηση compliance certs |
 
@@ -145,6 +161,7 @@
 2. **Συμβατική Κάλυψη:** Συμφωνίες SLA με ελάχιστες απαιτήσεις ασφάλειας, δικαιώματα ελέγχου, υποχρεώσεις ειδοποίησης περιστατικών.
 3. **Συνεχής Παρακολούθηση:** Ετήσια επανεξέταση πιστοποιήσεων, τριμηνιαία αναφορά αποδοτικότητας.
 4. **Exit Strategy:** Για κάθε κρίσιμο προμηθευτή, διατηρείται σχέδιο μετάβασης σε εναλλακτικό προμηθευτή.
+5. **Σημεία Επικοινωνίας:** Οι επιχειρησιακές επαφές ανά προμηθευτή τηρούνται στο `07_Contacts.md` και ενημερώνονται με τη διαδικασία του §4 παρακάτω.
 
 ---
 
@@ -193,7 +210,8 @@
 
 **Υπογραφή:**
 
-[ΟΝΟΜΑ ΕΚΠΡΟΣΩΠΟΥ], [ΤΙΤΛΟΣ], [ΗΜΕΡΟΜΗΝΙΑ]
+[ΟΝΟΜΑ ΕΚΠΡΟΣΩΠΟΥ], [ΤΙΤΛΟΣ], [ΗΜΕΡΟΜΗΝΙΑ]  
+*Το υπογεγραμμένο PDF αρχειοθετείται στο `Supporting_Docs/Risk/Risk_Assessment_Signoff_[YYYY].pdf` και οι λεπτομέρειες επαφών ελέγχου υπάρχουν στο `07_Contacts.md`.*
 
 ---
 

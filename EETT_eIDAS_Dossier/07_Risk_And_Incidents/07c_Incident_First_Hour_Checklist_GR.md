@@ -6,6 +6,18 @@
 | **Version** | `1.0` |
 | **Owner** | CISO |
 | **Purpose**| **ΚΡΙΣΙΜΟ:** Να χρησιμοποιηθεί άμεσα από τον εφημερεύοντα Incident Manager για τη διαχείριση της πρώτης ώρας ενός περιστατικού ασφαλείας. |
+| **Συσχέτιση** | Οι πλήρεις επαφές & κανάλια πολυπλατφόρμων προέρχονται από `07_Contacts.md`. |
+
+## Πίνακας Γρήγορων Επαφών (από `07_Contacts.md`)
+| Ρόλος | Τηλέφωνο | Δευτερεύον Κανάλι | Σημειώσεις |
+|-------|----------|-------------------|------------|
+| Incident Manager (On-call) | `[PHONE_IM]` | Slack `incident-YYYYMMDD-XXXX` | Ενεργοποίηση war-room |
+| SOC Lead | `[PHONE_SOC]` | Pager `[SOC_PAGER]` | 24×7 |
+| DPO | `[PHONE_DPO]` | Signal `[SIGNAL_DPO]` | GDPR 72h ειδοποίηση |
+| CAB Liaison | `[PHONE_CAB]` | `cab@auditor.com` | Ενημέρωση ευρημάτων |
+| ΕΕΤΤ SOC | `+30-XXX-XXX-XXXX` | `incident@eett.gr` | Αρχική αναφορά 24h |
+| DC1 NOC | `[PHONE_DC1]` | `noc@dc1.example` | Φυσική πρόσβαση |
+| DR Site NOC | `[PHONE_DR]` | `noc@dr.example` | DR invocation |
 
 ---
 
@@ -18,7 +30,7 @@
     *   [ ] Head of Operations
     *   [ ] DPO
     *   [ ] Technical Lead (π.χ. Crypto Officer)
-*   [ ] **Έναρξη Ημερολογίου Περιστατικού:** Άνοιξε νέο, ασφαλές έγγραφο για την καταγραφή ΟΛΩΝ των ενεργειών. `incident-log-YYYYMMDD-XXXX.md`
+*   [ ] **Έναρξη Ημερολογίου Περιστατικού:** Άνοιξε νέο, ασφαλές έγγραφο για την καταγραφή ΟΛΩΝ των ενεργειών. `incident-log-YYYYMMDD-XXXX.md` (το template βρίσκεται στο `Supporting_Docs/IR/` και συνδέεται με την πολιτική `12_Recordkeeping`).
 
 ---
 
@@ -77,3 +89,5 @@
 **Υπογραφή:** _________________________
 
 **Ημερομηνία / Ώρα Ολοκλήρωσης:** ____/____/______ `__:__ UTC`
+
+*Ολοκληρωμένα checklist αποθηκεύονται σε PDF στο `Supporting_Docs/IR/first-hour-checklists/[YEAR]/` σύμφωνα με το `12_Recordkeeping` (διατήρηση ≥ 7 έτη).* 

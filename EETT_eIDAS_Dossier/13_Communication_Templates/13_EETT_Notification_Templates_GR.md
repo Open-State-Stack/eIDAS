@@ -688,6 +688,75 @@ Email: [EMAIL]
 
 ---
 
+### Template 9 (EN): Cross-Border Incident Notification
+
+**Deadline:** Notify EETT within 24 hours and ENISA without delay (eIDAS Art. 19(2))
+
+---
+**[COMPANY LETTERHEAD (ENGLISH VERSION)]**
+
+**To:** Hellenic Telecommunications & Post Commission (EETT) – Trust Services Department  
+**Email:** [EETT_TRUST_SERVICES_EMAIL]  
+**CC:** ENISA (incidents@enisa.europa.eu); Supervisory Authorities of affected Member States
+
+**Date:** [DATE]
+
+**Subject:** Cross-Border Incident Notification (eIDAS Art. 19(2)) – [LEGAL_NAME_EN]
+
+Dear Sir/Madam,
+
+We hereby notify you of a security incident with cross-border impact affecting subscribers and relying parties in multiple EU Member States.
+
+- **Incident ID:** [INCIDENT_ID]  
+- **Detection Date & Time (UTC):** [DETECTION_DATETIME]  
+- **Severity Level:** [3 / 4 / 5] (per Annex 3 classification)  
+- **Affected Member States:**  
+  ☐ Greece ☐ Germany ☐ France ☐ Italy ☐ Spain ☐ Other: [Specify]  
+- **Estimated Number of Affected Users per Country:**
+
+  | Member State | Natural Persons | Legal Entities | Total |
+  |--------------|-----------------|----------------|-------|
+  | Greece | [NUM] | [NUM] | [TOTAL] |
+  | [COUNTRY_2] | [NUM] | [NUM] | [TOTAL] |
+  | [COUNTRY_3] | [NUM] | [NUM] | [TOTAL] |
+
+- **Services Impacted:**  
+  ☐ Qualified Electronic Signatures ☐ Qualified Electronic Seals ☐ Qualified Timestamps  
+  ☐ Qualified Website Authentication Certificates ☐ Other: [Specify]
+- **Summary:** [Root cause, attack vector, observable impact]
+- **Immediate Mitigation:** [Actions taken with timestamps]
+- **Notifications Performed:**  
+  ☐ ENISA (date/time: [DATETIME])  
+  ☐ Foreign Supervisory Authorities (list authority + date)  
+  ☐ European Commission (DG CNECT) – Level 5 only
+- **Cross-Border Coordination:**  
+  - Lead Authority: [AUTHORITY / COUNTRY]  
+  - Coordination mechanism: [Describe channels, ticket IDs, meetings]
+- **Point of Contact:** [CONTACT_PERSON_NAME], [TITLE], Tel: [CONTACT_PHONE], Email: [CONTACT_EMAIL] (24/7 reachable)
+
+A consolidated final report will follow once the joint investigation with the affected supervisory authorities is complete.
+
+Kind regards,
+
+(Qualified Electronic Signature)
+
+[AUTHORIZED_PERSON_NAME]  
+[TITLE]  
+[LEGAL_NAME_EN]
+
+---
+
+**Template 9 (EN) Checklist**
+- [ ] EETT notified within 24 hours (UTC timestamp recorded)
+- [ ] ENISA notification ticket ID captured
+- [ ] All affected Member States listed with user estimates
+- [ ] Foreign supervisory authorities contacted
+- [ ] Coordination lead identified and engaged
+- [ ] European Commission informed (Level 5 only)
+- [ ] 24/7 contact person available for follow-up
+
+---
+
 ## 4. ΠΑΡΑΡΤΗΜΑΤΑ (APPENDICES)
 
 ### ΠΑΡΑΡΤΗΜΑ Α: ΚΡΙΤΗΡΙΑ ΚΑΤΑΤΑΞΗΣ ΠΕΡΙΣΤΑΤΙΚΩΝ

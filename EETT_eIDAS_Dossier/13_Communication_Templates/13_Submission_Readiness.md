@@ -7,5 +7,5 @@
 | QA/README | `README.md`, `ENRICHMENT_SUMMARY.md`, `14_NTL_Publication_Datasheet.md` | ✅ Maintained | Περιγράφουν διαδικασία versioning & approvals.
 
 ## Outstanding
-- ⚠️ Συμπερίληψη αγγλικών templates για cross-border incidents (σε εξέλιξη).
-- ⚠️ Ενημέρωση distribution list ώστε να ταιριάζει με 08_User_Notifications.
+- ⚠️ Συμπλήρωση placeholders (ονόματα, στοιχεία επικοινωνίας, URLs) πριν τη μετατροπή σε PDF/ASiC.
+- ⚠️ Συγχρονισμός distribution list με Doc 08 §10 και MASTER_CONTACT_LIST ώστε τα ίδια emails/τηλέφωνα να χρησιμοποιούνται από τις ομάδες Notification & Regulatory.

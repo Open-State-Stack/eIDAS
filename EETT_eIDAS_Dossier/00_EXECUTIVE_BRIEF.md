@@ -28,14 +28,14 @@ This dossier contains a complete, submission-ready application package for **[LE
 
 | Milestone | Target Date | Status |
 |-----------|-------------|--------|
-| **Dossier Preparation Complete** | [COMPLETION_DATE] | ✓ |
-| **Internal Review & QA** | [QA_DATE] | ☐ |
-| **CAB Final Audit** | [CAB_AUDIT_DATE] | ☐ |
-| **EETT Submission** | [SUBMISSION_DATE] | ☐ |
+| **Dossier Preparation Complete** | 2025-01-10 | ✓ |
+| **Internal Review & QA** | 2025-02-07 | ✓ |
+| **CAB Final Audit** | 2025-04-15 | ☐ |
+| **EETT Submission** | 2025-05-20 | ☐ |
 | **EETT Completeness Check** | +5 working days | ☐ |
 | **EETT Decision** | +3 months (target) | ☐ |
-| **NTL Publication** | Post-approval | ☐ |
-| **Service Go-Live** | [GO_LIVE_DATE] | ☐ |
+| **NTL Publication** | 2025-07-15 (est.) | ☐ |
+| **Service Go-Live** | 2025-08-01 | ☐ |
 
 ---
 

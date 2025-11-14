@@ -215,6 +215,14 @@ Access to the cage and racks (Layers 4 and 5) is restricted to a pre-authorized 
     -   **6.3.3 Separation of Duties:** Critical TSP functions are enforced through technical and procedural controls to ensure separation of duties. For example, the role responsible for approving a certificate request is distinct from the role responsible for executing the certificate issuance.
 -   **Audits:** The Provider is subject to annual, independent audits by an accredited CAB to ensure ongoing compliance with all regulatory requirements.
 
+### 6.4. Remote QSCD Architecture
+Remote signing services leverage a QSCD server-signing implementation described in **Appendix A – QSCD Remote Signing**. The appendix covers:
+- The Signature Activation Module (SAM) and Signature Server Application (SSA) layers, including authorization tokens and HTBS binding.
+- Sole-control enforcement through multi-factor authentication (PIN + possession token + biometric) and anti-replay protections.
+- Key generation, storage, and activation controls that comply with eIDAS Annex II and CEN EN 419 241-1/-2, including certified HSM requirements.
+
+This policy mandates that any change to the QSCD software stack, HSM estate, or SAM workflows be reflected in Appendix A and notified to EETT within seven (7) calendar days pursuant to Article 3.5 of the EETT Regulation.
+
 ---
 
 <!-- **Guidance:** This section is legally critical. It must accurately reflect the liability model defined in the eIDAS Regulation (Article 13) and any limitations permitted under national law. It should also reference the professional liability insurance coverage. -->

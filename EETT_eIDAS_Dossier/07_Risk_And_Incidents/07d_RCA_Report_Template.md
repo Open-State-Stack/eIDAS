@@ -18,6 +18,8 @@ Related Policies: 07a_Incident_Response_Plan_GR.md, 11_Revocation_Status_SOP_GR.
 - [ ] Corrective Action Plan (CAP) approved with owners and deadlines
 - [ ] Effectiveness Verification Plan defined (how/when measured)
 - [ ] Closure approved by CISO and QTS Manager
+- [ ] Risk Register entries (R0x) updated & cross-referenced with `07_Risk_Assessment_Report_GR.md`
+- [ ] EN translation prepared when requested (use template in `20_README_and_Placeholders/Translation_Pack.md`)
 
 ---
 
@@ -53,6 +55,7 @@ Related Policies: 07a_Incident_Response_Plan_GR.md, 11_Revocation_Status_SOP_GR.
 - Geography/DC: [DC1|DC2|Cloud Segment]  
 - Subscribers/RPs impacted: [# or N/A]  
 - Personal Data involved: [Yes/No; categories if yes]
+- Linked Risk Register IDs: [R01, R05, …] (per `07_Risk_Assessment_Report_GR.md`)
 
 ---
 
@@ -150,6 +153,7 @@ Root Cause (conclusion): [ROOT_CAUSE_CONCLUSION]
 
 ## 9) Risk Register Updates / Ενημέρωση Μητρώου Κινδύνων
 - New risk(s) identified: [Risk ID, description, initial rating]  
+- Existing risk references (e.g., R03 OCSP availability) updated: [New rating/Frequency]  
 - Residual risk after CAP: [rating]  
 - Risk owner assignment: [Name/Role]  
 - Next review date: [YYYY-MM-DD]
@@ -181,4 +185,5 @@ Root Cause (conclusion): [ROOT_CAUSE_CONCLUSION]
 - For Level ≥3 incidents, initiate this RCA within 48 hours after resolution; tie CAP to specific control owners and due dates.  
 - Align OCSP/CRL timings with TSPS and Revocation SOP; verify SLAs post-incident.  
 - If QSCD/remote signing involved, reference APPENDIX_A_QSCD_Remote_Signing.md controls in analysis.  
-- Use the same Incident ID across ITSM, SIEM, hotline records, and regulatory submissions.
+- Use the same Incident ID across ITSM, SIEM, hotline records, and regulatory submissions.  
+- Archive signed RCA (GR & EN, όταν απαιτείται) στο `Supporting_Docs/IR/RCA/[YEAR]/` με hashes, σύμφωνα με `12_Recordkeeping`.

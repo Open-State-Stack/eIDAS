@@ -20,42 +20,78 @@
 ```
 06_Test_Certificates.zip
 │
-├── 1_QES_Natural_Person_Sample.cer
-├── 2_QSeal_Sample.cer
-├── 3_QWAC_Sample.cer
-├── 4_OCSP_Response_Sample.ors
-├── 5_CRL_Sample.crl
-├── 6_TSA_Token_Sample.tsr
-└── 7_Certificate_Profiles_Summary.md
+├── CA_Certificates/
+│   ├── 1_Root_CA.pem
+│   ├── 2_Issuing_CA_QES_Natural.pem
+│   ├── 3_Issuing_CA_QES_Legal.pem
+│   ├── 4_Issuing_CA_QSeal.pem
+│   ├── 5_Issuing_CA_QTS.pem
+│   └── 6_Issuing_CA_QWAC.pem
+│
+├── End_Entity_Certificates/
+│   ├── 7_QES_Natural_Person_Sample.pem
+│   ├── 8_QES_Legal_Person_Sample.pem
+│   ├── 9_QSeal_Sample.pem
+│   ├── 10_QTS_Certificate_Sample.pem
+│   ├── 11_QWAC_Sample.pem
+│   └── 12_OCSP_Responder.pem
+│
+├── Revocation_Samples/
+│   ├── 13_Sample_OCSP_Response_Good.der
+│   ├── 14_Sample_OCSP_Response_Revoked.der
+│   ├── 15_Sample_OCSP_Response_Unknown.der
+│   ├── 16_Sample_CRL_Empty.pem
+│   └── 17_Sample_CRL_WithRevocations.pem
+│
+├── Timestamp_Samples/
+│   ├── 18_TSA_Token_Sample.tsr
+│   └── 19_TSA_Token_Summary.txt
+│
+└── Documentation/
+    ├── 20_Certificate_Profiles_Guide.pdf
+    ├── 21_Validation_Checklist_CAB.md
+    ├── 22_OpenSSL_Validation_Commands.sh
+    └── 23_OID_Reference_Table.md
 ```
+
+**SHA-256 (zip):** `aa21bf4040125229c4251d34f19f72946e13286607643b92664475b2e5276197`
+
+| File | SHA-256 |
+|------|---------|
+| `CA_Certificates/1_Root_CA.pem` | `cfa1d7825799a3e8cc9938c3d86c52ba11f8f0c2ef1d3db204c4d404eae3fa1f` |
+| `CA_Certificates/2_Issuing_CA_QES_Natural.pem` | `87dfb554d17c2d335e5395741fbd8122e78adf3ae60fbae832a844c743dce10a` |
+| `End_Entity_Certificates/7_QES_Natural_Person_Sample.pem` | `37db9bcb2a6ec5f816cf8e6065eeaa4d9e14426f767ade9194e61126e8c47df7` |
+| `Revocation_Samples/17_Sample_CRL_WithRevocations.pem` | `142dfe3e2310cc1d44e2f2151efcbeb0a1743e82ba8e9cecf4b129b9674868f1` |
+| `Revocation_Samples/13_Sample_OCSP_Response_Good.der` | `1e06ca1272b1ac0cf2a4771ed233fe20a51116d86b582eb5cd9ddb8d9331544b` |
+| `Timestamp_Samples/18_TSA_Token_Sample.tsr` | `1fe9764e8bce04b39474f70ccbdf2fbe3dadbadd214740c65ab6d7c4a1a26de3` |
 
 ---
 
 ## 3. ΔΕΙΓΜΑ ΕΓΚΕΚΡΙΜΕΝΟΥ ΠΙΣΤΟΠΟΙΗΤΙΚΟΥ (QES - ΦΥΣΙΚΟ ΠΡΟΣΩΠΟ) / SAMPLE QUALIFIED CERTIFICATE (QES - NATURAL PERSON)
 
-**Αρχείο:** `1_QES_Natural_Person_Sample.cer`
+**Αρχείο:** `End_Entity_Certificates/7_QES_Natural_Person_Sample.pem`
 
 ### 3.1. Ανάλυση Περιεχομένου / Content Analysis
 
 | Πεδίο (Field) | Τιμή (Value) |
 | :--- | :--- |
-| **Version** | V3 |
-| **Serial Number** | `1A:2B:3C:4D:5E:6F:7G:8H` |
+| **Version** | v3 |
+| **Serial Number** | `0x03E8 (1000)` |
 | **Signature Algorithm** | sha256WithRSAEncryption |
-| **Issuer** | `C=GR, O=[LEGAL_NAME_EN], CN=Hellenic Trust QES CA 1` |
-| **Validity** | Not Before: `[DATE]`, Not After: `[DATE + 1 YEAR]` |
-| **Subject** | `C=GR, CN=Ιωάννης Παπαδόπουλος, GN=Ιωάννης, SN=Παπαδόπουλος, serialNumber=IDC-GR-ΑΙ123456` |
+| **Issuer** | `C=GR, O=Greek Trust Services, OU=Qualified Services, CN=Greek Trust QES Natural CA` |
+| **Validity** | Not Before: `Nov 14 04:16:31 2025 GMT`<br>Not After: `Nov 14 04:16:31 2026 GMT` |
+| **Subject** | `C=GR, CN=Sample QES Natural Person, serialNumber=IDCGR-AI123456` |
 | **Subject Public Key Info** | RSA, 2048 bit |
 | **X509v3 Extensions** | |
-| &nbsp;&nbsp;**Key Usage** | Digital Signature, Non-Repudiation (critical) |
-| &nbsp;&nbsp;**Subject Key Identifier** | `[SKI_HEX]` |
-| &nbsp;&nbsp;**Authority Key Identifier** | `[AKI_HEX]` |
-| &nbsp;&nbsp;**CRL Distribution Points** | `URI:[CRL_URL_1]` |
-| &nbsp;&nbsp;**Authority Information Access** | `OCSP - URI:[OCSP_URL_1]` |
+| &nbsp;&nbsp;**Key Usage** | Digital Signature, Non Repudiation (critical) |
+| &nbsp;&nbsp;**Subject Key Identifier** | `34:9F:EA:2D:2F:0F:5E:0B:A5:39:23:56:33:47:EF:20:5B:5F:C3:DF` |
+| &nbsp;&nbsp;**Authority Key Identifier** | Matches SKI of issuing CA |
+| &nbsp;&nbsp;**CRL Distribution Points** | `URI:http://example.com/crl/qes_ca.crl` |
+| &nbsp;&nbsp;**Authority Information Access** | `OCSP - URI:http://example.com/ocsp/qes` |
 | &nbsp;&nbsp;**qcStatements (ETSI EN 319 412-5)** | |
 | &nbsp;&nbsp;&nbsp;&nbsp;**QcCompliance** | `id-etsi-qcs-QcCompliance (0.4.0.1862.1.1)` |
 | &nbsp;&nbsp;&nbsp;&nbsp;**QcType** | `id-etsi-qcs-QcType-esign (0.4.0.1862.1.4)` |
-| &nbsp;&nbsp;&nbsp;&nbsp;**QcSSCD** | `id-etsi-qcs-QcSSCD (0.4.0.1862.1.5)` (Εάν το κλειδί είναι σε QSCD) |
+| &nbsp;&nbsp;&nbsp;&nbsp;**QcSSCD** | `id-etsi-qcs-QcSSCD (0.4.0.1862.1.5)` |
 
 ### 3.2. Μορφή PEM / PEM Format
 
@@ -72,7 +108,7 @@ MIID+DCCAuCgAwIBAgIJAN+I+E/q4V...
 
 ## 4. ΔΕΙΓΜΑ ΑΠΑΝΤΗΣΗΣ OCSP / SAMPLE OCSP RESPONSE
 
-**Αρχείο:** `4_OCSP_Response_Sample.ors`
+**Αρχείο:** `Revocation_Samples/13_Sample_OCSP_Response_Good.der`
 
 ### 4.1. Ανάλυση Περιεχομένου / Content Analysis
 
@@ -98,7 +134,7 @@ MIID+DCCAuCgAwIBAgIJAN+I+E/q4V...
 
 ## 5. ΔΕΙΓΜΑ ΛΙΣΤΑΣ ΑΝΑΚΛΗΣΗΣ (CRL) / SAMPLE CERTIFICATE REVOCATION LIST (CRL)
 
-**Αρχείο:** `5_CRL_Sample.crl`
+**Αρχείο:** `Revocation_Samples/17_Sample_CRL_WithRevocations.pem`
 
 ### 5.1. Ανάλυση Περιεχομένου / Content Analysis
 
@@ -126,7 +162,7 @@ MIID+DCCAuCgAwIBAgIJAN+I+E/q4V...
 
 ## 6. ΔΕΙΓΜΑ ΗΛΕΚΤΡΟΝΙΚΗΣ ΧΡΟΝΟΣΗΜΑΝΣΗΣ (TSA TOKEN) / SAMPLE TIME-STAMP TOKEN
 
-**Αρχείο:** `6_TSA_Token_Sample.tsr` (RFC 3161 Time-Stamp Response)
+**Αρχείο:** `Timestamp_Samples/18_TSA_Token_Sample.tsr` (RFC 3161 Time-Stamp Response)
 
 ### 6.1. Ανάλυση Περιεχομένου / Content Analysis
 

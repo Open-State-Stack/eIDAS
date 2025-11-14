@@ -409,4 +409,292 @@ C) Ειδοποίηση Τερματισμού (Άρθρο 7) / Termination Noti
 **Character Encoding:**
 - Προτίμηση GSM-7 (160 chars) έναντι Unicode (70 chars)
 - Αποφυγή Ελληνικών χαρακτήρων σε critical SMS (διεθνείς χρήστες, encoding issues)
-- URL shortener με domain ownership (eett.gr
+- Χρήση short URL με ιδιόκτητο domain (π.χ. `ntp.example.gr`) και TLS
+- Αποθήκευση του συνδέσμου γεγονότος στο Doc 12 (Recordkeeping) για αναδρομή
+
+**Έλεγχοι Παράδοσης / Delivery Controls**
+- Χρήση SMS gateway με SLA ≥ 99.9% και υποστηριζόμενο Sender ID «[COMPANY_SHORT_NAME]»
+- Αυτόματη επανάληψη σε 15 λεπτά όταν δεν λαμβάνεται delivery report
+- Καταγραφή αναφορών παράδοσης και αιτιών αποτυχίας στο Incident Log (Doc 07 Annex 5)
+
+**EN:** Because of the 160-character GSM-7 limit, SMS follow the same structure as above. Use an owned short domain, keep actionable verbs up front (e.g., `REVOKE NOW`), and store every sent text together with delivery receipts in the incident record to demonstrate compliance.
+
+---
+
+## 4. ΧΡΟΝΙΚΕΣ ΠΡΟΘΕΣΜΙΕΣ / TIMING REQUIREMENTS {#4}
+
+**GR:** Οι προθεσμίες ενεργοποιούνται από τη στιγμή που ο Incident Commander (Doc 07) επιβεβαιώσει το περιστατικό και καταγράψει το `INCIDENT_START`. Η τήρηση των SLA εξασφαλίζει συμμόρφωση με eIDAS Άρθρο 19(2), ΕΕΤΤ Άρθρο 5 και GDPR Άρθρα 33-34.
+
+**EN:** Deadlines start when the Incident Commander confirms the event and logs `INCIDENT_START`. Meeting these SLAs demonstrates compliance with eIDAS Art. 19(2), EETT Art. 5, and GDPR Arts. 33-34.
+
+| Trigger | Severity / Condition | Recipient(s) | Deadline | Regulatory Reference |
+|---------|---------------------|--------------|----------|----------------------|
+| Security incident | Level 5 (Critical) | EETT, ENISA, Subscribers, Relying Parties | EETT & Subscribers: ≤ 1h; ENISA: ≤ 24h; Public post: ≤ 2h | EETT Art. 5.1, ETSI EN 319 401 §6.1.4 |
+| Security incident | Level 4 (Major) | EETT, Subscribers | EETT: ≤ 4h; Subscribers: ≤ 24h | EETT Art. 5.1-5.2 |
+| Security incident | Level 3 (Significant) | EETT (informational), Subscribers | EETT: ≤ 24h; Subscribers: ≤ 72h | EETT Art. 5.2 |
+| Personal data breach (high risk) | Any | Hellenic DPA, Data Subjects, EETT | HDPA: ≤ 72h; Data subjects: without undue delay; EETT: aligned with incident level | GDPR Arts. 33-34, eIDAS Art. 19 |
+| Certificate compromise | Any | EETT, CAB Forum contacts, Subscribers, Browser root programs | Initial notice ≤ 1h; follow-up root cause ≤ 24h | CABF BR §4.9.3, EETT Art. 11 |
+| Planned maintenance | Impact ≥ 10% users or >1h | Subscribers, Relying Parties | ≥ 5 working days prior | EETT Art. 5.2 (good practice) |
+| Service termination | Planned | EETT, Subscribers, Regulators in other MS | ≥ 3 months to EETT, ≥ 60 days to subscribers | eIDAS Art. 24(2)(h), EETT Art. 11 |
+| Cross-border incident | Impact to other EU MS | Foreign Supervisory Bodies via cooperation mechanism | ≤ 24h after notifying EETT | eIDAS Art. 19(3) |
+
+- **Clock Start:** `INCIDENT_START` as recorded in Doc 07.
+- **Clock Stop:** Evidence of dispatch (email header, SMS receipt, API log) stored in Doc 12.
+- **Escalation:** If deadline is at risk, the QTS Manager escalates to CEO per Risk Plan (Doc 07 §5.2).
+
+---
+
+## 5. ΠΡΟΤΥΠΑ ΕΙΔΟΠΟΙΗΣΕΩΝ / NOTIFICATION TEMPLATES {#5}
+
+**GR:** Όλα τα πρότυπα ελέγχονται ετησίως από QTS Manager, Νομικό Σύμβουλο και DPO. Τα placeholders παραμένουν σύμφωνα με οδηγία («ignore placeholder for the future»).
+
+**EN:** Templates are reviewed yearly by the QTS Manager, Legal Counsel, and the DPO. Placeholders stay intact per instruction.
+
+### 5.1. Template A – Critical Security Incident Email
+
+**GR:**
+```
+Θέμα: [INCIDENT_ID] - Κρίσιμο περιστατικό ασφάλειας (Επίπεδο 5)
+
+Αγαπητέ/ή [SUBSCRIBER_CONTACT],
+
+Στις [INCIDENT_DATETIME] εντοπίσαμε περιστατικό ασφάλειας που επηρεάζει την υπηρεσία [SERVICE_NAME]. 
+
+• Τρέχουσα κατάσταση: [INCIDENT_STATUS]  
+• Επηρεαζόμενα πιστοποιητικά: [CERT_COUNT]  
+• Απαιτούμενη ενέργεια: [REQUIRED_ACTION] έως [ACTION_DEADLINE]
+
+Παρέχουμε συνεχή ενημέρωση στο [STATUS_URL]. Για επείγοντα ζητήματα επικοινωνήστε στο [HOTLINE].
+
+Με εκτίμηση,  
+[LEGAL_NAME_GR] – Ομάδα Ασφάλειας
+```
+
+**EN:**
+```
+Subject: [INCIDENT_ID] - Critical security incident (Severity 5)
+
+Dear [SUBSCRIBER_CONTACT],
+
+On [INCIDENT_DATETIME] we detected a security incident impacting [SERVICE_NAME].
+
+• Current status: [INCIDENT_STATUS]  
+• Affected certificates: [CERT_COUNT]  
+• Required action: [REQUIRED_ACTION] by [ACTION_DEADLINE]
+
+We will post updates at [STATUS_URL]. For urgent assistance call [HOTLINE].
+
+Regards,  
+[LEGAL_NAME_EN] – Security Team
+```
+
+### 5.2. Template B – Personal Data Breach Notice
+
+**GR:** Περιλαμβάνει τα στοιχεία GDPR Άρθρου 34.
+```
+Θέμα: Σημαντική ενημέρωση σχετικά με τα δεδομένα σας
+
+Στις [INCIDENT_DATETIME] διαπιστώσαμε παραβίαση δεδομένων που ενδέχεται να επηρεάζει τα στοιχεία σας. 
+
+Τι συνέβη: [WHAT_HAPPENED]  
+Ποια δεδομένα: [DATA_TYPES]  
+Πιθανές συνέπειες: [POTENTIAL_IMPACT]  
+Ενέργειες που έχουμε λάβει: [MITIGATION]  
+Τι πρέπει να κάνετε: [USER_ACTIONS]
+
+Για ερωτήσεις, επικοινωνήστε με τον ΥΠΔ στο [DPO_CONTACT].
+```
+
+**EN:** Mirrors the Greek text to satisfy cross-border recipients.
+
+### 5.3. Template C – Certificate Compromise Alert (Email + Portal Banner)
+
+- **Subject:** `[INCIDENT_ID] - Immediate revocation required`
+- **Body (GR/EN):** Συνοπτική περιγραφή, πίνακας επηρεαζόμενων σειρών πιστοποιητικών, βήματα ανάκλησης, σύνδεσμος σε CRL/OCSP.
+- **Portal banner:** `WARNING: Certificates issued between [DATE_RANGE] must be revoked. See Incident #[ID].`
+
+### 5.4. Template D – Planned Maintenance / Προγραμματισμένη Διακοπή
+
+Provide bilingual notice with start/end time (UTC+02 / UTC), services impacted, fallback contacts, and confirmation that valid certificates remain trustworthy (eIDAS Art. 24(2)(h)).
+
+### 5.5. Template E – Press Release (Level 4-5)
+
+Structure (GR/EN):
+1. Headline with severity and time.
+2. Summary paragraph (what/when/impact).
+3. Actions taken and collaboration with EETT/ENISA.
+4. Guidance for users and relying parties.
+5. Media contact line.
+
+### 5.6. Template F – Annual Effectiveness Summary
+
+Used for Section 12 reporting: includes total incidents, notification SLA achievement (%), and improvement actions.
+
+Full template text is stored in Doc 13 (Communication Templates) and referenced here for configuration control.
+
+---
+
+## 6. ΕΠΙΚΟΙΝΩΝΙΑ ΜΕ ΑΠΟΔΕΚΤΕΣ / RELYING PARTY COMMUNICATION {#6}
+
+**GR:** Οι αποδέκτες που δεν είναι συνδρομητές λαμβάνουν ενημερώσεις μέσω δημοσίων καναλιών και της υπηρεσίας Status API. Όλες οι ανακοινώσεις υπογράφονται με QSeal για ακεραιότητα.
+
+**EN:** Non-subscriber relying parties consume public channels and the Status API. Every publication is QSeal-signed to guarantee authenticity.
+
+- Public announcements remain online για ≥ 7 έτη (Doc 12).
+- OCSP/CRL περιέχει αναφορά `incidentReference` για συσχέτιση.
+- Αποστολή RSS feed σε aggregators (ENISA CSIRTs Network) εντός 2 ωρών για επίπεδο ≥4.
+
+---
+
+## 7. ΔΙΑΣΥΝΟΡΙΑΚΕΣ ΕΚΤΙΜΗΣΕΙΣ / CROSS-BORDER CONSIDERATIONS {#7}
+
+- **Μεταφράσεις / Translations:** Κρίσιμες ειδοποιήσεις παρέχονται σε GR + EN. Αν επηρεάζονται συγκεκριμένα κράτη μέλη, προστίθεται μηχανική μετάφραση με ανθρώπινη επαλήθευση.
+- **Ωρολόγια Ζώνη / Time Zones:** Όλες οι αναφορές φέρουν UTC και Athens time.
+- **Supervisory Cooperation:** Ο QTS Manager ενημερώνει τις αντίστοιχες αρχές μέσω EETT (single liaison) και καταγράφει ticket IDs.
+- **Data residency:** Επισημαίνεται εάν επηρεάζονται δεδομένα πολιτών άλλων MS ώστε να συντονιστεί ο DPA.
+
+---
+
+## 8. ΕΣΩΤΕΡΙΚΟΣ ΣΥΝΤΟΝΙΣΜΟΣ / INTERNAL COORDINATION {#8}
+
+| Δραστηριότητα / Activity | Incident Commander | QTS Manager | DPO | CISO | Corporate Comms | CEO |
+|--------------------------|-------------------|-------------|-----|------|------------------|-----|
+| Incident classification | R | A | C | C | I | I |
+| Draft notification | C | R | C | C | R | I |
+| Regulatory submission | I | R | C | C | I | A |
+| Media response | I | C | I | I | R | A |
+| Evidence archiving | C | R | C | A | I | I |
+
+Legend: R = Responsible, A = Accountable, C = Consulted, I = Informed.
+
+Escalation chain: Incident Commander → QTS Manager → CEO. Backup roles are maintained in Doc 01 (Registry).
+
+---
+
+## 9. ΡΟΗ ΕΡΓΑΣΙΑΣ ΕΙΔΟΠΟΙΗΣΗΣ / NOTIFICATION WORKFLOW {#9}
+
+1. **Detect & Triage** – SOC raises ticket, Incident Commander validates severity.
+2. **Activate Playbook** – Cross-functional bridge call (Security, Operations, DPO, Communications).
+3. **Draft Messages** – Use Section 5 templates, adapt facts, include mitigation guidance.
+4. **Review & Approve** – QTS Manager + DPO sign-off; CEO approval required for public statements.
+5. **Dispatch** – Send through Email/SMS/API, verify delivery receipts.
+6. **Regulator Reporting** – Submit Form (Annex A) via EETT portal and HDPA portal.
+7. **Update Loop** – Provide updates every 4h (Level 4-5) or 12h (Level 3) until resolution.
+8. **Close & Archive** – Store final notice, evidence, and lessons learned in Doc 12; feed metrics to Section 11.
+
+ASCII Overview:
+```
+Detect → Confirm Severity → Draft → Review → Dispatch → Log Evidence → Update → Close
+```
+
+---
+
+## 10. ΚΑΤΑΛΟΓΟΣ ΕΝΔΙΑΦΕΡΟΜΕΝΩΝ / STAKEHOLDER CONTACT LISTS {#10}
+
+Contact data resides in Doc 13 (Communication Templates) and MASTER_CONTACT_LIST.md. This plan specifies required fields and refresh cadence.
+
+| Κατηγορία / Category | Υποχρεωτικά Πεδία | Πηγή Δεδομένων | Συχνότητα Ελέγχου |
+|----------------------|-------------------|----------------|-------------------|
+| Συνδρομητές / Subscribers | Org name, Service type, Contact name, Email, SMS, Preferred language | CRM extract synchronized weekly | Μηνιαία δειγματοληψία + πριν από μεγάλες αποστολές |
+| Αποδέκτες / Relying Parties | Sector, Contact email, API key, Country | RP registry (Doc 01) | Ανά τρίμηνο |
+| Ρυθμιστικές Αρχές / Regulators | Authority name, Channel, Escalation phone | Compliance register | Σε κάθε ενημέρωση ΕΕΤΤ |
+| ΜΜΕ / Media | Outlet, Journalist, Phone | Communications team | Ετήσια αναθεώρηση |
+
+Changes to contact data require dual control (Communications + Compliance).
+
+---
+
+## 11. ΔΟΚΙΜΕΣ ΚΑΙ ΜΕΤΡΗΣΕΙΣ / TESTING AND METRICS {#11}
+
+### 11.1. Testing
+
+| Test Type | Frequency | Evidence | Owner |
+|-----------|-----------|----------|-------|
+| Full notification drill (email + SMS + API) | 2× per year | Drill report, delivery stats | QTS Manager |
+| Template accuracy review | Quarterly | Redlined template pack | Corporate Comms |
+| Cross-border escalation simulation | Annual | Meeting minutes, regulator acknowledgments | Compliance Officer |
+| SMS gateway failover test | Annual | Screenshots, delivery receipts | IT Operations |
+
+### 11.2. Metrics
+
+| KPI | Target | Data Source | Escalation |
+|-----|--------|-------------|------------|
+| Notification SLA adherence | ≥ 98% | Incident tracker (Doc 07) | <98% → Report to CAB + Remediation plan |
+| Delivery success rate (email) | ≥ 95% within 10 min | ESP dashboard | <92% → trigger infrastructure review |
+| Delivery success rate (SMS) | ≥ 98% | SMS gateway logs | <95% → switch carrier |
+| Subscriber feedback closure | ≤ 3 business days | CRM tickets | Aging >3d → escalate to Customer Ops |
+| Post-incident survey completion | ≥ 60% of major incidents | Survey tool export | <50% → DPO follow-up |
+
+Metrics feed into the Annual Report (Section 12) and Compliance Register (Doc 19).
+
+---
+
+## 12. ΕΤΗΣΙΑ ΑΝΑΦΟΡΑ ΑΠΟΤΕΛΕΣΜΑΤΙΚΟΤΗΤΑΣ / ANNUAL EFFECTIVENESS REPORT {#12}
+
+Contents submitted to EETT and retained for 7 years:
+- Σύνολο περιστατικών ανά κατηγορία και μέσο ειδοποίησης.
+- Ποσοστό τήρησης προθεσμιών και αιτίες αποκλίσεων.
+- Περίληψη δοκιμών/ασκήσεων και remedial actions.
+- Επισκοπήσεις DPO & CISO (υπογεγραμμένες).
+- Σχέδιο βελτίωσης για επόμενο έτος.
+
+Report owner: QTS Manager; due within Q1 of κάθε έτους.
+
+---
+
+## 13. ΕΛΕΓΧΟΣ ΕΓΓΡΑΦΟΥ / DOCUMENT CONTROL {#13}
+
+| Version | Date | Description | Author | Approved By |
+|---------|------|-------------|--------|-------------|
+| 0.5 | 2024-10-01 | Initial draft structure | Compliance Team | QTS Manager |
+| 0.9 | 2024-12-15 | Added sections 1-3 & templates | QTS Manager | CEO |
+| 1.0 | [SUBMISSION_DATE] | Comprehensive enrichment (sections 4-13, annexes) | Compliance Officer | CEO & DPO |
+
+Next review: [SUBMISSION_DATE + 12 months].
+
+---
+
+### Annex A – Incident Report Form (EETT / HDPA)
+
+| Πεδίο / Field | Περιγραφή / Description |
+|---------------|------------------------|
+| Incident ID | Unique ID from Doc 07 |
+| Severity Level | 1-5 (Doc 07 matrix) |
+| Detection Timestamp | ISO 8601 UTC |
+| Affected Services | QES/QSeal/QTS/QWAC/etc |
+| Impact Summary | Availability / Integrity / Confidentiality |
+| Affected Subscribers | Count + sector |
+| Interim Actions | Mitigation already applied |
+| Required Actions | Steps expected from recipients |
+| Contact Person | Incident Commander + phone/email |
+
+### Annex B – Emergency Contact Template
+
+| Role | Primary | Backup | 24/7 Phone | Secure Email |
+|------|---------|--------|-----------|--------------|
+| Incident Commander | [NAME] | [NAME] | [PHONE] | [EMAIL] |
+| QTS Manager | ... | ... | ... | ... |
+| DPO | ... | ... | ... | ... |
+| Media Spokesperson | ... | ... | ... | ... |
+
+Kept in sync with MASTER_CONTACT_LIST.md (Doc 13).
+
+### Annex C – Sample Status API Payload
+
+```json
+{
+  "generated_at": "2024-11-15T08:45:00Z",
+  "service": "QES_NaturalPerson",
+  "status": "major_outage",
+  "incident_reference": "INC-2024-0051",
+  "user_actions": "Suspend new enrollments, monitor OCSP responses",
+  "next_update": "2024-11-15T10:45:00Z"
+}
+```
+
+### Annex D – Test & Drill Log Template
+
+| Drill ID | Date | Scenario | Channels Tested | Success % | Lessons Learned | Owner |
+|----------|------|----------|-----------------|-----------|-----------------|-------|
+
+Signed drill reports are filed under Doc 12 for auditability.

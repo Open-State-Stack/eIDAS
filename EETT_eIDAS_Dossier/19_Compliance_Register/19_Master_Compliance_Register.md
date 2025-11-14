@@ -17,40 +17,40 @@
 
 ### Φύλλο 1: Αντιστοίχιση Κανονισμού eIDAS / Sheet 1: eIDAS Regulation Mapping
 
-| Άρθρο (Article) | Περίληψη Απαίτησης (Requirement Summary) | Αποδεικτικό Στοιχείο (Evidence) | Έγγραφο (Doc) | Ενότητα/Σελίδα (Section/Page) | Κατάσταση (Status) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Art. 13** | Liability of TSP; reversed burden of proof | TSP Policy §7.2–§7.3; End-User Agreement §6 | 04, 10 | Policy §7; EULA §6 | ✓ |
-| **Art. 19(2)** | User notification of security breaches | User Notification Plan §5; Incident Response Plan §6.2 | 08, 07a | §5; §6.2 | ✓ |
-| **Art. 24(2)(a)** | Competent personnel & adequate procedures | Qualified Service App, TSPS | 02, 05 | Part E, Sec 9 | ✓ |
-| **Art. 24(2)(b)** | Trustworthy systems and products | CAR, TSPS, Infrastructure Docs | 03, 05 | Sec 8 | ✓ |
-| **Art. 24(2)(c)** | Secure issuance environment | TSPS, RA Manual | 05 | Sec 3, 4 | ✓ |
-| **Art. 24(2)(d)** | Security measures against risks | Risk Assessment Report | 07 | All | ✓ |
-| **Art. 24(2)(e)** | Conformity assessment by a CAB | Conformity Assessment Report (CAR) | 03 | All | ✓ |
-| **Art. 24(2)(f)** | Inform supervisory body of changes | EETT Communications Pack | 13 | Template 1 | ✓ |
-| **Art. 24(2)(g)** | Termination plan | Termination Plan | 09 | All | ✓ |
-| **Art. 24(2)(h)** | Recordkeeping of relevant data | Recordkeeping & Access Policy | 12 | All | ✓ |
-| **Art. 28** | Requirements for QES certificates | CAR, Test Certificates, TSPS | 03, 06, 05 | Annex I check | ✓ |
-| **Art. 38** | Requirements for QSeal certificates | CAR, Test Certificates, TSPS | 03, 06, 05 | Annex III check | ✓ |
-| **Art. 42** | Requirements for QTS | CAR, Test Certificates, TSPS | 03, 06, 05 | TSA sections | ✓ |
+| Άρθρο (Article) | Περίληψη Απαίτησης (Requirement Summary) | Αποδεικτικό Στοιχείο (Evidence) | Έγγραφο (Doc) | Ενότητα/Σελίδα (Section/Page) | Κατάσταση (Status) | Last Control Test |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Art. 13** | Liability of TSP; reversed burden of proof | TSP Policy §7.2–§7.3; End-User Agreement §6 | 04, 10 | Policy §7; EULA §6 | ✓ | 2025-01-10 (Compliance QA) |
+| **Art. 19(2)** | User notification of security breaches | User Notification Plan §5; Incident Response Plan §6.2 | 08, 07a | §5; §6.2 | ✓ | 2025-01-12 (Compliance QA) |
+| **Art. 24(2)(a)** | Competent personnel & adequate procedures | Qualified Service App, TSPS | 02, 05 | Part E, Sec 9 | ✓ | 2025-01-14 (PMO) |
+| **Art. 24(2)(b)** | Trustworthy systems and products | CAR, TSPS, Infrastructure Docs | 03, 05 | Sec 8 | ✓ | 2025-01-14 (PMO) |
+| **Art. 24(2)(c)** | Secure issuance environment | TSPS, RA Manual | 05 | Sec 3, 4 | ✓ | 2025-01-14 (PMO) |
+| **Art. 24(2)(d)** | Security measures against risks | Risk Assessment Report | 07 | All | ✓ | 2025-01-15 (CISO) |
+| **Art. 24(2)(e)** | Conformity assessment by a CAB | Conformity Assessment Report (CAR) | 03 | All | ✓ | 2025-01-20 (CAB QA) |
+| **Art. 24(2)(f)** | Inform supervisory body of changes | EETT Communications Pack | 13 | Template 1 | ✓ | 2025-01-16 (Compliance) |
+| **Art. 24(2)(g)** | Termination plan | Termination Plan | 09 | All | ✓ | 2025-01-16 (Compliance) |
+| **Art. 24(2)(h)** | Recordkeeping of relevant data | Recordkeeping & Access Policy | 12 | All | ✓ | 2025-01-18 (DPO) |
+| **Art. 28** | Requirements for QES certificates | CAR, Test Certificates, TSPS | 03, 06, 05 | Annex I check | ✓ | 2025-01-20 (CAB QA) |
+| **Art. 38** | Requirements for QSeal certificates | CAR, Test Certificates, TSPS | 03, 06, 05 | Annex III check | ✓ | 2025-01-20 (CAB QA) |
+| **Art. 42** | Requirements for QTS | CAR, Test Certificates, TSPS | 03, 06, 05 | TSA sections | ✓ | 2025-01-20 (CAB QA) |
 
 ---
 
 ### Φύλλο 2: Αντιστοίχιση Κανονισμού ΕΕΤΤ / Sheet 2: EETT Regulation Mapping
 
-| Άρθρο/Παράρτημα (Article/Annex) | Περίληψη Απαίτησης (Requirement Summary) | Αποδεικτικό Στοιχείο (Evidence) | Έγγραφο (Doc) | Ενότητα (Section) | Κατάσταση (Status) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Art. 3.2** | Registry application details | Registry Application | 01 | All | ✓ |
-| **Art. 3.4** | €300 registration fee | Fee Proof Template | 01a | All | ✓ |
-| **Art. 3.5** | 7-day change notification | EETT Communications Pack | 13 | Template 1 | ✓ |
-| **Art. 4** | Security measures | Risk Assessment, TSPS | 07, 05 | All | ✓ |
-| **Art. 5** | Incident reporting (24h for Level ≥3) | Incident Response Plan, Forms | 07a, 07b | All | ✓ |
-| **Art. 6** | Qualified service application | Qualified Service Application | 02 | All | ✓ |
-| **Art. 7-8** | Termination obligations | Termination Plan | 09 | All | ✓ |
-| **Art. 10** | CAR requirements (19 items) | Conformity Assessment Report (CAR) | 03 | Sections 1-19 | ✓ |
-| **Art. 11** | 24x7 revocation & status services | Revocation Status SOP | 11 | All | ✓ |
-| **Art. 12** | 7-year recordkeeping & access | Recordkeeping & Access Policy | 12 | All | ✓ |
-| **Annex 3** | Incident severity classification | Incident Response Plan | 07a | Section 2 | ✓ |
-| **Annex 5** | Termination plan Table of Contents | Termination Plan | 09 | Document Structure | ✓ |
+| Άρθρο/Παράρτημα (Article/Annex) | Περίληψη Απαίτησης (Requirement Summary) | Αποδεικτικό Στοιχείο (Evidence) | Έγγραφο (Doc) | Ενότητα (Section) | Κατάσταση (Status) | Last Control Test |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Art. 3.2** | Registry application details | Registry Application | 01 | All | ✓ | 2025-01-08 (Legal) |
+| **Art. 3.4** | €300 registration fee | Fee Proof Template | 01a | All | ✓ | 2025-01-08 (Finance) |
+| **Art. 3.5** | 7-day change notification | EETT Communications Pack | 13 | Template 1 | ✓ | 2025-01-16 (Compliance) |
+| **Art. 4** | Security measures | Risk Assessment, TSPS | 07, 05 | All | ✓ | 2025-01-15 (CISO) |
+| **Art. 5** | Incident reporting (24h for Level ≥3) | Incident Response Plan, Forms | 07a, 07b | All | ✓ | 2025-01-15 (CISO) |
+| **Art. 6** | Qualified service application | Qualified Service Application | 02 | All | ✓ | 2025-01-10 (Compliance) |
+| **Art. 7-8** | Termination obligations | Termination Plan | 09 | All | ✓ | 2025-01-16 (Compliance) |
+| **Art. 10** | CAR requirements (19 items) | Conformity Assessment Report (CAR) | 03 | Sections 1-19 | ✓ | 2025-01-20 (CAB QA) |
+| **Art. 11** | 24x7 revocation & status services | Revocation Status SOP | 11 | All | ✓ | 2025-01-17 (Ops) |
+| **Art. 12** | 7-year recordkeeping & access | Recordkeeping & Access Policy | 12 | All | ✓ | 2025-01-18 (DPO) |
+| **Annex 3** | Incident severity classification | Incident Response Plan | 07a | Section 2 | ✓ | 2025-01-15 (CISO) |
+| **Annex 5** | Termination plan Table of Contents | Termination Plan | 09 | Document Structure | ✓ | 2025-01-16 (Compliance) |
 
 ---
 

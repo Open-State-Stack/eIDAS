@@ -7,7 +7,8 @@
 | Incident Forms | `07b_Incident_Report_Forms.pdf` + `07b_Incident_Forms_GR.md` | ✅ Ready | Περιλαμβάνει αρχική/τελική αναφορά, τηλέφωνα SOC.
 
 ## Outstanding
-- ⚠️ Εισαγωγή τελικού πίνακα επικοινωνίας (SOC, DPO, CAB) σε όλες τις εκδόσεις.
-- ⚠️ Επικύρωση από CISO ότι τα controls χαρτογραφούνται στο ISO/IEC 27001 Statement of Applicability (αναφορά στο Supporting_Docs).
+- ✅ Ενσωματώθηκε κεντρικός πίνακας επαφών (`07_Contacts.md`) και γίνεται reference σε RA/IR/Forms.
+- ✅ Προστέθηκε χαρτογράφηση SoA (ISO/IEC 27001:2022) στο `07_Risk_Assessment_Report_GR.md`.
+- ⚠️ **(Μελλοντικό)** Συμπλήρωση πραγματικών στοιχείων σε placeholders (εταιρική επωνυμία, ημερομηνίες, υπογραφές) πριν την υποβολή.
 
 Με την ολοκλήρωση των παραπάνω, η ενότητα 07 είναι submission-ready και διαλειτουργική με τις ειδοποιήσεις (φάκελος 08) και termination (09).

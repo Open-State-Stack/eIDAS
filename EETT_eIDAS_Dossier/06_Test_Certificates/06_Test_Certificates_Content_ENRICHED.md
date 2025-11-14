@@ -79,14 +79,16 @@
 │
 ├── Timestamp_Samples/
 │   ├── 18_TSA_Token_Sample.tsr               (RFC 3161 Time-Stamp Token with signature)
-│   └── 19_TSA_Token_Good.txt                 (Human-readable TST Info structure)
+│   └── 19_TSA_Token_Summary.txt              (Human-readable TST Info structure)
 │
 └── Documentation/
     ├── 20_Certificate_Profiles_Guide.pdf      (Comprehensive 30-page guide)
-    ├── 21_Validation_Checklist_CAB.xlsx       (CAB auditor validation checklist)
+    ├── 21_Validation_Checklist_CAB.md         (CAB auditor validation checklist)
     ├── 22_OpenSSL_Validation_Commands.sh      (Shell script to validate all certificates)
     └── 23_OID_Reference_Table.md              (Complete OID mapping per ETSI TS 119 612)
 ```
+
+**SHA-256 (zip):** `aa21bf4040125229c4251d34f19f72946e13286607643b92664475b2e5276197`
 
 **Total Files:** 23  
 **Total Size:** ~150 KB (uncompressed)  

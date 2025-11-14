@@ -1,5 +1,7 @@
 # ΣΧΕΔΙΟ ΕΙΔΟΠΟΙΗΣΗΣ ΧΡΗΣΤΩΝ / USER NOTIFICATION PLAN
 
+> ℹ️ **Merged Reference:** Από 2025-11-15 το πλήρως επικαιροποιημένο σχέδιο βρίσκεται στο `08_User_Notification_Plan_GR_EN.md`. Το παρόν αντίγραφο διατηρείται μόνο για ιστορική αναφορά και δεν πρέπει να τροποποιείται. / As of 2025-11-15 the authoritative plan lives in `08_User_Notification_Plan_GR_EN.md`. This copy is read-only for traceability.
+
 **Εταιρεία / Company:** [LEGAL_NAME_GR] / [LEGAL_NAME_EN]  
 **Αριθμός Εγγραφής ΕΕΤΤ / EETT Registration Number:** [EETT_REG_NUMBER]  
 **Έκδοση / Version:** 1.0  
