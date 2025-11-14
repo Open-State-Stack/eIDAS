@@ -19,6 +19,16 @@ OUTPUT_DIR="${DOSSIER_DIR}/generated_pdfs"
 LOG_FILE="${DOSSIER_DIR}/scripts/pdf_generation_$(date +%Y%m%d_%H%M%S).log"
 TEMPLATE_DIR="${DOSSIER_DIR}/scripts/pandoc_templates"
 
+# ---------------------------------------------------------------
+# Prefer rendered Markdown files if they exist
+# ---------------------------------------------------------------
+if [ -d "${DOSSIER_DIR}/rendered" ]; then
+    echo -e "${YELLOW}Rendered directory detected. PDF generation will use rendered content.${NC}"
+    SOURCE_DIR="${DOSSIER_DIR}/rendered"
+else
+    SOURCE_DIR="${DOSSIER_DIR}"
+fi
+
 # PDF generation settings
 PANDOC_ENGINE="xelatex"
 PANDOC_FONT="DejaVu Sans"  # Supports Greek characters
@@ -64,7 +74,7 @@ prepare_output_dir() {
 
     # Create folder structure matching source
     for i in {01..20}; do
-        folder=$(find "$DOSSIER_DIR" -maxdepth 1 -type d -name "${i}_*" | head -1)
+        folder=$(find "$SOURCE_DIR" -maxdepth 1 -type d -name "${i}_*" | head -1)
         if [ -n "$folder" ]; then
             folder_name=$(basename "$folder")
             mkdir -p "$OUTPUT_DIR/$folder_name"
@@ -80,6 +90,16 @@ generate_pdf() {
     local output_pdf="$2"
     local title="$3"
     local author="${4:-[LEGAL_NAME_EN]}"
+
+    # ------------------------------------------------------------------
+    # If running against a rendered dossier, transparently switch paths
+    # ------------------------------------------------------------------
+    if [ ! -f "$md_file" ] && [ "$SOURCE_DIR" != "$DOSSIER_DIR" ]; then
+        local alt_path="${md_file/$DOSSIER_DIR/$SOURCE_DIR}"
+        if [ -f "$alt_path" ]; then
+            md_file="$alt_path"
+        fi
+    fi
 
     log "${BLUE}Generating: $(basename "$output_pdf")${NC}"
 
@@ -367,7 +387,7 @@ main() {
     local fail_count=0
 
     for i in {01..20}; do
-        folder=$(find "$DOSSIER_DIR" -maxdepth 1 -type d -name "${i}_*" | head -1)
+        folder=$(find "$SOURCE_DIR" -maxdepth 1 -type d -name "${i}_*" | head -1)
         if [ -n "$folder" ]; then
             folder_name=$(basename "$folder")
             if process_folder "$i" "$folder_name"; then

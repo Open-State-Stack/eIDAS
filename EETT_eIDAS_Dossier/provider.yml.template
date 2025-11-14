@@ -1,0 +1,123 @@
+# =======================================================================
+#  provider.yml.template
+#  ---------------------------------------------------------------------
+#  Centralised metadata source for the EETT / eIDAS Dossier generator
+#  ---------------------------------------------------------------------
+#  1.  Copy this file to  `provider.yml`
+#  2.  Fill in every field with real values (UTF-8, no quotes required
+#      unless the value contains a colon `:` or starts with `0`).
+#  3.  Keep `provider.yml` out of version control or add it to `.gitignore`.
+#  4.  Run `./scripts/replace_placeholders.sh` to propagate values.
+#  ---------------------------------------------------------------------
+#  DO NOT leave blank keys – replace with `TBD` if information is not
+#  yet available.  The CI linter will flag any `TBD` prior to packaging.
+# =======================================================================
+
+# -----------------------------------------------------------------------
+# 1. Legal / Corporate Identity
+# -----------------------------------------------------------------------
+legal:
+  name_gr: "GreekTrustCo Ανώνυμη Εταιρεία"     # Full official name (Greek)
+  name_en: "GreekTrustCo S.A."                 # Full official name (English)
+  legal_form: "Ανώνυμη Εταιρεία"               # e.g., "Α.Ε." / "Ι.Κ.Ε." / "Ο.Ε."
+  afm: "123456789"                             # Tax ID (9 digits)
+  gemi: "012345678000"                         # GEMI Registration number
+  doy: "Α' Αθηνών"                             # Competent tax office
+  directors:
+    - name: "Γιώργος Παπαδόπουλος"
+      position: "Διευθύνων Σύμβουλος"
+      id_number: "ΑΑ123456"
+    - name: "Maria Kosta"
+      position: "Μέλος ΔΣ"
+      id_number: "AB654321"
+
+# -----------------------------------------------------------------------
+# 2. Registered Address & Sites
+# -----------------------------------------------------------------------
+address:
+  registered_gr: "Λεωφ. Κηφισίας 60, 15125, Μαρούσι"
+  registered_en: "60 Kifisias Ave, 15125, Marousi, Greece"
+  datacenters:
+    primary:
+      location: "Datacenter Athens-1"
+      ownership: "Colocation"
+    secondary:
+      location: "Datacenter Thessaloniki-1"
+      ownership: "Colocation"
+
+# -----------------------------------------------------------------------
+# 3. Key Contacts
+# -----------------------------------------------------------------------
+contacts:
+  public_email: "info@greektrustco.gr"
+  public_phone: "+30 210 123 4567"
+  revocation_hotline: "+30 210 987 6543"
+  liaison:
+    name: "Eleni Nikolaou"
+    title: "Regulatory Affairs Officer"
+    email: "compliance@greektrustco.gr"
+    phone: "+30 210 111 2222"
+  qts_manager:
+    name: "Dimitris Vrettos"
+    email: "qts.manager@greektrustco.gr"
+    phone: "+30 210 333 4444"
+  ciso:
+    name: "Panagiotis Ioannou"
+    email: "ciso@greektrustco.gr"
+  dpo:
+    name: "Anna Georgiou"
+    email: "dpo@greektrustco.gr"
+    phone: "+30 210 555 6666"
+
+# -----------------------------------------------------------------------
+# 4. Financial & Insurance
+# -----------------------------------------------------------------------
+financial:
+  equity_capital_eur: 250000
+  registration_fee_trx_id: "TRX123456789"
+  insurance:
+    policy_number: "PI-QES-2025-0001"
+    insurer: "Acme Insurance S.A."
+    coverage_per_incident_eur: 1000000
+    aggregate_limit_eur: 2500000
+    valid_from: "2025-01-01"
+    valid_to: "2026-01-01"
+
+# -----------------------------------------------------------------------
+# 5. Technical End-Points
+# -----------------------------------------------------------------------
+technical:
+  ocsp_urls:
+    - "http://ocsp.greektrustco.gr"
+  crl_urls:
+    - "http://crl.greektrustco.gr/ca.crl"
+  tsa_url: "http://tsa.greektrustco.gr"
+  qscd_model: "nCipher nShield Connect XC"
+  qscd_provider: "Entrust Datacard"
+
+# -----------------------------------------------------------------------
+# 6. Conformity Assessment Body (CAB)
+# -----------------------------------------------------------------------
+cab:
+  name: "TÜV Hellas (TÜV Nord)"
+  accreditation_number: "ESYD-1234-ISO17065"
+  audit_window: "2025-04-15 – 2025-05-05"
+  car_reference: "CAR-2025-GTC-001"
+
+# -----------------------------------------------------------------------
+# 7. Submission & Signature Metadata
+# -----------------------------------------------------------------------
+submission:
+  target_date: "2025-06-15"
+  sign_date: "2025-06-10"
+  protocol_number: ""        # Leave blank; filled by EETT
+  eett_reg_number: ""        # Leave blank; assigned post-approval
+
+# -----------------------------------------------------------------------
+# 8. Miscellaneous
+# -----------------------------------------------------------------------
+misc:
+  website_url: "https://www.greektrustco.gr"
+  soc_24x7:
+    phone: "+30 210 777 8888"
+    email: "soc@greektrustco.gr"

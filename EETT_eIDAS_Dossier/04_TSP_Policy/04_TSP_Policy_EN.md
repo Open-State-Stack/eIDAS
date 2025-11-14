@@ -1,4 +1,6 @@
-# TRUST SERVICE POLICY (TSP POLICY)
+# TRUST SERVICE POLICY (TSP POLICY) - Version 1.0
+
+**Last Updated:** 2025-11-14
 
 **Company:** [LEGAL_NAME_EN]  
 **Version:** 1.0  
@@ -352,6 +354,10 @@ This Policy is reviewed at least annually, or upon significant changes to the le
 3.  **Documentation:** All reviews, modifications, and approvals are tracked, documented, and signed off within the company's official Change Management System (e.g., Jira, ServiceNow) under a dedicated "eIDAS Policy Review" ticket. The initial approval for this version is logged under ticket `QTS-POL-2024-001`.
 
 ### 12.3. Publication and Notification
+
+## Change Log
+
+- **v1.0:** Initial version created on 2025-11-14.
 The current version of this Policy will always be available in the public repository. Subscribers will be notified of any material changes at least 30 days prior to their effective date.
 
 ---

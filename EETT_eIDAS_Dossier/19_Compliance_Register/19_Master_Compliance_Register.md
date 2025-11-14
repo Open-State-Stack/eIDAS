@@ -25,11 +25,11 @@
 | **Art. 24(2)(b)** | Trustworthy systems and products | CAR, TSPS, Infrastructure Docs | 03, 05 | Sec 8 | ✓ | 2025-01-14 (PMO) |
 | **Art. 24(2)(c)** | Secure issuance environment | TSPS, RA Manual | 05 | Sec 3, 4 | ✓ | 2025-01-14 (PMO) |
 | **Art. 24(2)(d)** | Security measures against risks | Risk Assessment Report | 07 | All | ✓ | 2025-01-15 (CISO) |
-| **Art. 24(2)(e)** | Conformity assessment by a CAB | Conformity Assessment Report (CAR) | 03 | All | ✓ | 2025-01-20 (CAB QA) |
+| **Art. 24(2)(e)** | Conformity assessment by a CAB | Conformity Assessment Report (CAR) including specific references to test certificates and validation results from Folder 06 | 03, 06 | All, Test Sections | ✓ | 2025-01-20 (CAB QA) |
 | **Art. 24(2)(f)** | Inform supervisory body of changes | EETT Communications Pack | 13 | Template 1 | ✓ | 2025-01-16 (Compliance) |
 | **Art. 24(2)(g)** | Termination plan | Termination Plan | 09 | All | ✓ | 2025-01-16 (Compliance) |
 | **Art. 24(2)(h)** | Recordkeeping of relevant data | Recordkeeping & Access Policy | 12 | All | ✓ | 2025-01-18 (DPO) |
-| **Art. 28** | Requirements for QES certificates | CAR, Test Certificates, TSPS | 03, 06, 05 | Annex I check | ✓ | 2025-01-20 (CAB QA) |
+| **Art. 28** | Requirements for QES certificates | CAR, Test Certificates (including validation, issuance, and revocation tests from Folder 06), TSPS | 03, 06, 05 | Annex I check with detailed test logs | ✓ | 2025-01-20 (CAB QA) |
 | **Art. 38** | Requirements for QSeal certificates | CAR, Test Certificates, TSPS | 03, 06, 05 | Annex III check | ✓ | 2025-01-20 (CAB QA) |
 | **Art. 42** | Requirements for QTS | CAR, Test Certificates, TSPS | 03, 06, 05 | TSA sections | ✓ | 2025-01-20 (CAB QA) |
 
@@ -76,6 +76,8 @@
 | **05 TSPS** | 07 Risk Assessment, 11 Revocation SOP | Security controls in TSPS must mitigate risks from 07. Revocation procedures must match SOP. | [DATE] |
 | **07a Incident Plan** | 08 User Notification Plan, 13 EETT Comms | Incident levels must trigger correct user notifications and EETT reports. | [DATE] |
 | **09 Termination Plan** | 12 Recordkeeping Policy | Archive handover must comply with 7-year retention policy. | [DATE] |
+| **03 CAR** | 06 Test Certificates, 05 TSPS | Conformity assessments in Folder 03 must align with test results and service specifications from Folders 06 and 05. | 2025-11-14 |
+| **06 Test Certificates** | 03 CAR, 11 Revocation Procedures | Test certificates and logs in Folder 06 must be referenced in conformity assessments (Folder 03) and support revocation testing (Folder 11). | 2025-11-14 |
 
 ---
 
