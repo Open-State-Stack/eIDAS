@@ -1,844 +1,1443 @@
-# EXECUTIVE BRIEF
-## Complete EETT/eIDAS Accreditation Dossier for Ελληνικές Υπηρεσίες Εμπιστοσύνης Α.Ε.
+# EETT/eIDAS DOSSIER TEMPLATE
+## Step-by-Step Guide to Using This Accreditation Package
 
-**Date:** [SUBMISSION_DATE]  
-**Version:** 1.0  
-**Classification:** Confidential – For EETT Submission
-
----
-
-## EXECUTIVE SUMMARY
-
-This dossier contains a complete, submission-ready application package for **[LEGAL_NAME_GR]** to become a Qualified Trust Service Provider (Πάροχος Υπηρεσιών Εμπιστοσύνης - ΠΥΕ) under:
-
-- **EETT Κανονισμός Παροχής Υπηρεσιών Εμπιστοσύνης** (EETT Trust Services Regulation)
-- **Regulation (EU) No 910/2014** (eIDAS Regulation)
-
-### Services Applied For
-
-☐ Qualified Electronic Signatures (QES) - Natural & Legal Persons  
-☐ Qualified Electronic Seals (QSeal)  
-☐ Qualified Time-Stamping (QTS)  
-☐ Qualified Validation Service  
-☐ Qualified Preservation Service  
-☐ Qualified Electronic Delivery Service (REM)  
-☐ Qualified Website Authentication Certificates (QWAC)
-
-### Key Milestones
-
-| Milestone | Target Date | Status |
-|-----------|-------------|--------|
-| **Dossier Preparation Complete** | 2025-01-10 | ✓ |
-| **Internal Review & QA** | 2025-02-07 | ✓ |
-| **CAB Final Audit** | 2025-04-15 | ☐ |
-| **EETT Submission** | 2025-05-20 | ☐ |
-| **EETT Completeness Check** | +5 working days | ☐ |
-| **EETT Decision** | +3 months (target) | ☐ |
-| **NTL Publication** | 2025-07-15 (est.) | ☐ |
-| **Service Go-Live** | 2025-08-01 | ☐ |
+**Version:** 2.0  
+**Date:** 2025-01-16  
+**Purpose:** Complete usage instructions for EETT Qualified Trust Service Provider submission
 
 ---
 
-## DOSSIER STRUCTURE & COMPLIANCE MAPPING
+## 📖 WHAT IS THIS DOCUMENT?
 
-This dossier systematically addresses ALL requirements of the EETT Regulation and eIDAS:
+This is your **master guide** to using the EETT/eIDAS accreditation dossier template. Whether you're a project manager, compliance officer, technical lead, or executive sponsor, this document will guide you through the entire process from template customization to EETT submission.
 
-### 1. EETT REGISTRY APPLICATION (Articles 3.2–3.7)
-
-**Deliverables:**
-- `01_Registry/01_Registry_Application_[LEGAL_NAME_GR].docx` ✓
-- `01_Registry/01a_Fee_Proof.pdf` ✓
-- `01_Registry/01b_Change_Notice_Template.docx` ✓
-
-**Compliance:**
-- ✓ Article 3.2: Provider details, contact information
-- ✓ Article 3.3: Public contact details for National Trust List
-- ✓ Article 3.4: €300 registration fee payment proof
-- ✓ Article 3.5: Change notification template (7-day deadline)
-- ✓ Article 3.7: Annual €100 fee reminder calendar
-
-**Status:** Ready for submission  
-**Next Action:** Execute fee payment, attach receipt
+**What this template provides:**
+- ✓ 20+ pre-drafted, submission-ready documents covering 100% of EETT & eIDAS requirements
+- ✓ Bilingual content (Greek/English) where required
+- ✓ Complete compliance traceability to every regulatory article
+- ✓ Automated validation and packaging scripts
+- ✓ Quality assurance checklists and audit readiness tools
 
 ---
 
-### 2. QUALIFIED SERVICE START APPLICATION (Article 6 & Annex 4)
+## 🎯 WHO SHOULD USE THIS GUIDE?
 
-**Deliverables:**
-- `02_Qualified_Service_Application/02_EETT_Qualified_Service_Start_Application.docx` ✓
+**Primary Users:**
+- **Project Managers** – Overall timeline, milestones, team coordination
+- **Compliance Officers** – Regulatory mapping, audit preparation, EETT liaison
+- **Technical Leads** – Infrastructure requirements, test certificates, security architecture
+- **Legal Counsel** – Contract review, liability assessment, GDPR compliance
+- **Executive Sponsors** – Budget approval, strategic decisions, go-live authorization
 
-**Compliance:**
-- ✓ Article 6.1: Formal application to start qualified services
-- ✓ Article 6.2: Cover letter & administrator declaration
-- ✓ Article 6.4: Electronic submission system access request
-- ✓ Annex 4 Part A: Provider identification
-- ✓ Annex 4 Part B: Service types (with OIDs per ETSI TS 119 612)
-- ✓ Annex 4 Part C: Financial resources (capital, insurance, operational budget)
-
-**Status:** Complete with placeholder fields  
-**Next Action:** Fill company-specific data, obtain legal representative signatures
+**Reading Time:** 15-20 minutes  
+**Implementation Time:** 4-6 weeks (parallel workstreams)
 
 ---
 
-### 3. CONFORMITY ASSESSMENT REPORT (Article 10)
+## 📂 UNDERSTANDING THE DOSSIER STRUCTURE
 
-**Deliverables:**
-- `03_CAR/03_CAR_Template_[ServiceFamily].docx` ✓
+### Folder Organization
 
-**Compliance:**
-- ✓ Article 10.1: CAB identification & accreditation (Regulation 765/2008)
-- ✓ Article 10.2–10.4: Service descriptions, architecture, audit scope
-- ✓ Article 10.5: Third-party dependencies
-- ✓ Article 10.6: Public keys, service type identifiers (OIDs)
-- ✓ Article 10.7–10.10: Audit period, methodology, findings
-- ✓ Article 10.11–10.17: eIDAS compliance (Articles 24, 28, 38, 42, etc.)
-- ✓ Article 10.18: Non-conformities & corrective actions
-- ✓ Article 10.19: Recommendations
-
-**Includes:** Traceability matrix mapping every eIDAS/EETT requirement to evidence
-
-**Status:** Template ready for CAB to complete  
-**Next Action:** Engage CAB (e.g., [CAB_NAME]), conduct audit, obtain signed CAR
-
----
-
-### 4. TRUST SERVICE POLICY & PRACTICE STATEMENT (Article 6.3.2–6.3.3)
-
-**Deliverables:**
-- `04_Policies/04_TSP_Policy_GR.docx` (Greek) ✓
-- `04_Policies/04_TSP_Policy_EN.docx` (English) ✓
-- `04_Policies/05_TSPS_GR.docx` (Greek) ✓
-- `04_Policies/05_TSPS_EN.docx` (English) ✓
-
-**Compliance:**
-- ✓ Aligned to ETSI EN 319 401 (General Policy Requirements)
-- ✓ Service-specific policies per ETSI EN 319 411-1/-2, 319 421
-- ✓ EETT-specific requirements: 24×7 revocation, phone acceptance, 7-year records
-- ✓ Lifecycle management: registration, issuance, renewal, revocation, validation
-- ✓ Cryptographic controls, key management, HSM operations
-- ✓ Personnel requirements, training, segregation of duties
-- ✓ Physical & environmental security
-- ✓ Incident management & business continuity
-
-**Status:** Complete bilingual templates  
-**Next Action:** Tailor to company-specific infrastructure, publish on website
-
----
-
-### 5. TEST CERTIFICATES & TECHNICAL ARTIFACTS (Article 6.3.4 & Article 10.6)
-
-**Deliverables:**
-- `05_Test_Certificates/06_Test_Certificates.zip` ✓
-  - Sample QES certificates (natural & legal persons)
-  - Sample QSeal certificates
-  - Sample QWAC certificates
-  - OCSP responses
-  - CRL samples
-  - TSA tokens
-  - Certificate profiles documentation
-
-**Compliance:**
-- ✓ X.509 v3 format (RFC 5280)
-- ✓ QCStatements per eIDAS Regulation
-- ✓ Service type identifiers (OIDs) per Decision (EU) 2015/1505
-- ✓ Key identifiers (SKI/AKI)
-- ✓ CRL/OCSP distribution points
-- ✓ TSA policy OIDs per ETSI EN 319 421
-
-**Status:** Sample templates provided  
-**Next Action:** Generate real pre-production samples from your CA infrastructure
-
----
-
-### 6. RISK ASSESSMENT & INCIDENT MANAGEMENT (Annex 3, Articles 4–5)
-
-**Deliverables:**
-- `06_Risk_Incident/07_Risk_Assessment_Report_GR.docx` ✓
-- `06_Risk_Incident/07a_Incident_Response_Plan_GR.docx` ✓
-- `06_Risk_Incident/07b_Incident_Forms_GR.xlsx` ✓
-
-**Compliance:**
-- ✓ Risk methodology aligned to ISO 31000 / ISO 27005
-- ✓ Asset inventory (HSMs, CAs, databases, networks, personnel, facilities)
-- ✓ Threat modeling & vulnerability assessment
-- ✓ Risk register with likelihood, impact, controls
-- ✓ Lifecycle risk coverage: registration, key mgmt, issuance, revocation, validation, timestamping
-- ✓ Incident classification (Levels 1–5 per Annex 3)
-- ✓ 24-hour reporting to EETT for Level ≥3 incidents
-- ✓ Initial & Final incident report forms (all fields per Article 5.4)
-
-**Status:** Complete templates with methodology  
-**Next Action:** Populate with company-specific assets, threat landscape, controls
-
----
-
-### 7. USER NOTIFICATION PLAN (eIDAS Art. 19(2), Article 6.3.7)
-
-**Deliverables:**
-- `07_User_Notifications/08_User_Notification_Plan_GR_EN.docx` (Bilingual) ✓
-
-**Compliance:**
-- ✓ Notification triggers: security incidents, service termination, certificate compromise
-- ✓ Notification methods: email, SMS, website, press release
-- ✓ Templates for different scenarios
-- ✓ Cross-border notification considerations (EU languages, Trusted List operators)
-- ✓ Timeline requirements (e.g., immediate for critical incidents)
-
-**Status:** Complete bilingual plan  
-**Next Action:** Test notification workflows, integrate with incident response plan
-
----
-
-### 8. TERMINATION PLAN (Articles 7–8, Annex 5)
-
-**Deliverables:**
-- `08_Termination/09_Termination_Plan_GR_EN.docx` (Bilingual) ✓
-
-**Compliance:**
-- ✓ Planned termination: service discontinuation, merger, acquisition
-- ✓ Unplanned termination: bankruptcy, license revocation, force majeure
-- ✓ Partial termination: end-of-life for specific PKI components
-- ✓ Notification timelines: 3 months advance notice (planned), immediate (unplanned Level ≥4)
-- ✓ User impact assessment & mitigation
-- ✓ Archive handover to another qualified TSP or EETT
-- ✓ 7-year accessibility of information (records, validation data, archives)
-- ✓ NTL status change coordination
-- ✓ Testing scenarios & annual drills
-- ✓ Third-party agreements (archive custodian, subcontractors)
-
-**Status:** Complete plan aligned to Annex 5 table of contents  
-**Next Action:** Secure archive custodian agreements, conduct termination drill
-
----
-
-### 9. STANDARD END-USER AGREEMENT (Article 6.3.9, eIDAS Art. 13)
-
-**Deliverables:**
-- `09_Contracts/10_Standard_End_User_Agreement_GR_EN.docx` (Bilingual) ✓
-
-**Compliance:**
-- ✓ Terms of use & permitted purposes
-- ✓ Subscriber identification & authentication obligations
-- ✓ Key/device protection duties
-- ✓ Revocation terms: 24×7 availability, telephone acceptance, processing deadlines
-- ✓ Suspension conditions
-- ✓ Liability framework (eIDAS Art. 13): damages, limits, exclusions, burden of proof
-- ✓ Indemnification clauses
-- ✓ Privacy & data protection (GDPR): data processed, retention, subject rights
-- ✓ Complaints procedure
-- ✓ Governing law (Greek law) & jurisdiction
-- ✓ Contract modification & termination
-
-**Status:** Complete bilingual template  
-**Next Action:** Legal review, publish on website, integrate into enrollment workflow
-
----
-
-### 10. REVOCATION & STATUS SERVICES (Article 11)
-
-**Deliverables:**
-- `10_Revocation_Status/11_Revocation_Status_SOP_GR.docx` ✓
-- `10_Revocation_Status/11a_Web_Disclosure_Text_GR.md` ✓
-
-**Compliance:**
-- ✓ 24×7 revocation request acceptance (Article 11.1)
-- ✓ Telephone acceptance procedures (Article 11.2)
-- ✓ Immediate processing & OCSP/CRL update
-- ✓ CRL issuance: daily minimum, nextUpdate field mandatory
-- ✓ OCSP: high-availability, < 200ms response time (recommended)
-- ✓ Public disclosure of revocation procedures on website
-- ✓ Multilingual support (Greek, English minimum)
-
-**Status:** Complete SOP + web disclosure text  
-**Next Action:** Implement 24×7 NOC/hotline, publish web disclosure, test revocation workflows
-
----
-
-### 11. RECORDKEEPING & ACCESS POLICY (Article 12)
-
-**Deliverables:**
-- `11_Records_Access/12_Records_and_Access_Policy_GR.docx` ✓
-
-**Compliance:**
-- ✓ 7-year retention after certificate expiry (Article 12.1)
-- ✓ Records integrity controls: digital signatures, write-once storage, audit trails
-- ✓ Data subject access rights (GDPR Art. 15): 7 working-day response deadline
-- ✓ Disclosure rules: pseudonymization, competent authority requests only
-- ✓ Archive structure: certificate lifecycle events, RA transactions, revocations, validation logs
-- ✓ Backup & disaster recovery for archives
-- ✓ Termination scenario: archive handover procedures
-
-**Status:** Complete policy  
-**Next Action:** Implement archive infrastructure, test data subject access workflow
-
----
-
-### 12. EETT COMMUNICATIONS PACK (Articles 3.5, 5, 8)
-
-**Deliverables:**
-- `12_EETT_Communications/13_EETT_Notification_Templates_GR.docx` ✓
-
-**Includes:**
-- ✓ Change notification templates (Article 3.5, 7-day deadline)
-- ✓ Initial incident notification (Article 5.3, 24-hour deadline for Level ≥3)
-- ✓ Final incident report (Article 5.4, all required fields)
-- ✓ Termination notification (Article 8)
-- ✓ Service status change notifications
-- ✓ CAB audit report submission cover letter
-
-**Status:** Ready-to-use templates  
-**Next Action:** Configure email/system integration for automated alerts
-
----
-
-### 13. NATIONAL TRUST LIST (NTL) DATASHEET (Article 3.3)
-
-**Deliverables:**
-- `13_NTL/14_NTL_Publication_Datasheet.xlsx` ✓
-
-**Compliance:**
-- ✓ Service type identifiers (OIDs) per ETSI TS 119 612
-- ✓ Service status: "granted" (post-approval)
-- ✓ Public keys / X.509 certificates (PEM format)
-- ✓ Service names (Greek & English)
-- ✓ Service digital identity (X.509 SKI)
-- ✓ Service supply points (OCSP, CRL, TSA URLs)
-- ✓ Service definition URIs (CP/CPS locations)
-- ✓ Supervision/accreditation pointers (CAB details)
-
-**Critical Reminder:**  
-**DO NOT START SERVICES BEFORE NTL LISTING**
-
-**Status:** Template with all required fields  
-**Next Action:** Complete after EETT approval, coordinate NTL publication
-
----
-
-### 14. SUBMISSION PACKAGING & SIGNATURE (Decision (EU) 2015/1506)
-
-**Deliverables:**
-- `14_Submission_Guide/15_Submission_Packaging_Guide_GR_EN.pdf` ✓
-
-**Compliance:**
-- ✓ Qualified e-signature/e-seal application to all documents
-- ✓ Format: PAdES (PDF/A with embedded signatures) or ASiC-E containers
-- ✓ Signature validation per ETSI EN 319 102-1
-- ✓ Timestamping: all signatures include qualified timestamps
-- ✓ Packaging: single ZIP with manifest, signatures, supporting docs
-- ✓ Metadata: document inventory, version control, checksums
-
-**Status:** Guide ready  
-**Next Action:** Apply qualified signature/seal to final dossier before submission
-
----
-
-### 15. MASTER COMPLIANCE REGISTER
-
-**Deliverable:**
-- `15_Compliance_Master/Master_Compliance_Register.xlsx` ✓
-
-**Contents:**
-- Tab 1: eIDAS Article mapping (Articles 3–45) → Dossier evidence
-- Tab 2: EETT Regulation mapping (Articles 3–12, Annexes 1–5) → Dossier evidence
-- Tab 3: ETSI Standards mapping (EN 319 4xx series) → Implementation evidence
-- Tab 4: Document cross-reference matrix
-- Tab 5: Red-team review checklist (security & legal)
-
-**Status:** Complete traceability matrix  
-**Next Action:** Use for final QA review, provide to CAB auditor
-
----
-
-## COMPLIANCE SUMMARY
-
-### eIDAS Regulation (EU) No 910/2014
-
-| Article | Requirement | Satisfied By | Evidence Location |
-|---------|-------------|--------------|-------------------|
-| **Art. 13** | TSP information & contact details | Doc 01, 02 | Sections A, B |
-| **Art. 19(2)** | User notification obligations | Doc 08 | User Notification Plan |
-| **Art. 20** | Application for qualified status | Doc 02 | Complete application |
-| **Art. 24(1)** | Requirements for qualified TSPs | Docs 02–12 | All technical/organizational docs |
-| **Art. 24(2)(a)** | Sufficient financial resources | Doc 02 Part C | Financial resources section |
-| **Art. 24(2)(b)** | Qualified personnel | Doc 02 Part E | HR section, CVs |
-| **Art. 24(2)(c)** | Reliable systems & products | Docs 03, 04, 05 | CAR, TSP Policy, infrastructure |
-| **Art. 24(2)(d)** | Security measures | Docs 04, 07 | TSPS, Risk Assessment |
-| **Art. 24(2)(e)** | CAB-audited policies & practices | Docs 03, 04, 05 | CAR, TSP Policy, TSPS |
-| **Art. 24(2)(f)** | Liability coverage | Doc 02 Part C | Insurance policies |
-| **Art. 24(3)** | Competent authority supervision | Doc 13 | EETT communication templates |
-| **Art. 24(4)** | Business continuity | Docs 07, 09 | Incident Response, Termination Plan |
-| **Art. 24(5)** | Recordkeeping (5 years min) | Doc 12 | Records Policy (7 years implemented) |
-| **Art. 28** | QC for e-signatures | Docs 03, 06 | CAR, test certificates |
-| **Art. 38** | QC for e-seals | Docs 03, 06 | CAR, test certificates |
-| **Art. 42** | Qualified time-stamps | Docs 03, 06 | CAR, TSA tokens |
-
-### EETT Regulation
-
-| Article/Annex | Requirement | Satisfied By | Evidence Location |
-|---------------|-------------|--------------|-------------------|
-| **Art. 3.2** | Registry application | Doc 01 | Registry Application |
-| **Art. 3.3** | NTL publication details | Doc 14 | NTL Datasheet |
-| **Art. 3.4** | Registration fee (€300) | Doc 01a | Fee proof |
-| **Art. 3.5** | 7-day change notification | Doc 01b, 13 | Change notice templates |
-| **Art. 3.7** | Annual fee (€100) | Doc 01a | Calendar reminder |
-| **Art. 4** | Security measures | Docs 04, 07 | TSPS, Risk Assessment |
-| **Art. 5** | Incident reporting (24h for Level ≥3) | Doc 07a, 07b | Incident Response Plan, forms |
-| **Art. 6** | Qualified service application | Doc 02 | Qualified Service Application |
-| **Art. 7–8** | Termination obligations | Doc 09 | Termination Plan |
-| **Art. 10** | CAR requirements (19 items) | Doc 03 | CAR Template |
-| **Art. 11** | Revocation & status (24×7) | Doc 11, 11a | Revocation SOP, web disclosure |
-| **Art. 12** | Records (7 years, access) | Doc 12 | Recordkeeping Policy |
-| **Annex 3** | Incident severity classification | Doc 07a, 07b | Incident levels 1–5 |
-| **Annex 4** | Application form structure | Doc 02 | Parts A, B, C completed |
-| **Annex 5** | Termination plan ToC | Doc 09 | Aligned structure |
-
----
-
-## PROJECT TIMELINE & GANTT
-
-### Phase 1: Dossier Preparation (Weeks 1–8)
-```
-Week 1–2:  ▓▓▓▓▓▓▓▓▓▓ Intake & stakeholder alignment
-Week 3–4:  ▓▓▓▓▓▓▓▓▓▓ Policy development (TSP Policy, TSPS)
-Week 5–6:  ▓▓▓▓▓▓▓▓▓▓ Risk assessment, incident procedures
-Week 7–8:  ▓▓▓▓▓▓▓▓▓▓ Termination plan, user agreements, revocation SOPs
-```
-
-### Phase 2: Infrastructure & CAB Preparation (Weeks 9–16)
-```
-Week 9–10:  ▓▓▓▓▓▓▓▓▓▓ HSM procurement, CA hierarchy setup
-Week 11–12: ▓▓▓▓▓▓▓▓▓▓ OCSP/CRL infrastructure, test environment
-Week 13–14: ▓▓▓▓▓▓▓▓▓▓ Generate test certificates, validate technical stack
-Week 15–16: ▓▓▓▓▓▓▓▓▓▓ CAB engagement, pre-audit readiness
-```
-
-### Phase 3: CAB Audit (Weeks 17–20)
-```
-Week 17:    ▓▓▓▓▓▓▓▓▓▓ CAB audit kickoff, document review
-Week 18–19: ▓▓▓▓▓▓▓▓▓▓ On-site audit, infrastructure inspection, interviews
-Week 20:    ▓▓▓▓▓▓▓▓▓▓ Non-conformity resolution, CAR finalization
-```
-
-### Phase 4: EETT Submission (Week 21)
-```
-Week 21:    ▓▓▓▓▓▓▓▓▓▓ Apply qualified signatures, package dossier, submit to EETT
-```
-
-### Phase 5: EETT Review & Approval (Weeks 22–33)
-```
-Week 22:    ▓▓░░░░░░░░ EETT completeness check (5 working days)
-Week 23–25: ░░░░░░░░░░ Respond to EETT information requests (if any)
-Week 26–33: ░░░░░░░░░░ EETT substantive review (target: 3 months from notification)
-             └─ Possible site inspection
-             └─ Supplementary questions
-             └─ EETT decision (approval/rejection)
-```
-
-### Phase 6: NTL Publication & Go-Live (Weeks 34–36)
-```
-Week 34:    ▓▓▓▓▓▓▓▓▓▓ NTL publication (EETT → EU Trusted List)
-Week 35:    ▓▓▓▓▓▓▓▓▓▓ Final pre-production testing, staff training
-Week 36:    ▓▓▓▓▓▓▓▓▓▓ SERVICE GO-LIVE ✓
-```
-
-**Legend:**  
-▓ = Active work  
-░ = Waiting period / External dependency
-
-**Critical Path:**  
-CAB Audit → EETT Submission → EETT Approval → NTL Listing → Go-Live
-
-**Dependencies:**
-- CAB must be engaged by Week 15 (audit scheduling typically 4–6 weeks lead time)
-- EETT decision deadline: 3 months from notification (may extend with justification)
-- Cannot go live until NTL publication confirmed
-
----
-
-## QUALITY CONTROLS & RED-TEAM CHECKLIST
-
-### Document Quality
-
-☐ All placeholders [PLACEHOLDER] replaced with actual data  
-☐ Company-specific technical details validated (HSM models, DC locations, URLs)  
-☐ Legal entity names consistent across all documents (Greek & English)  
-☐ Contact details verified (phone, email, addresses)  
-☐ Financial figures current & audited (balance sheet, insurance policies)  
-☐ All cross-references between documents accurate  
-☐ Version control & dates consistent  
-☐ Greek language documents reviewed by native speaker  
-☐ English translations accurate & professional
-
-### Regulatory Compliance
-
-☐ Every eIDAS Article 24 requirement mapped to evidence  
-☐ Every EETT Article 3–12 requirement addressed  
-☐ All Annex 3–5 requirements satisfied  
-☐ CAR covers all 19 items of Article 10  
-☐ Incident classification matches Annex 3 (Levels 1–5)  
-☐ Termination plan follows Annex 5 structure  
-☐ 24×7 revocation commitment documented & implemented  
-☐ 7-year recordkeeping policy in place  
-☐ GDPR compliance verified (data subject rights, privacy notices)
-
-### Technical Security
-
-☐ HSM FIPS 140-2 Level 2+ / Common Criteria EAL 4+ certified  
-☐ Root CA offline, air-gapped, key ceremony procedures documented  
-☐ Issuing CAs online, HSM-protected, HA architecture  
-☐ OCSP/CRL high-availability tested (99.9% SLA target)  
-☐ Cryptographic algorithms comply with ETSI TS 119 312  
-☐ Key backup: M-of-N splitting, geographically distributed  
-☐ Network segmentation (VLANs, firewalls, IDS/IPS)  
-☐ Physical security: Tier III DC minimum, biometric access, CCTV  
-☐ Penetration testing scheduled (annual minimum)  
-☐ Vulnerability scanning automated (weekly)  
-☐ Disaster recovery tested (RTO/RPO validated)  
-☐ Business continuity plan exercised annually
-
-### Operational Readiness
-
-☐ 24×7 NOC/SOC staffed  
-☐ Revocation hotline tested (phone acceptance)  
-☐ Incident response team trained  
-☐ RA operators certified (internal exam)  
-☐ CISO, Crypto Officer, DPO appointed  
-☐ Personnel background checks completed  
-☐ Training program established (initial + annual refresher)  
-☐ Insurance policies active & adequate coverage  
-☐ CAB audit scheduled  
-☐ Archive custodian agreement signed (termination scenario)
-
-### Legal & Contractual
-
-☐ End-user agreement legally reviewed  
-☐ Liability limits aligned with insurance coverage  
-☐ Privacy policy GDPR-compliant  
-☐ Data processing agreements with subcontractors  
-☐ Termination plan financially provisioned  
-☐ Indemnification clauses balanced (user vs. TSP)  
-☐ Governing law clause (Greek law specified)  
-☐ Dispute resolution mechanism defined
-
-### Pre-Submission Final Checks
-
-☐ All documents signed by authorized legal representatives  
-☐ Qualified e-signature/e-seal applied to dossier  
-☐ Qualified timestamp applied to signatures  
-☐ Document package integrity verified (checksums, manifest)  
-☐ Submission format compliant (PAdES or ASiC-E)  
-☐ EETT submission portal access confirmed  
-☐ Registration fee (€300) paid, receipt attached  
-☐ All attachments referenced in application included  
-☐ Master compliance register complete  
-☐ Executive brief & Gantt timeline finalized
-
----
-
-## NEXT ACTIONS (Priority Order)
-
-### Immediate (Week 1)
-
-1. **Intake Completion:**  
-   Fill all [PLACEHOLDER] fields in documents 01–15 with actual company data  
-   *Owner: Company Management*  
-   *Deadline: [DATE]*
-
-2. **Fee Payment:**  
-   Pay €300 EETT registration fee, attach receipt to Doc 01a  
-   *Owner: Finance Department*  
-   *Deadline: [DATE]*
-
-3. **CAB Selection & Engagement:**  
-   Select accredited CAB (e.g., TÜV, LRQA, Bureau Veritas with EA accreditation)  
-   *Owner: QTS Manager*  
-   *Deadline: [DATE]*
-
-### Short-Term (Weeks 2–4)
-
-4. **Infrastructure Readiness:**  
-   - Procure/configure HSMs (FIPS 140-2 Level 2+)
-   - Set up CA hierarchy (Root offline, Issuing online)
-   - Deploy OCSP/CRL infrastructure
-   - Generate test certificates (Doc 06)  
-   *Owner: CTO / Crypto Officer*  
-   *Deadline: [DATE]*
-
-5. **Insurance Procurement:**  
-   Obtain professional liability insurance (€1M+ coverage for QES/QSeal)  
-   *Owner: Risk Manager / Finance*  
-   *Deadline: [DATE]*
-
-6. **Personnel Readiness:**  
-   - Appoint QTS Manager, CISO, Crypto Officer, DPO
-   - Prepare CVs & certifications
-   - Conduct background checks
-   - Initiate training program  
-   *Owner: HR / QTS Manager*  
-   *Deadline: [DATE]*
-
-### Medium-Term (Weeks 5–16)
-
-7. **CAB Pre-Audit:**  
-   Conduct internal readiness assessment against eIDAS & ETSI standards  
-   *Owner: QTS Manager + CISO*  
-   *Deadline: [DATE]*
-
-8. **CAB Formal Audit:**  
-   Schedule & complete CAB audit, obtain signed CAR (Doc 03)  
-   *Owner: QTS Manager + CAB*  
-   *Deadline: [DATE]*
-
-9. **Document Finalization:**  
-   - Legal review of end-user agreement (Doc 10)
-   - Publish TSP Policy & TSPS on website (Docs 04, 05)
-   - Publish revocation procedures (Doc 11a)
-   - Test incident reporting workflow (Docs 07a, 07b, 13)  
-   *Owner: Legal + Compliance*  
-   *Deadline: [DATE]*
-
-### Pre-Submission (Week 17–20)
-
-10. **Dossier QA Review:**  
-    Execute red-team checklist (above), validate all cross-references  
-    *Owner: Internal Audit + External Consultant*  
-    *Deadline: [DATE]*
-
-11. **Signature Application:**  
-    Apply qualified e-signature/e-seal to all documents (use external qualified TSP)  
-    *Owner: QTS Manager*  
-    *Deadline: [DATE]*
-
-12. **Submission Package:**  
-    Create final ZIP package per Doc 15 (manifest, checksums, signatures)  
-    *Owner: QTS Manager*  
-    *Deadline: [DATE]*
-
-### Submission (Week 21)
-
-13. **EETT Submission:**  
-    Submit via EETT Electronic Submission System  
-    *Owner: Legal Representative + QTS Manager*  
-    *Deadline: [SUBMISSION_DATE]*
-
-### Post-Submission (Weeks 22–36)
-
-14. **EETT Liaison:**  
-    - Monitor for completeness check (5 working days)
-    - Respond to EETT information requests within deadline (5–25 days)
-    - Prepare for possible site inspection  
-    *Owner: EETT Liaison Officer*  
-    *Ongoing*
-
-15. **NTL Preparation:**  
-    Complete NTL datasheet (Doc 14) post-approval  
-    *Owner: QTS Manager*  
-    *Deadline: Upon EETT approval*
-
-16. **Go-Live Preparation:**  
-    - Final production environment testing
-    - 24×7 NOC/hotline activation
-    - User onboarding materials
-    - Marketing communications  
-    *Owner: Operations + Marketing*  
-    *Deadline: Post-NTL publication*
-
----
-
-## RISK REGISTER (Top 10 Risks)
-
-| # | Risk | Impact | Probability | Mitigation |
-|---|------|--------|-------------|------------|
-| 1 | CAB audit delays (availability) | High | Medium | Engage CAB by Week 15; have backup CAB |
-| 2 | Major non-conformity in CAB audit | High | Low | Pre-audit internal assessment; gap remediation |
-| 3 | EETT requests extensive additional info | Medium | Medium | Over-document in initial submission; assign responsive liaison |
-| 4 | HSM procurement delays (supply chain) | High | Medium | Order early (Week 2); consider rental/cloud HSM interim |
-| 5 | Insurance coverage insufficient/rejected | High | Low | Engage specialist broker; obtain quotes from 3+ insurers |
-| 6 | Key personnel unavailable (resignation) | Medium | Low | Cross-training; documented procedures; retention incentives |
-| 7 | Placeholder data incomplete/inaccurate | Medium | Medium | Dedicated intake session (Week 1); validation checklist |
-| 8 | Legal review delays end-user agreement | Low | Medium | Engage legal counsel early (Week 3); allow 2-week buffer |
-| 9 | EETT extends review beyond 3 months | Low | Medium | Proactive liaison; anticipate extension; adjust go-live plan |
-| 10 | NTL publication technical glitches | Low | Low | Pre-coordinate with EETT; validate OIDs & data formats |
-
----
-
-## BUDGET ESTIMATE (Indicative)
-
-| Item | Cost (€) | Notes |
-|------|----------|-------|
-| **CAB Audit (Initial)** | 15,000 – 30,000 | Depends on services audited, audit days |
-| **CAB Audit (Annual Surveillance)** | 8,000 – 15,000 | Ongoing compliance |
-| **HSM (2 units, HA pair)** | 40,000 – 80,000 | Purchase; or €2,000–5,000/month rental |
-| **Data Center (Colocation)** | 24,000/year | 2 racks (primary + backup) |
-| **Professional Liability Insurance** | 10,000 – 25,000/year | €1M–€5M coverage |
-| **EETT Fees** | 400 | €300 registration + €100 annual |
-| **Legal & Consulting** | 20,000 – 50,000 | Document review, policy development |
-| **Personnel (6 FTEs, year 1)** | 300,000 | QTS Mgr, CISO, Crypto Officer, DPO, 2× RA Operators |
-| **Software Licenses (CA, OCSP, TSA)** | 30,000 – 60,000 | Open source or commercial PKI suite |
-| **Security (Pentesting, SIEM, etc.)** | 15,000 | Initial + annual testing |
-| **Training & Certifications** | 5,000 | CISSP, CISA, ISO 27001 LA, RA training |
-| **Contingency (15%)** | 66,000 – 104,000 | Unforeseen costs |
-| **TOTAL (Year 1)** | **€533,400 – €818,400** | One-time + first-year operational |
-
-**Ongoing (Year 2+):**  
-€350,000 – €500,000/year (personnel, insurance, audits, infrastructure, maintenance)
-
----
-
-## SUCCESS CRITERIA
-
-**Dossier Acceptance:**  
-☐ EETT confirms completeness within 5 working days (no major information requests)  
-☐ CAR accepted by EETT without major objections  
-
-**Approval:**  
-☐ EETT grants authorization within 3 months  
-☐ All requested qualified services approved  
-
-**NTL Listing:**  
-☐ Services listed in Greek NTL with status "granted"  
-☐ NTL successfully published to EU Trusted List (https://eidas.ec.europa.eu/efda/tl-browser/)  
-
-**Operational Readiness:**  
-☐ 24×7 revocation hotline operational  
-☐ OCSP/CRL achieving >99% availability  
-☐ Zero critical incidents in first 90 days  
-☐ First certificates issued to pilot users  
-
-**Business:**  
-☐ First customer contracts signed  
-☐ Revenue target: [X] certificates/timestamps in first 6 months  
-☐ Positive CAB surveillance audit (Year 1)  
-
----
-
-## APPENDICES
-
-### A. Acronyms & Definitions
-
-- **CAB:** Conformity Assessment Body (ΦΑΣ – Φορέας Αξιολόγησης Συμμόρφωσης)
-- **CAR:** Conformity Assessment Report (ΕΑΣ – Έκθεση Αξιολόγησης Συμμόρφωσης)
-- **CRL:** Certificate Revocation List
-- **DPO:** Data Protection Officer
-- **EA:** European co-operation for Accreditation
-- **EETT:** Hellenic Telecommunications and Post Commission (Εθνική Επιτροπή Τηλεπικοινωνιών και Ταχυδρομείων)
-- **eIDAS:** Electronic Identification, Authentication and Trust Services (Regulation (EU) No 910/2014)
-- **ESYD:** Hellenic Accreditation System (Εθνικό Σύστημα Διαπίστευσης)
-- **FIPS:** Federal Information Processing Standards (US cryptographic module certification)
-- **Γ.Ε.Μ.Η.:** Γενικό Εμπορικό Μητρώο (General Commercial Registry)
-- **GDPR:** General Data Protection Regulation (Regulation (EU) 2016/679)
-- **HSM:** Hardware Security Module
-- **NTL:** National Trust List (Εθνικός Κατάλογος Εμπιστοσύνης)
-- **OCSP:** Online Certificate Status Protocol
-- **OID:** Object Identifier
-- **PAdES:** PDF Advanced Electronic Signatures
-- **QES:** Qualified Electronic Signature
-- **QSCD:** Qualified Signature Creation Device
-- **QSeal:** Qualified Electronic Seal
-- **QTS:** Qualified Time-Stamp
-- **QWAC:** Qualified Website Authentication Certificate
-- **RA:** Registration Authority
-- **REM:** Registered Electronic Mail (qualified eDelivery)
-- **RPO:** Recovery Point Objective
-- **RTO:** Recovery Time Objective
-- **SLA:** Service Level Agreement
-- **TSA:** Time-Stamp Authority
-- **TSP:** Trust Service Provider (Πάροχος Υπηρεσιών Εμπιστοσύνης - ΠΥΕ)
-- **TSPS:** Trust Service Practice Statement
-
-### B. Key Contacts
-
-**EETT:**  
-Λεωφ. Κηφισίας 60, 151 25 Μαρούσι, Αθήνα  
-+30 210 614 5000  
-info@eett.gr  
-www.eett.gr
-
-**EU Trusted List Browser:**  
-https://eidas.ec.europa.eu/efda/tl-browser/
-
-**ETSI (Standards):**  
-www.etsi.org → Search "EN 319" for eIDAS standards
-
-**Hellenic Accreditation System (ESYD):**  
-www.esyd.gr  
-(For verifying CAB accreditation)
-
-### C. Document Repository
-
-All documents are organized in:  
-`/Users/spirospilafas/Documents/OpenStateStack/eIDAS/EETT_eIDAS_Dossier/`
+The dossier contains **20 numbered folders** (01-20) plus supporting directories:
 
 ```
 EETT_eIDAS_Dossier/
-├── 00_EXECUTIVE_BRIEF.md (this document)
-├── 01_Registry/
-│   ├── 01_Registry_Application_[LEGAL_NAME_GR].docx
-│   ├── 01a_Fee_Proof.pdf
-│   └── 01b_Change_Notice_Template.docx
-├── 02_Qualified_Service_Application/
-│   └── 02_EETT_Qualified_Service_Start_Application.docx
-├── 03_CAR/
-│   └── 03_CAR_Template_[ServiceFamily].docx
-├── 04_Policies/
-│   ├── 04_TSP_Policy_GR.docx
-│   ├── 04_TSP_Policy_EN.docx
-│   ├── 05_TSPS_GR.docx
-│   └── 05_TSPS_EN.docx
-├── 05_Test_Certificates/
-│   └── 06_Test_Certificates.zip
-├── 06_Risk_Incident/
-│   ├── 07_Risk_Assessment_Report_GR.docx
-│   ├── 07a_Incident_Response_Plan_GR.docx
-│   └── 07b_Incident_Forms_GR.xlsx
-├── 07_User_Notifications/
-│   └── 08_User_Notification_Plan_GR_EN.docx
-├── 08_Termination/
-│   └── 09_Termination_Plan_GR_EN.docx
-├── 09_Contracts/
-│   └── 10_Standard_End_User_Agreement_GR_EN.docx
-├── 10_Revocation_Status/
-│   ├── 11_Revocation_Status_SOP_GR.docx
-│   └── 11a_Web_Disclosure_Text_GR.md
-├── 11_Records_Access/
-│   └── 12_Records_and_Access_Policy_GR.docx
-├── 12_EETT_Communications/
-│   └── 13_EETT_Notification_Templates_GR.docx
-├── 13_NTL/
-│   └── 14_NTL_Publication_Datasheet.xlsx
-├── 14_Submission_Guide/
-│   └── 15_Submission_Packaging_Guide_GR_EN.pdf
-└── 15_Compliance_Master/
-    └── Master_Compliance_Register.xlsx
+├── 00_EXECUTIVE_BRIEF.md          ← YOU ARE HERE
+├── 01_Registry/                    Registry application & fees
+├── 02_Service_Start/               Qualified service application
+├── 03_Conformity_Assessment/       CAB audit templates & traceability
+├── 04_Policies/                    TSP Policy documents
+├── 05_Key_Management/              TSPS & crypto procedures
+├── 06_RA_Operations/               Registration Authority procedures
+├── 07_Incident_and_BCP/            Risk & incident management
+├── 08_User_Notifications/          User notification plans
+├── 09_Service_Termination/         Termination & archive plans
+├── 10_End_User_Agreement/          Subscriber agreements
+├── 11_Revocation_Procedures/       24×7 revocation SOPs
+├── 12_Recordkeeping/               7-year retention policies
+├── 13_Communication_Templates/     EETT correspondence
+├── 14_NTL_Publication/             National Trust List datasheet
+├── 15_Compliance_Master/           Master compliance register
+├── 16_Submission_Packaging/        ASiC-E packaging guide
+├── 17_Executive_Brief/             Stakeholder summaries
+├── 18_Project_Timeline/            Gantt charts & milestones
+├── 19_Compliance_Register/         Regulatory controls matrix
+├── 20_README_and_Placeholders/     Template documentation
+├── _PMO/                           Project management tracking
+├── _Shared/                        Contact lists & shared resources
+├── scripts/                        Automation tools
+└── Supporting_Docs/                Reference materials
+```
+
+### Document Lifecycle Pattern
+
+Most folders follow a **5-stage workflow**:
+
+```
+Drafts/          → Working templates with [PLACEHOLDERS]
+Compliance/      → Audit logs, readiness trackers
+Evidence/        → Supporting proof, test reports, hashes
+Final/           → Signed PDFs ready for submission
+Archive/         → Historical versions (read-only)
+```
+
+**Key Concept:** Documents flow through stages as they mature. You'll work primarily in `Drafts/`, then move finalized content to `Final/`.
+
+---
+
+## 🚀 STEP-BY-STEP IMPLEMENTATION GUIDE
+
+### PHASE 1: PREPARATION & SETUP (Week 1)
+
+#### Step 1.1: Assess Your Readiness
+
+**Before starting, confirm you have:**
+
+☐ **Legal Entity:** Greek company registered in ΓΕΜΗ (General Commercial Registry)  
+☐ **Financial Resources:**
+  - Minimum €25,000 capital (for basic services)
+  - €1M+ professional liability insurance
+  - Budget for infrastructure & audits (€500K+ Year 1)  
+☐ **Technical Infrastructure (planned or existing):**
+  - FIPS 140-2 Level 2+ HSMs
+  - Tier III data center(s)
+  - 24×7 NOC capability  
+☐ **Key Personnel (appointed or to be hired):**
+  - TSP/QTS Manager
+  - CISO (Chief Information Security Officer)
+  - Crypto Officer
+  - Data Protection Officer (DPO)
+  - RA Operators  
+☐ **Timeline Commitment:** 6 months from start to service launch
+
+**If any critical items are missing, address them BEFORE proceeding.**
+
+---
+
+#### Step 1.2: Assemble Your Project Team
+
+Create a cross-functional team with clear ownership:
+
+| Role | Responsibilities | Time Commitment |
+|------|------------------|-----------------|
+| **Project Manager** | Timeline, coordination, EETT liaison | 100% (dedicated) |
+| **Compliance Officer** | Document review, regulatory mapping, CAB coordination | 75% |
+| **Technical Lead** | Infrastructure, test certificates, security architecture | 75% |
+| **Legal Counsel** | Contract review, liability, GDPR | 25% (advisory) |
+| **Finance Lead** | Budgets, insurance, fee payments | 15% (support) |
+| **HR Lead** | Personnel recruitment, background checks, training | 20% (support) |
+
+**Action:** Schedule a kickoff meeting with all stakeholders. Share this document in advance.
+
+---
+
+#### Step 1.3: Gather Company Information
+
+You'll need ~150 data points to replace placeholders. Start collecting:
+
+**Corporate Information:**
+- Legal name (Greek & English)
+- ΓΕΜΗ registration number
+- Tax ID (ΑΦΜ)
+- VAT number
+- Business address (headquarters)
+- Website URL
+- Contact phone/email
+- Board of Directors (names, titles, IDs)
+
+**Technical Information:**
+- HSM vendor & model numbers
+- Data center locations & providers
+- Public service URLs (OCSP, CRL, TSA, website)
+- Network architecture diagrams
+- Certificate OIDs (if already assigned)
+
+**Personnel Information:**
+- QTS Manager CV & certifications
+- CISO CV & certifications
+- Crypto Officer qualifications
+- DPO contact details
+- RA Operator training records
+
+**Financial Information:**
+- Latest audited balance sheet
+- Professional liability insurance policy
+- Insurance coverage amounts & policy numbers
+- Budget allocation for TSP operations
+
+**Use the template:** `20_README_and_Placeholders/PLACEHOLDER_REPLACEMENT_GUIDE.md` for the complete checklist.
+
+---
+
+### PHASE 2: TEMPLATE CUSTOMIZATION (Weeks 1-2)
+
+#### Step 2.1: Understand the Placeholder System
+
+The template uses **~150 unique placeholders** in this format: `[PLACEHOLDER_NAME]`
+
+**Common placeholders:**
+- `[LEGAL_NAME_GR]` – Company name in Greek
+- `[LEGAL_NAME_EN]` – Company name in English
+- `[AFM]` – Tax ID
+- `[GEMI]` – ΓΕΜΗ registration number
+- `[SUBMISSION_DATE]` – Target submission date
+- `[OCSP_URL]` – OCSP responder URL
+- `[CRL_URL]` – CRL distribution point URL
+- `[REVOCATION_HOTLINE]` – 24×7 phone number
+
+**Where to find them:** Every document with placeholders lists them in the header or a dedicated section.
+
+---
+
+#### Step 2.2: Choose Your Customization Method
+
+**Option A: Automated (Recommended)**
+
+Use the Python rendering script:
+
+```bash
+cd scripts/
+
+# 1. Copy and edit the provider metadata file
+cp templates/provider.yml.template provider.yml
+nano provider.yml  # Fill in all company data
+
+# 2. Run the rendering engine
+python render.py
+
+# 3. Check the output
+ls -la ../rendered/
+```
+
+**Advantages:**
+- ✓ Batch replaces all 150+ placeholders instantly
+- ✓ Validates required fields
+- ✓ Generates clean output in `/rendered` directory
+- ✓ Reduces human error
+
+**Disadvantages:**
+- Requires Python 3.8+ and dependencies (`pip install -r requirements.txt`)
+- Initial `provider.yml` setup takes 1-2 hours
+
+---
+
+**Option B: Manual (For small edits)**
+
+Use find-replace in your text editor or Word:
+
+```bash
+# Example using sed (macOS/Linux)
+cd EETT_eIDAS_Dossier/
+
+find . -name "*.md" -exec sed -i '' \
+  's/\[LEGAL_NAME_GR\]/Ελληνικές Υπηρεσίες Εμπιστοσύνης Α.Ε./g' {} \;
+```
+
+**Advantages:**
+- ✓ No scripting knowledge required
+- ✓ Fine-grained control
+
+**Disadvantages:**
+- Time-consuming for 150+ placeholders
+- High risk of missing placeholders or typos
+- No validation
+
+---
+
+#### Step 2.3: Validate Placeholder Completion
+
+After customization, verify no placeholders remain:
+
+```bash
+cd scripts/
+bash validate_submission.sh
+```
+
+**This script checks:**
+- ☐ All `[PLACEHOLDER]` tags replaced
+- ☐ No "TBD" or "TODO" markers in final documents
+- ☐ Required files exist in all folders
+- ☐ File sizes are reasonable (not 0 bytes)
+- ☐ PDF metadata is populated (for Final/ PDFs)
+
+**Expected output:**
+```
+✓ Placeholder check: PASS (0 unresolved placeholders)
+✓ File completeness: PASS (20/20 folders validated)
+⚠ WARNING: 5 PDFs in Final/ folders are 0 bytes (awaiting conversion)
+```
+
+**Action:** Resolve all errors before proceeding. Warnings are acceptable at this stage.
+
+---
+
+### PHASE 3: FOLDER-BY-FOLDER REVIEW (Weeks 2-3)
+
+#### Step 3.1: Work Through Each Folder Systematically
+
+**For each numbered folder (01-20):**
+
+1. **Read the folder README:**  
+   `XX_Folder_Name/README.md` explains the folder's purpose, required deliverables, and outstanding actions.
+
+2. **Review Draft documents:**  
+   Open files in `Drafts/` folder. Ensure:
+   - Placeholders are replaced
+   - Technical details match your infrastructure
+   - Policies align with your organization's practices
+
+3. **Check Compliance status:**  
+   Open `Compliance/XX_Submission_Readiness.md` to see:
+   - Which EETT/eIDAS articles are covered
+   - Outstanding evidence or actions
+   - Readiness status (Green/Yellow/Red)
+
+4. **Collect Evidence:**  
+   Gather supporting documentation listed in `Evidence/` folder requirements:
+   - Test reports
+   - Certificates
+   - Audit logs
+   - External attestations
+
+5. **Update tracking:**  
+   Mark completed items in `_PMO/SUBMISSION_ALIGNMENT_SUMMARY.md`
+
+---
+
+#### Step 3.2: Priority Folders (Critical Path)
+
+**Focus on these folders first (they have external dependencies):**
+
+**01_Registry** – Pay €300 fee ASAP (requires bank receipt)  
+**02_Service_Start** – Longest document, requires signatures  
+**03_Conformity_Assessment** – CAB engagement must start early (4-6 week lead time)  
+**06_RA_Operations** – Generate test certificates (requires functioning CA infrastructure)  
+**10_End_User_Agreement** – Legal review takes 2+ weeks
+
+---
+
+#### Step 3.3: Folder-Specific Guidance
+
+**01_Registry (EETT Articles 3.2-3.7)**
+
+**What it does:** Registers your company as a Trust Service Provider (non-qualified initially).
+
+**Key files:**
+- `Registry_Application.md` – Company details, contact info
+- `01a_Fee_Proof.pdf` – Bank receipt for €300 payment
+- `01b_Change_Notice_Template.md` – Template for future changes (7-day deadline)
+
+**Actions:**
+1. Fill company details in Registry Application
+2. Pay €300 to EETT account (details in document)
+3. Attach bank receipt
+4. Review annual €100 fee requirement (set calendar reminder)
+
+**Common mistakes:**
+- ✗ Inconsistent company name across documents
+- ✗ Using P.O. Box instead of physical address
+- ✗ Missing authorized signatory details
+
+---
+
+**02_Service_Start (Article 6, Annex 4)**
+
+**What it does:** Formal application to start qualified services.
+
+**Key file:** `02_Service_Start_Application.md`
+
+**Structure:**
+- Part A: Provider identification (ΓΕΜΗ, ΑΦΜ, directors)
+- Part B: Services applied for (QES, QSeal, QTS, QWAC, etc.)
+- Part C: Financial resources (capital, insurance, budget)
+- Part D: Infrastructure (HSMs, data centers, network)
+- Part E: Personnel (QTS Manager, CISO, Crypto Officer, DPO)
+- Part F: Policies (references to Docs 04-12)
+
+**Actions:**
+1. Select which services to apply for (checkbox in Part B)
+2. Obtain and attach insurance policy documents
+3. Prepare board resolution approving application
+4. Collect CVs for all key personnel
+5. Get signatures from legal representatives
+
+**Dependencies:**
+- Finance: Insurance policies must be active
+- HR: Personnel must be appointed before application
+- Engineering: Infrastructure must be planned/deployed
+
+---
+
+**03_Conformity_Assessment (Article 10)**
+
+**What it does:** Contains templates for CAB (Conformity Assessment Body) audit.
+
+**Key files:**
+- `CAR_Template.md` – 19-item checklist per EETT Article 10
+- `SUBMISSION_READINESS_CHECKLIST.md` – Self-assessment
+- `03_Traceability_Matrix_STRUCTURE.md` – Regulatory mapping
+
+**Actions:**
+1. **Select CAB:** Must be accredited by ESYD (Hellenic Accreditation System) or EA (European co-operation for Accreditation)
+   - Recommended: TÜV HELLAS, Eurocert, LRQA, Bureau Veritas, BSI Group
+2. **Engage CAB:** Request quote, schedule audit (allow 4-6 weeks lead time)
+3. **Prepare document package:**
+   - All policies (Folders 04-05)
+   - Infrastructure documentation (Folder 06)
+   - Risk assessments (Folder 07)
+   - Test certificates (Folder 06)
+4. **Conduct audit:**
+   - Pre-audit: Document review (remote, 1-2 weeks)
+   - On-site audit: Infrastructure inspection, interviews (3-5 days)
+   - Post-audit: Non-conformity resolution (1-2 weeks)
+5. **Receive CAR:** Signed Conformity Assessment Report with CAB accreditation number
+
+**Timeline:** 4-6 weeks total  
+**Cost:** €15,000-€30,000 (initial audit)
+
+**Critical:** You CANNOT submit to EETT without a valid CAR.
+
+---
+
+**04_Policies & 05_Key_Management (Articles 6.3.2-6.3.3)**
+
+**What they do:** Define governance, security, and operational procedures.
+
+**Key files:**
+- `04_TSP_Policy_GR.docx` / `04_TSP_Policy_EN.docx` – Overarching governance
+- `05_TSPS_GR.docx` / `05_TSPS_EN.docx` – Service-specific procedures
+
+**Actions:**
+1. Tailor templates to your organization's:
+   - Security controls (physical, logical, personnel)
+   - Key ceremony procedures
+   - Organizational structure
+2. Review for ETSI EN 319 401/411 compliance
+3. Legal review for liability and warranty sections
+4. Publish on your website (EETT requires public access)
+
+**Dependencies:**
+- Engineering: Infrastructure details (HSM models, DC locations)
+- Legal: Liability limits, indemnification clauses
+- HR: Personnel roles & training requirements
+
+---
+
+**06_RA_Operations (Article 6.3.4, 10.6)**
+
+**What it does:** Provides test certificates and RA procedures.
+
+**Key files:**
+- `Test_Certificates.md` – Documentation for sample certificates
+- `06_Test_Certificates_Content.md` – Detailed certificate profiles
+- Sample certificates (PEM/DER format)
+
+**Actions:**
+1. Set up pre-production CA environment
+2. Generate test certificates for:
+   - QES (natural person)
+   - QES (legal person / legal representative)
+   - QSeal
+   - QWAC (website authentication)
+   - TSA (if offering time-stamping)
+3. Generate corresponding OCSP responses and CRLs
+4. Validate against ETSI standards (EN 319 412 series)
+5. Package into ZIP archive
+
+**Critical fields in certificates:**
+- QCStatements (eIDAS compliance indicators)
+- Service type OIDs (per Decision EU 2015/1505)
+- CRL/OCSP distribution points (must be real URLs)
+- Key usage & extended key usage
+
+**Dependencies:**
+- Engineering: Functioning CA infrastructure
+- Operations: OCSP/CRL services operational
+
+---
+
+**07_Incident_and_BCP (Annex 3, Articles 4-5)**
+
+**What it does:** Risk assessment and incident response procedures.
+
+**Key files:**
+- `07_Risk_Assessment_Report_GR.docx` – ISO 27005-aligned risk analysis
+- `07a_Incident_Response_Plan_GR.docx` – 24-hour EETT reporting procedure
+- `07b_Incident_Forms_GR.xlsx` – Initial & Final report templates
+
+**Actions:**
+1. Complete risk assessment:
+   - Asset inventory (HSMs, CAs, personnel, facilities)
+   - Threat modeling (insider threats, cyberattacks, natural disasters)
+   - Control effectiveness evaluation
+2. Define incident severity levels (1-5 per Annex 3)
+3. Document 24-hour reporting workflow for Level ≥3 incidents
+4. Test incident response with tabletop exercise
+
+**EETT requirement:** Level 3+ incidents must be reported within 24 hours (initial notification) + final report with all Annex 3 fields.
+
+---
+
+**08_User_Notifications (eIDAS 19(2), Article 6.3.7)**
+
+**What it does:** How you'll notify users of incidents, breaches, or service changes.
+
+**Key file:** `08_User_Notification_Plan_GR_EN.docx`
+
+**Actions:**
+1. Define notification triggers:
+   - Security breaches affecting certificate integrity
+   - Service termination
+   - Policy changes
+   - Compromised private keys
+2. Define notification methods:
+   - Email (primary)
+   - SMS (critical alerts)
+   - Website banner
+   - Press release (major incidents)
+3. Prepare templates for each scenario
+4. Test notification workflows (integrate with Folder 07 incident plan)
+
+---
+
+**09_Service_Termination (Articles 7-8, Annex 5)**
+
+**What it does:** Plans for service discontinuation scenarios.
+
+**Key file:** `09_Service_Termination_Plan_GR_EN.docx`
+
+**Actions:**
+1. Define termination scenarios:
+   - Planned (business decision, merger)
+   - Unplanned (bankruptcy, license revocation)
+   - Partial (end-of-life for specific certificate types)
+2. Document notification timelines:
+   - 3 months advance notice (planned)
+   - Immediate (unplanned Level ≥4)
+3. Arrange archive custodian (another qualified TSP or EETT)
+4. Ensure 7-year accessibility of records post-termination
+5. Conduct annual termination drill
+
+**Critical:** EETT will NOT approve without credible termination/archive plan.
+
+---
+
+**10_End_User_Agreement (Article 6.3.9, eIDAS 13)**
+
+**What it does:** Contract between your TSP and certificate subscribers.
+
+**Key file:** `10_End_User_Agreement_GR_EN.docx`
+
+**Actions:**
+1. **Legal review (mandatory):**
+   - Liability limits vs. insurance coverage
+   - GDPR compliance (Articles 13-14 transparency)
+   - Indemnification clauses
+   - Warranty disclaimers
+2. Ensure 24×7 revocation terms are clear
+3. Publish bilingual version on website
+4. Integrate into enrollment workflow (e.g., require acceptance before certificate issuance)
+
+**Common legal issues:**
+- Overly broad liability exclusions (may violate eIDAS Art. 13)
+- Missing data subject rights (GDPR violation)
+- Unclear revocation procedures
+
+---
+
+**11_Revocation_Procedures (Article 11)**
+
+**What it does:** 24×7 revocation service documentation.
+
+**Key files:**
+- `11_Revocation_SOP_GR.docx` – Internal procedures
+- `11a_Web_Disclosure_Text_GR.md` – Public-facing instructions
+
+**Actions:**
+1. Set up 24×7 revocation hotline (phone + web + email)
+2. Document telephone acceptance procedures (Article 11.2 requirement)
+3. Define revocation processing deadlines (immediate best practice)
+4. Publish revocation procedures on website (Article 11.3)
+5. Configure OCSP/CRL auto-update workflows
+
+**EETT critical requirement:** 24×7 availability with telephone acceptance (not just web form).
+
+---
+
+**12_Recordkeeping (Article 12)**
+
+**What it does:** 7-year data retention policies.
+
+**Key file:** `12_Recordkeeping_Policy_GR.docx`
+
+**Actions:**
+1. Define records scope:
+   - Certificate lifecycle events (issuance, renewal, revocation)
+   - RA transactions
+   - Validation logs
+   - Audit trails
+2. Implement integrity controls (digital signatures, write-once storage)
+3. Document data subject access procedures (GDPR Art. 15, 7-day response)
+4. Plan backup & disaster recovery for archives
+5. Define disclosure rules (only to competent authorities)
+
+---
+
+**13_Communication_Templates (Articles 3.5, 5, 8)**
+
+**What it does:** Pre-drafted letters to EETT.
+
+**Key file:** `13_EETT_Communication_Templates_GR.docx`
+
+**Includes templates for:**
+- Change notifications (7-day deadline)
+- Initial incident reports (24-hour deadline)
+- Final incident reports (all Annex 3 fields)
+- Termination notifications
+- Service status updates
+
+**Actions:**
+1. Customize with your company letterhead
+2. Assign EETT liaison officer
+3. Configure automated alerts (e.g., trigger email to EETT when Level 3 incident detected)
+
+---
+
+**14_NTL_Publication (Article 3.3)**
+
+**What it does:** Data for Greek National Trust List.
+
+**Key file:** `14_NTL_Publication_Datasheet.xlsx`
+
+**Actions:**
+1. **WAIT until EETT approval** (do not complete prematurely)
+2. After approval:
+   - Populate service type OIDs (per ETSI TS 119 612)
+   - Add service names (Greek & English)
+   - Include public keys / X.509 certificates (PEM format)
+   - List service URLs (OCSP, CRL, TSA)
+3. Submit to EETT for NTL publication
+4. Verify publication at EETT website and EU Trusted List Browser
+
+**Critical:** Services CANNOT go live until listed in NTL with status "granted".
+
+---
+
+**15_Compliance_Master**
+
+**What it does:** Master traceability matrix.
+
+**Key file:** `Master_Compliance_Register.xlsx`
+
+**Tabs:**
+- Tab 1: eIDAS Articles → Evidence mapping
+- Tab 2: EETT Articles → Evidence mapping
+- Tab 3: ETSI Standards → Implementation evidence
+- Tab 4: Document cross-references
+- Tab 5: Red-team review checklist
+
+**Actions:**
+1. Use for final QA review
+2. Provide to CAB auditor as navigation tool
+3. Include in submission package as Annex
+
+---
+
+**16_Submission_Packaging (Decision EU 2015/1506)**
+
+**What it does:** Instructions for final packaging.
+
+**Key file:** `Submission_Packaging.md`
+
+**Actions (Week 4, just before submission):**
+1. Apply qualified e-signatures/seals to all documents:
+   - Use external qualified TSP (you can't self-sign yet)
+   - Apply PAdES (PDF with embedded signature)
+   - Include qualified timestamp
+2. Generate final PDFs from markdown/Word documents:
+   ```bash
+   cd scripts/
+   bash generate_pdfs.sh
+   ```
+3. Create ASiC-E container (ZIP with manifest):
+   ```bash
+   bash create_package.sh
+   ```
+4. Validate package integrity:
+   ```bash
+   bash validate_submission.sh
+   ```
+
+---
+
+**17-20 (Supporting Folders)**
+
+- **17_Executive_Brief** – Stakeholder summaries (this document)
+- **18_Project_Timeline** – Gantt charts, milestone tracking
+- **19_Compliance_Register** – Duplicate of 15 (legacy structure)
+- **20_README_and_Placeholders** – Template documentation
+
+**Actions:** Review for completeness; update timelines and status trackers.
+
+---
+
+### PHASE 4: EXTERNAL DEPENDENCIES (Weeks 2-4)
+
+#### Step 4.1: CAB Audit Coordination
+
+**Timeline:** Start by Week 2, complete by Week 4
+
+1. **Select CAB** (Week 2):
+   - Request quotes from 2-3 accredited CABs
+   - Verify ESYD/EA accreditation
+   - Check experience with eIDAS (ask for references)
+
+2. **Kick off audit** (Week 2):
+   - Share document package (Folders 04-12)
+   - Provide infrastructure details
+   - Schedule on-site visit
+
+3. **Pre-audit preparation** (Week 3):
+   - CAB reviews documents remotely
+   - You respond to preliminary questions
+   - Fix any obvious gaps
+
+4. **On-site audit** (Week 3-4):
+   - CAB inspects data centers, HSMs
+   - Interviews with QTS Manager, CISO, Crypto Officer
+   - Walkthrough of procedures (key ceremony, incident response, revocation)
+
+5. **Receive CAR** (Week 4):
+   - CAB issues signed Conformity Assessment Report
+   - Resolve any non-conformities
+   - Obtain CAB accreditation number
+
+**Deliverable:** Signed CAR (Doc 03) with CAB seal/signature
+
+---
+
+#### Step 4.2: Financial Actions
+
+**Week 1:**
+☐ Pay €300 EETT registration fee → Attach receipt to Doc 01a
+
+**Week 2:**
+☐ Obtain professional liability insurance (€1M+ coverage)  
+☐ Attach policy to Doc 02 Part C
+
+**Ongoing:**
+☐ Budget approval for infrastructure (€500K+ Year 1)
+
+---
+
+#### Step 4.3: Legal Review
+
+**Week 2-3:**
+☐ Legal counsel reviews Doc 10 (End-User Agreement):
+  - Liability limits
+  - GDPR compliance
+  - Indemnification clauses  
+☐ Legal approves termination plan (Doc 09)  
+☐ DPO reviews recordkeeping policy (Doc 12)
+
+**Deliverable:** Legal sign-off memo attached to `_PMO/Legal_Approval.pdf`
+
+---
+
+#### Step 4.4: Infrastructure Deployment
+
+**Week 2-4 (if not already complete):**
+☐ Procure/configure HSMs (FIPS 140-2 Level 2+)  
+☐ Set up CA hierarchy (Root offline, Issuing online)  
+☐ Deploy OCSP/CRL infrastructure  
+☐ Configure 24×7 NOC/SOC  
+☐ Set up revocation hotline  
+☐ Generate test certificates (Doc 06)
+
+**Deliverable:** Pre-production environment operational
+
+---
+
+### PHASE 5: QUALITY ASSURANCE (Week 4)
+
+#### Step 5.1: Run Pre-Submission Validation
+
+```bash
+cd scripts/
+bash validate_submission.sh > validation_report.txt
+```
+
+**This checks:**
+☐ No unresolved placeholders  
+☐ All required files present  
+☐ File sizes reasonable (not 0 bytes)  
+☐ PDF metadata populated  
+☐ Cross-references valid  
+☐ Dates consistent  
+☐ Signatures present
+
+**Fix all errors before proceeding.**
+
+---
+
+#### Step 5.2: Executive Red-Team Review
+
+Assemble a review panel (Legal, Technical, Compliance) to check:
+
+**Document Quality:**
+☐ Placeholders replaced  
+☐ Technical details accurate  
+☐ Contact information current  
+☐ Financial figures audited  
+☐ Cross-references valid  
+☐ Bilingual content aligned
+
+**Regulatory Compliance:**
+☐ eIDAS Article 24 fully covered  
+☐ EETT Articles 3-12 fully covered  
+☐ CAR has all 19 items (Article 10)  
+☐ Incident levels match Annex 3  
+☐ Termination plan matches Annex 5
+
+**Technical Security:**
+☐ HSM certifications valid  
+☐ Root CA offline & protected  
+☐ OCSP/CRL highly available  
+☐ Crypto algorithms approved (ETSI TS 119 312)  
+☐ Penetration testing scheduled  
+☐ DR plan tested
+
+**Operational Readiness:**
+☐ 24×7 NOC operational  
+☐ Revocation hotline tested  
+☐ Personnel trained  
+☐ Insurance active
+
+**Legal:**
+☐ End-user agreement reviewed  
+☐ Liability limits vs. insurance aligned  
+☐ GDPR compliance verified
+
+---
+
+#### Step 5.3: Apply Qualified Signatures
+
+**Week 4, final step before submission:**
+
+1. **Export all documents to PDF:**
+   ```bash
+   cd scripts/
+   bash generate_pdfs.sh
+   ```
+
+2. **Apply qualified e-signature or e-seal:**
+   - Use external qualified TSP (e.g., existing Greek QTS provider)
+   - Sign with PAdES format (PDF Advanced Electronic Signature)
+   - Include qualified timestamp
+   - Sign each document individually OR sign the entire package
+
+3. **Verify signatures:**
+   - Validate against EU Trusted List
+   - Confirm qualified status (not advanced or simple)
+
+**Critical:** EETT requires qualified signatures on submission package.
+
+---
+
+### PHASE 6: SUBMISSION (Week 4-5)
+
+#### Step 6.1: Package the Dossier
+
+```bash
+cd scripts/
+bash create_package.sh
+```
+
+**This creates:**
+- `EETT_Submission_Package_[DATE].zip` containing:
+  - All signed PDFs (Docs 01-15)
+  - Manifest.xml (file inventory)
+  - Checksums (SHA-256 hashes)
+  - Digital signature over entire package
+
+**Format:** ASiC-E (Associated Signature Container Extended) per Decision EU 2015/1506
+
+---
+
+#### Step 6.2: Submit to EETT
+
+**Method:** EETT Electronic Submission System (details in Doc 02)
+
+**Steps:**
+1. Log in to EETT portal (credentials obtained after registry application, Doc 01)
+2. Navigate to "Qualified Service Application"
+3. Upload `EETT_Submission_Package.zip`
+4. Complete online form (cross-check with Doc 02)
+5. Confirm submission
+
+**Receive:**
+- Submission protocol number (e.g., ΑΠ/2025/5000)
+- Automated acknowledgment email
+
+**Timeline:**
+- EETT completeness check: ≤5 working days
+- EETT substantive review: Target 3 months (extendable with justification)
+
+---
+
+#### Step 6.3: Update Tracking
+
+1. Record protocol number in:
+   - `_PMO/SUBMISSION_ALIGNMENT_SUMMARY.md`
+   - Doc 13 (EETT Communication Templates)
+   - Doc 17 (Executive Brief)
+
+2. Update timeline:
+   - Milestone "EETT Submission" → ✓ Complete
+   - Milestone "EETT Completeness Check" → In Progress
+
+3. Notify stakeholders:
+   - Board of Directors
+   - CAB auditor
+   - Insurance provider
+
+---
+
+### PHASE 7: POST-SUBMISSION (Weeks 5-24+)
+
+#### Step 7.1: EETT Completeness Check (Week 5)
+
+**Timeline:** ≤5 working days from submission
+
+**Possible outcomes:**
+
+**✓ Complete:**
+- EETT confirms all required documents present
+- Review proceeds to substantive phase
+- **Action:** Monitor for information requests
+
+**✗ Incomplete:**
+- EETT requests missing documents/information
+- You have 5-25 working days to respond (EETT specifies deadline)
+- **Action:** Respond promptly with Doc 13 templates
+
+---
+
+#### Step 7.2: EETT Substantive Review (Weeks 6-24)
+
+**Timeline:** Target 3 months; may extend with justification
+
+**What EETT reviews:**
+- CAR validity & CAB accreditation
+- Technical compliance (infrastructure, crypto)
+- Organizational compliance (policies, personnel)
+- Financial stability
+- Legal agreements
+
+**Possible EETT actions:**
+- Information requests (respond using Doc 13 templates)
+- Site inspection (prepare NOC/DC access)
+- Technical demonstrations (test revocation, OCSP, CRL)
+- Clarifications on policies
+
+**Your responsibilities:**
+- Assign EETT liaison officer (check _Shared/MASTER_CONTACT_LIST.md)
+- Respond within EETT deadlines (typically 5-25 working days)
+- Maintain infrastructure (EETT may test live)
+- Keep CAB informed (may need supplementary audit)
+
+---
+
+#### Step 7.3: EETT Decision (Week 24 target)
+
+**Possible outcomes:**
+
+**✓ Approval:**
+- EETT grants authorization for applied services
+- You receive formal decision letter
+- **Action:** Proceed to Step 7.4 (NTL Publication)
+
+**⚠ Conditional Approval:**
+- Approval with corrective actions (minor non-conformities)
+- You must resolve within specified timeline
+- **Action:** Implement corrections, submit evidence
+
+**✗ Rejection:**
+- EETT denies application (rare if CAR is valid)
+- Reasons provided (e.g., insufficient financial resources, infrastructure gaps)
+- **Action:** Address deficiencies, reapply (consult CAB)
+
+---
+
+#### Step 7.4: NTL Publication (Week 25-26)
+
+**After EETT approval:**
+
+1. **Complete Doc 14 (NTL Datasheet):**
+   - Service type OIDs
+   - Service names (Greek/English)
+   - Public keys/certificates (PEM)
+   - Service URLs (OCSP, CRL, TSA)
+
+2. **Submit to EETT for NTL listing:**
+   - EETT publishes to Greek National Trust List
+   - EETT notifies EU Commission
+   - EU adds to Trusted List Browser (https://eidas.ec.europa.eu/efda/tl-browser/)
+
+3. **Verify publication:**
+   - Check EETT website
+   - Check EU Trusted List Browser
+   - Confirm status: "granted" (not "withdrawn" or "suspended")
+
+**Timeline:** 2-3 weeks from EETT approval
+
+**Critical:** DO NOT start services before NTL publication. Certificates issued before listing are NOT qualified.
+
+---
+
+#### Step 7.5: Service Go-Live (Week 27-28)
+
+**Pre-production checklist:**
+☐ Production CA environment deployed  
+☐ HSMs operational (primary + backup)  
+☐ OCSP/CRL services HA-tested (99.9% SLA)  
+☐ 24×7 NOC/hotline staffed  
+☐ RA operators trained & certified  
+☐ Website updated (CP/CPS published, revocation procedures)  
+☐ End-user agreement active  
+☐ Enrollment workflows tested  
+☐ First pilot users enrolled
+
+**Go-Live:**
+1. Issue first production certificates
+2. Monitor OCSP/CRL performance
+3. Test revocation workflow with pilot user
+4. Activate user notification systems
+5. Begin marketing/sales outreach
+
+**Post-Go-Live:**
+- Weekly compliance monitoring (first month)
+- Monthly CAB surveillance audit prep
+- Quarterly EETT status reports (if required)
+- Annual recertification audit
+
+---
+
+## 🛠️ TOOLS & AUTOMATION
+
+### Available Scripts
+
+Located in `scripts/` directory:
+
+| Script | Purpose | When to Use |
+|--------|---------|-------------|
+| **render.py** | Populate placeholders from `provider.yml` | Week 1 (template customization) |
+| **validate_submission.sh** | Pre-submission QA checks | Week 4 (before submission) |
+| **generate_pdfs.sh** | Convert markdown/Word to PDF | Week 4 (final packaging) |
+| **create_package.sh** | Build ASiC-E submission container | Week 4 (final packaging) |
+| **replace_placeholders.sh** | Batch find/replace (manual mode) | Week 1 (if not using render.py) |
+
+### Script Dependencies
+
+**Python scripts:**
+```bash
+pip install -r scripts/requirements.txt
+```
+
+**Bash scripts (require):**
+- Pandoc (for PDF generation)
+- XeLaTeX (for Greek language support in PDFs)
+- zip/unzip (for ASiC-E packaging)
+- sha256sum (for checksums)
+
+**Install on macOS:**
+```bash
+brew install pandoc mactex zip
+```
+
+**Install on Linux (Debian/Ubuntu):**
+```bash
+sudo apt-get install pandoc texlive-xetex zip
 ```
 
 ---
 
-## DOCUMENT CONTROL
+## 📊 PROJECT MANAGEMENT
 
-| Version | Date | Author | Changes |
-|---------|------|--------|---------|
-| 0.1 | [DRAFT_DATE] | eIDAS Consultant | Initial draft |
-| 0.5 | [REVIEW_DATE] | Legal + Technical Review | Incorporated feedback |
-| 1.0 | [FINAL_DATE] | QTS Manager | Final for submission |
+### Timeline Summary
 
-**Approval:**
+| Phase | Duration | Key Milestones |
+|-------|----------|----------------|
+| **1. Preparation** | Week 1 | Team assembled, data gathered |
+| **2. Customization** | Weeks 1-2 | Placeholders replaced, validation passed |
+| **3. Folder Review** | Weeks 2-3 | All 20 folders reviewed, evidence collected |
+| **4. External Dependencies** | Weeks 2-4 | CAB audit complete, insurance obtained, legal review done |
+| **5. QA** | Week 4 | Validation passed, red-team review complete |
+| **6. Submission** | Week 4-5 | Package submitted to EETT |
+| **7. EETT Review** | Weeks 5-24 | Completeness check (5 days), substantive review (3 months) |
+| **8. NTL & Go-Live** | Weeks 25-28 | NTL published, service launched |
 
-| Role | Name | Signature | Date |
-|------|------|-----------|------|
-| CEO / Legal Representative | [NAME] | _________ | [DATE] |
-| QTS Manager | [NAME] | _________ | [DATE] |
-| CISO | [NAME] | _________ | [DATE] |
-| Legal Counsel | [NAME] | _________ | [DATE] |
-
----
-
-**Classification:** Confidential – EETT Submission Only  
-**Distribution:** EETT, Internal Management, CAB Auditor  
-**Retention:** 7 years post-approval
+**Total:** ~6 months from start to service launch
 
 ---
 
-**END OF EXECUTIVE BRIEF**
+### Tracking Progress
 
-*This brief provides a high-level overview. Refer to individual documents (01–15) for detailed, submission-ready content.*
+**Use these files:**
+
+1. **`_PMO/SUBMISSION_ALIGNMENT_SUMMARY.md`**  
+   Master status tracker with:
+   - Folder-by-folder readiness (Green/Yellow/Red)
+   - External dependencies
+   - Blocking issues
+
+2. **`18_Project_Timeline/` (Gantt charts)**  
+   Visual timeline with:
+   - Phase durations
+   - Critical path
+   - Dependencies
+
+3. **Each folder's `Compliance/XX_Submission_Readiness.md`**  
+   Detailed status for that folder's deliverables
+
+**Update frequency:**
+- Daily during Weeks 1-4 (active work)
+- Weekly during Weeks 5-24 (EETT review)
+
+---
+
+### Risk Management
+
+**Top 10 Risks** (from full template):
+
+1. CAB audit delays
+2. Major non-conformity in CAB audit
+3. EETT requests extensive additional information
+4. HSM procurement delays
+5. Insurance coverage insufficient
+6. Key personnel unavailable
+7. Placeholder data incomplete
+8. Legal review delays
+9. EETT extends review beyond 3 months
+10. NTL publication technical issues
+
+**Mitigation strategies documented in:**  
+`18_Project_Timeline/Risk_Register.xlsx`
+
+---
+
+## 💰 BUDGET GUIDANCE
+
+### Expected Costs (Year 1)
+
+| Category | Range (€) |
+|----------|-----------|
+| CAB Audit (Initial) | 15,000 - 30,000 |
+| HSMs (2 units, HA) | 40,000 - 80,000 |
+| Data Center | 24,000/year |
+| Insurance | 10,000 - 25,000/year |
+| EETT Fees | 400 |
+| Legal & Consulting | 20,000 - 50,000 |
+| Personnel (6 FTEs) | 300,000 |
+| Software Licenses | 30,000 - 60,000 |
+| Security (Pentest, etc.) | 15,000 |
+| Training | 5,000 |
+| Contingency (15%) | 66,000 - 104,000 |
+| **TOTAL** | **€533K - €818K** |
+
+**Ongoing (Year 2+):** €350K - €500K/year
+
+---
+
+## ✅ SUCCESS CRITERIA
+
+**You'll know you're successful when:**
+
+**Week 4 (Submission):**
+☐ EETT confirms completeness within 5 working days  
+☐ No major information requests
+
+**Week 24 (Approval):**
+☐ EETT grants authorization  
+☐ All requested services approved  
+☐ CAR accepted without objections
+
+**Week 26 (NTL):**
+☐ Services listed in Greek NTL with status "granted"  
+☐ EU Trusted List Browser shows your services
+
+**Week 28 (Go-Live):**
+☐ First certificates issued  
+☐ OCSP/CRL >99% availability  
+☐ Zero critical incidents in first 90 days  
+☐ 24×7 revocation hotline operational
+
+**Year 1 (Business):**
+☐ CAB surveillance audit passes  
+☐ Customer contracts signed  
+☐ Revenue targets met
+
+---
+
+## 📚 ADDITIONAL RESOURCES
+
+### Official References
+
+**EETT:**
+- Website: www.eett.gr
+- Address: Λεωφ. Κηφισίας 60, 151 25 Μαρούσι, Αθήνα
+- Phone: +30 210 614 5000
+- Email: info@eett.gr
+
+**EU eIDAS:**
+- Regulation text: EUR-Lex (search "Regulation 910/2014")
+- Trusted List Browser: https://eidas.ec.europa.eu/efda/tl-browser/
+- Implementing decisions: Decision EU 2015/1505, 2015/1506
+
+**ETSI Standards:**
+- Portal: www.etsi.org
+- Key standards: EN 319 401, 411-1, 411-2, 421, 422 (search "EN 319" + number)
+
+**Hellenic Accreditation (ESYD):**
+- Website: www.esyd.gr
+- Use to verify CAB accreditation
+
+---
+
+### Recommended CABs (Greece)
+
+- TÜV HELLAS (www.tuv-nord.com/gr)
+- Eurocert (www.eurocert.gr)
+- LRQA Greece (www.lrqa.com)
+- Bureau Veritas Hellas (www.bureauveritas.gr)
+- BSI Group (www.bsigroup.com)
+
+**Verify:** Check ESYD website for current EA accreditation status.
+
+---
+
+### HSM Vendors
+
+- Utimaco (www.utimaco.com) – CryptoServer series
+- Thales (www.thalesgroup.com) – Luna HSM
+- Entrust (www.entrust.com) – nShield
+- AWS CloudHSM (aws.amazon.com/cloudhsm) – Cloud option
+
+**Requirement:** FIPS 140-2 Level 2+ or Common Criteria EAL 4+
+
+---
+
+### Insurance Providers
+
+- Marsh Greece (www.marsh.com)
+- Howden (www.howdengroup.com)
+- Allianz (www.allianz.gr)
+- AIG (www.aig.com)
+
+**Coverage needed:** Professional liability (E&O), €1M+ for QES/QSeal
+
+---
+
+## 🆘 TROUBLESHOOTING
+
+### Common Issues
+
+**"I can't find a specific placeholder definition"**
+→ Check `20_README_and_Placeholders/PLACEHOLDER_REPLACEMENT_GUIDE.md`  
+→ Search globally: `grep -r "\[PLACEHOLDER_NAME\]" .`
+
+**"Validation script fails with placeholder errors"**
+→ Run: `grep -r "\[.*\]" . | grep -v ".git" | grep -v "Archive"`  
+→ Manually find/replace remaining placeholders
+
+**"CAB says my policies don't match ETSI standards"**
+→ Review ETSI EN 319 401 (General Policy Requirements)  
+→ Use CAB's gap analysis to revise Docs 04-05  
+→ Request CAB to provide compliant template sections
+
+**"EETT requests information I don't have"**
+→ Use Doc 13 templates to respond  
+→ Request deadline extension if needed (EETT may grant)  
+→ Consult CAB or legal counsel for technical/legal questions
+
+**"Test certificates fail validation"**
+→ Verify against ETSI EN 319 412 series  
+→ Use online validators (e.g., ETSI Signature Validation Tool)  
+→ Check QCStatements format (critical for eIDAS compliance)
+
+**"My HSM isn't FIPS 140-2 certified"**
+→ This is a blocking issue – EETT requires certified HSMs  
+→ Options: Purchase compliant HSM, or use cloud HSM (AWS CloudHSM, Azure Dedicated HSM)
+
+---
+
+## 📞 GETTING HELP
+
+### Internal Support
+
+1. **Check folder README:**  
+   Each folder has specific guidance in `XX_Folder_Name/README.md`
+
+2. **Review compliance status:**  
+   `Compliance/XX_Submission_Readiness.md` lists outstanding actions
+
+3. **Consult PMO tracker:**  
+   `_PMO/SUBMISSION_ALIGNMENT_SUMMARY.md` shows dependencies & blockers
+
+### External Support
+
+1. **EETT Queries:**  
+   Email: info@eett.gr  
+   Phone: +30 210 614 5000  
+   (For clarifications on regulation requirements)
+
+2. **CAB Consultation:**  
+   Your engaged CAB can answer technical/policy questions  
+   (Usually included in audit fee)
+
+3. **Legal Counsel:**  
+   For contract, liability, GDPR issues  
+   (Budget: €20K-€50K for full review)
+
+4. **Technical Consultants:**  
+   For HSM, PKI, infrastructure setup  
+   (Vendors often provide integration support)
+
+---
+
+## 📋 QUICK REFERENCE CHECKLIST
+
+**Before You Start:**
+☐ Greek company registered (ΓΕΜΗ)  
+☐ Budget approved (€500K+ Year 1)  
+☐ Project team assigned  
+☐ Timeline commitment (6 months)
+
+**Week 1:**
+☐ Gather company data (150+ fields)  
+☐ Pay €300 EETT fee  
+☐ Customize placeholders (render.py OR manual)  
+☐ Validate completion (validate_submission.sh)
+
+**Week 2:**
+☐ Engage CAB (request quotes, schedule audit)  
+☐ Review all 20 folders  
+☐ Obtain insurance policies  
+☐ Start legal review (Doc 10)
+
+**Week 3:**
+☐ CAB pre-audit (document review)  
+☐ Collect evidence for all folders  
+☐ Deploy/validate infrastructure  
+☐ Generate test certificates (Doc 06)
+
+**Week 4:**
+☐ CAB on-site audit  
+☐ Red-team QA review  
+☐ Apply qualified signatures  
+☐ Package dossier (create_package.sh)  
+☐ Submit to EETT
+
+**Week 5:**
+☐ EETT completeness check (≤5 days)  
+☐ Respond to any EETT requests
+
+**Weeks 6-24:**
+☐ EETT substantive review  
+☐ Maintain infrastructure  
+☐ Respond to EETT information requests
+
+**Week 25-26:**
+☐ Complete NTL datasheet (Doc 14)  
+☐ EETT publishes to NTL  
+☐ Verify EU Trusted List publication
+
+**Week 27-28:**
+☐ Final pre-production testing  
+☐ Service go-live  
+☐ Issue first certificates
+
+---
+
+## 🎓 APPENDIX: REGULATORY QUICK REFERENCE
+
+### EETT Regulation Articles (Summary)
+
+| Article | Requirement | Your Action |
+|---------|-------------|-------------|
+| **3.2-3.7** | Registry application | Complete Doc 01, pay €300 |
+| **4** | Security measures | Document in Docs 04, 07 |
+| **5** | Incident reporting | Doc 07a (24-hour deadline for Level ≥3) |
+| **6** | Qualified service application | Complete Doc 02 |
+| **7-8** | Termination | Doc 09 (Annex 5 structure) |
+| **10** | CAR requirements | Doc 03 (19-item checklist) |
+| **11** | Revocation (24×7) | Doc 11 (telephone acceptance) |
+| **12** | Recordkeeping (7 years) | Doc 12 |
+
+### eIDAS Regulation Articles (Summary)
+
+| Article | Requirement | Your Action |
+|---------|-------------|-------------|
+| **13** | TSP transparency & liability | Docs 01, 02, 10 |
+| **19(2)** | User notification | Doc 08 |
+| **20** | Application procedure | Doc 02 |
+| **24** | TSP requirements (financial, personnel, security, etc.) | Docs 02-12 (all) |
+| **28** | QC for e-signatures | CAR (Doc 03), test certs (Doc 06) |
+| **38** | QC for e-seals | CAR (Doc 03), test certs (Doc 06) |
+| **42** | Qualified time-stamps | CAR (Doc 03), TSA tokens (Doc 06) |
+
+### ETSI Standards (Summary)
+
+| Standard | Topic | Your Action |
+|----------|-------|-------------|
+| **EN 319 401** | General policy requirements | Doc 04 (TSP Policy) |
+| **EN 319 411-1** | Policy for QCs issuing certs to public | Doc 05 (TSPS) |
+| **EN 319 411-2** | Policy for QCs issuing certs to legal persons | Doc 05 (TSPS) |
+| **EN 319 421** | Policy for TSAs | Doc 05 (if offering QTS) |
+| **EN 319 412-x** | Certificate profiles | Doc 06 (test certificates) |
+
+---
+
+## 📄 DOCUMENT CONTROL
+
+| Field | Value |
+|-------|-------|
+| **File** | 00_EXECUTIVE_BRIEF.md |
+| **Version** | 2.0 (Step-by-Step Guide) |
+| **Date** | 2025-01-16 |
+| **Author** | EETT/eIDAS Template Project Team |
+| **Previous Version** | 1.0 (Executive Summary) |
+| **Change Summary** | Complete redesign as step-by-step usage guide per user request |
+| **Review Status** | Draft for User Approval |
+| **Classification** | Internal Use – Template Documentation |
+
+---
+
+## 🎯 FINAL WORDS
+
+**You now have everything you need to:**
+1. Understand the template structure
+2. Customize it for your organization
+3. Navigate external dependencies (CAB, insurance, legal)
+4. Submit to EETT with confidence
+5. Achieve Qualified Trust Service Provider status
+
+**Remember:**
+- **Start early** (CAB audits have 4-6 week lead times)
+- **Validate often** (run scripts after every major change)
+- **Document everything** (EETT expects thorough evidence)
+- **Communicate proactively** (with CAB, EETT, stakeholders)
+
+**This is a marathon, not a sprint.** Budget 6 months from start to service launch. With careful planning and this template, you'll navigate the EETT/eIDAS accreditation process successfully.
+
+---
+
+**Questions?**  
+Review folder-specific README files, consult `_PMO/SUBMISSION_ALIGNMENT_SUMMARY.md`, or contact EETT directly.
+
+**Good luck with your accreditation journey! 🚀**
+
+---
+
+**END OF EXECUTIVE BRIEF**  
+*Next steps: Proceed to Phase 1, Step 1.1 (Readiness Assessment)*
