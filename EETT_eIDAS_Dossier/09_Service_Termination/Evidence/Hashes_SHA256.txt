@@ -1,0 +1,8 @@
+# Doc 09 Evidence Hash Register
+
+```
+<pending>  Final/09_Service_Termination_Plan_GR_EN.pdf
+<pending>  Evidence/ANNEX_E_Termination_Exercise_Attachments.zip   # add when attachments uploaded
+```
+
+Update immediately after validation/signature checks and mirror values in Annex B + Doc 12 logs.

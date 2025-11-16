@@ -1,0 +1,7 @@
+# Doc 13 Evidence Hash Register
+
+```
+<pending>  Final/13_EETT_Communication_Templates_GR.pdf
+```
+
+Populate after validation and file in Doc 12.

@@ -1,0 +1,8 @@
+# Doc 08 Evidence Hash Register
+
+```
+<pending>  Final/08_User_Notification_Templates_GR_EN.pdf
+<pending>  Final/08_User_Notification_Plan_GR_EN.pdf   # to be added when PDF exported
+```
+
+Record hashes immediately after validation and mirror them in Annex B / Doc 12.

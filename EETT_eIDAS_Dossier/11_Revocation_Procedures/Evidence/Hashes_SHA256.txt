@@ -1,0 +1,8 @@
+# Doc 11 Evidence Hash Register
+
+```
+<pending>  Final/11_Revocation_SOP_GR_EN.pdf
+<pending>  Final/11a_Revocation_Forms.pdf
+```
+
+Update once validation occurs; mirror in Doc 12 + Annex B.

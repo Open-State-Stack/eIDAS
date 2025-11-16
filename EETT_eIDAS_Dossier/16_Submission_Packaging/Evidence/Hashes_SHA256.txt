@@ -1,0 +1,6 @@
+# Doc 16 Packaging Hashes
+
+```
+<pending>  Final/EETT_Submission_<YYYYMMDD>.asice
+<pending>  Evidence/PAdES_Validation_Report.pdf
+```

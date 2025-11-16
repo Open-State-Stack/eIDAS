@@ -1,0 +1,7 @@
+# Doc 14 Evidence Hash Register
+
+```
+<pending>  Final/14_NTL_Publication_Datasheet.pdf
+```
+
+Update once validation is performed and mirror the hash in Doc 12.

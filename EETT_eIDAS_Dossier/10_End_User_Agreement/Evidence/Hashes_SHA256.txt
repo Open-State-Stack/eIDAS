@@ -1,0 +1,7 @@
+# Doc 10 Evidence Hash Register
+
+```
+<pending>  Final/10_End_User_Agreement_GR_EN_SIGNED.pdf
+```
+
+Record hash immediately after validation; mirror in Doc 12 and Annex B.

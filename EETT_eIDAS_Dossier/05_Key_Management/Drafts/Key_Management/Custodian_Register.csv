@@ -1,0 +1,6 @@
+Name,Role,ID,Card Serial,Assigned Keys,Last Training,Status
+"Σοφία Παπαδημητρίου","Lead Crypto Officer","ID-CO-01","SC-1001","RootCA2025, IssuingCA-QES","2025-04-20","Active"
+"Δημήτρης Καραγιάννης","Security Officer","ID-SO-02","SC-1002","RootCA2025","2025-03-15","Active"
+"Νίκος Γεωργίου","Backup Crypto Officer","ID-CO-04","SC-1003","IssuingCA-QTS","2025-02-28","Active"
+"Μαρία Αντωνίου","Crypto Officer","ID-CO-05","SC-1004","QSCD Cluster","2025-04-05","Active"
+"Ελένη Νικολάου","Compliance Witness","ID-CW-03","N/A","Observer","2025-05-01","Active"
